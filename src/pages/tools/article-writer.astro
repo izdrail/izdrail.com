@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import Hero from '../../components/Hero.astro';
+
+import ArticleExtractor from '../../vue/ArticleExtractor.vue';
+---
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Article Writer - Free Tools - Lzo Media">
+<meta property="og:url" content="https://lzomedia.com/tools/article-writer/">
+<meta property="og:image" content="https://i.imgur.com/XF92B0Q.png">
+<meta property="og:description" content="Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS.">
+<meta property="product:plural_title" content="">
+<meta property="product:price.amount" content="0">
+<meta property="product:price.currency" content="GBP">
+<meta name="author" content="Stefan ♥">
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Article Writer",
+        "description": "Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS.",
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "bestRating": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Jon Basildon"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.4,
+            "reviewCount": 89
+        }
+    }
+</script>
+<BaseLayout
+	title="Article Writer"
+	description="Extract text from any link and analyze it for keywords, sentiment, and more."
+>
+	<div class="stack gap-20">
+
+		<main class="wrapper stack gap-12">
+			<Hero
+				title="Article writer"
+				tagline="Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS."
+			/>
+
+			<ArticleExtractor client:visible />
+
+            <img alt="banner" src="https://i.imgur.com/XF92B0Q.png"/>
+            <!-- About the project sections -->
+            <section>
+                <h3>
+                    About Article Writer
+                </h3>
+                <div class="text-2xl">
+                    <p>
+                        This tool allows you to extract the main content from any web page and analyze it for keywords, sentiment, and more.
+                    </p>
+                    <p>
+                        The tool is designed to help <b>webmasters</b>, <b>marketers</b> and search engine optimization (SEO) specialists to get a more insightful image on a piece of content .
+                    </p>
+
+                </div>
+            </section>
+
+
+            <!--Requirements for running -->
+            <section>
+                <h3>
+                   Why I've built this tool
+                </h3>
+                <div class="text-2xl">
+                    <p>
+                        I've decided to built this tool for showcasing  my skills in building web applications using the latest technologies like python, fastapi, vuejs, tailwindcss and docker.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3 title="how to run your own">
+                    Run your own
+                </h3>
+                <div class="text-2xl">
+                    <p>
+                        I've decided to make the source code of this tool available to the public.
+                        You can run your own instance of the tool by following the instructions on the <a href="https://github.com/cornatul/api.todayintel.com">GitHub repository</a> .
+                    </p>
+                    <p>
+                        Or even better run it on your local machine using docker and docker-compose.
+                    </p>
+                    <p class="mt-5">
+                        <code>
+                            docker pull cornatul/api.todayintel.com:v1
+                        </code>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>
+                    Open API Documentation
+                </h3>
+                <div class="text-2xl">
+                    <p>
+                        The API documentation is available online at the following address:
+                    </p>
+                    <p class="mt-5">
+                        <code>
+                            https://api.todayintel.com/docs
+                        </code>
+                    </p>
+                    <p>
+                        <br>
+                        Feel free to use the API for your own projects.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3 title="Technologies used">
+                    Technologies used
+                </h3>
+                <div class="text-2xl">
+                    <p>
+                        The tool is built using the following technologies:
+                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>NLTK</li>
+                        <li>Vader sentiment analysis</li>
+                        <li>SpacyNLP</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+	</div>
+</BaseLayout>

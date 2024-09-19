@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import Hero from '../../components/Hero.astro';
+
+import TrendingNow from '../../vue/TrendingNow.vue';
+---
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Find what is trending now - Free  Tools">
+<meta property="og:url" content="https:/lzomedia.com/tools/trending-now/">
+<meta property="og:image" content="https://i.imgur.com/j6PglyK.png">
+<meta property="og:description" content="Discover what is trending now on the web, media, and news">
+<meta property="product:plural_title" content="">
+<meta property="product:price.amount" content="0">
+<meta property="product:price.currency" content="GBP">
+<meta name="author" content="Stefan ♥">
+
+
+
+<BaseLayout
+	title="Keywords trending now on media - Free SEO Tools"
+	description="Get a more in-depth look at what is curentlly trending in media & news with my analyzer tool."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-12">
+			<Hero
+				title="Trending now in media & news"
+				tagline="Get a more in-depth look at what is curentlly trending in media & news with my analyzer tool."
+				align="center"
+			/>
+
+           <TrendingNow client:visible/>
+
+            <img alt="banner" src="https://i.imgur.com/j6PglyK.png"/>
+
+            <p class="text-2xl">
+
+                Introducing my cutting-edge <b>analyzer tool</b> designed to provide a comprehensive overview of <b>current trends in media</b>.
+                Stay ahead of the curve by accessing real-time insights into the <b>hottest topics</b> captivating audiences worldwide.
+                My <b>free tool</b> offers a deep dive into <b>trending subjects</b>, empowering you to make informed decisions and capitalize on emerging opportunities.
+                Experience the power of data-driven analysis with our trend analyzer tool today.
+            </p>
+
+
+
+            <p class="text-2xl">In today's fast-paced digital landscape, staying informed about the latest trends is paramount for individuals and businesses alike.
+                With the constant influx of information from various sources such as Google, Twitter, and major media outlets, keeping track of what's trending can be overwhelming. That's where my cutting-edge analyzer tool comes in.</p>
+
+            <h3 title="laravel developer london">What Sets it Apart</h3>
+            <p class="text-2xl">My trend analyzer tool is not just another analytics platform. It's a comprehensive solution designed to provide real-time insights into current trends in media and news. What makes our tool unique is that it's free and open source, making it accessible to everyone.</p>
+
+            <h2 title="laravel developer uk">How It Works</h2>
+            <p class="text-2xl">Utilizing advanced algorithms and data aggregation techniques, my tool scours the web, including popular search engines like Google, social media platforms like Twitter, and prominent newspapers and media outlets. By analyzing vast amounts of data in real-time, I can provide users with a holistic view of what's trending across different channels.</p>
+
+            <h2 title="laravel developer near me">Key Features</h2>
+
+            <h3 title="find what is trending in real time ">Real-time Insights</h3>
+            <p class="text-2xl">Stay ahead of the curve with up-to-the-minute updates on the hottest topics captivating audiences worldwide.</p>
+
+            <h3>Comprehensive Overview</h3>
+            <p class="text-2xl">Get a deep dive into trending subjects, empowering you to make informed decisions and capitalize on emerging opportunities.</p>
+
+            <h3>User-Friendly Interface</h3>
+            <p class="text-2xl">My tool boasts an intuitive interface that makes navigating through trends and insights a breeze.</p>
+
+            <h3>Empowering Decision-Making</h3>
+            <p class="text-2xl">Whether you're a marketer looking to optimize your content strategy, a journalist tracking breaking news stories, or an individual interested in staying informed, my trend analyzer tool is your go-to solution.
+                By harnessing the power of data-driven analysis, I empower users to make smarter decisions and stay ahead of the competition.</p>
+
+        </main>
+	</div>
+</BaseLayout>

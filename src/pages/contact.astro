@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+
+
+---
+
+<BaseLayout
+	title="Contact me"
+	description="Learn about some of my work as a senior software developer and see my most recent projects below to get an idea of my past experience."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Contact me"
+				tagline="You can reach out to me at any time to discuss your project or to ask any questions you may have."
+				align="start"
+			/>
+			<ContactCTA />
+		</main>
+	</div>
+</BaseLayout>

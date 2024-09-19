@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import {getCollection} from 'astro:content';
+
+const posts = (await getCollection('blog'))
+console.log(posts)
+---
+
+
+<BaseLayout
+	title="Latest Posts"
+	description="My thoughts on software development, design, and more."
+>
+	<div class="stack gap-20">
+
+		<main class="wrapper stack gap-12">
+			<Hero
+				title="Blog"
+				tagline="My thoughts on software development, design, and more."
+				align="center"
+			/>
+
+            <section class="dark:bg-gray-900">
+                <div class="container px-6 mx-auto">
+                    <div class="grid grid-cols-1  md:mt-16 md:grid-cols-2">
+						{posts.map((post) => (
+							<div class="flex flex-col gap-6">
+								<div class="flex flex-col gap-2">
+									<h2 class="text-2xl font-bold">
+										<a href={post.url}>{post.title}</a>
+									</h2>
+									<p class="text-sm text-gray-400">
+										{post.data.description}
+									</p>
+								</div>
+								<div class="flex gap-2">
+									meta info
+								</div>
+							</div>
+						))}
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</BaseLayout>

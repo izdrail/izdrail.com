@@ -1,40 +1,42 @@
 ---
-title: Free Email Marketing
+title: Laravel Mail
 publishDate: 2020-03-02 00:00:00
-img: https://i.imgur.com/QrnTmX9.png
-img_alt: today intel
+img: https://i.imgur.com/nD4rYz4.png
+img_alt: Laravel Mail
 description: |
-  Open source email marketing platform with AI Powers
+  Community inspired mail platform for your laravel application.
 tags:
-  - Laravel
-  - Fast Api
-  - Python
-  - Php
-  - Spacy NLP
-  - Text Summarization
-  - Entity Extraction
-  - Sentiment Analysis
+  - GrapesJS Editor
+  - IMAP Client
+  - Spider Foot Client
+  - Advanced Workflows
+  - Multiple workspaces
+  
+
 ---
 
+## Laravel Mail
+Community inspired mail platform for your laravel application.
+Reduce your mail costs and focus on your business. Use Workflows to drive your business revenue.
 
-# Free Email Marketing Platform
 
-## Integration 
+## Features
 
-## Introduction
+### GrapesJS Editor.
+With the help of GrapesJS you will be able to create your own templates for your mail campaigns.
 
-## Why use News AI?
-- **News AI** will be able to generate news articles based on a given topic.
-- **News AI** Will allow you to manage marketing campaigns.
-- **News AI** Will allow you to share content on your social media accounts.
-- **News AI** Will allow you to manage multiple WordPress websites.
-- **News AI** Will allow you to create and manage email marketing campaigns.
-- **News AI** Will allow you to track user engagement and conversion rates.
-- **News AI** Will allow you to automate text extraction.
+### Advanced Workflows
+I've inspired from the42coders/workflows for this platform
+so that you will be able to use drag and drop to build workflows for your mail campaigns.
 
-## Status
-This project is currently in development. 
-The goal is to have a working prototype by the end of 2023.
 
-## Demo
-https://user-images.githubusercontent.com/2276408/227950857-6c6fd350-913d-4abe-9594-b004ded35715.mp4
+### Advanced Imports.
+With a very powerful csv importer you will be able to import any contacts to your platform.
+
+### Multiple workspaces
+Handle multiple workspaces or teams through a single interface.
+
+### Email Intelligence
+Using the power of docker, you will be able to run risk assessments and check for your users' email addresses.
+
+© 2024 Stefan & Andrei. All rights reserved.

@@ -73,7 +73,7 @@ const projects = (await getCollection('work'))
                 </Hero>
 
                 <img
-                        alt="php developer ava london"
+                        alt="php developer laravel london"
                         style="box-shadow: none !important;aspect-ratio: 3/3;"
                         height="620"
                         src="https://avatars.githubusercontent.com/u/2276408?s=400&v=4"
@@ -93,14 +93,14 @@ const projects = (await getCollection('work'))
                 <main class="grid grid-cols-3 gap-7">
                     {
                         [
-                            { name: 'PHP', url: '#' },
+                            { name: 'Php', url: '#' },
                             { name: 'Python', url: '/services/python' },
                             { name: 'Laravel', url: '/services/laravel' },
                             { name: 'Symfony', url: '/services/symfony' },
                             { name: 'Magento', url: '/services/magento' },
                             { name: 'Drupal', url: '/services/drupal' },
                             { name: 'Wordpress', url: '/services/wordpress' },
-                            { name: 'Apis', url: '#' },
+                            { name: 'Rest Apis', url: '#' },
                             { name: 'React', url: '#' },
                             { name: 'VueJS', url: '#' },
                             { name: 'Ionic', url: '#' },
@@ -136,7 +136,7 @@ const projects = (await getCollection('work'))
                 </header>
                 <div class="cta">
                     <CallToAction title="laravel developer my works" href="/work/">
-                        View All
+                        More
                         <Icon icon="arrow-right" size="1.2em"/>
                     </CallToAction>
                 </div>
@@ -151,46 +151,6 @@ const projects = (await getCollection('work'))
                             <PortfolioPreview project={project}/>
                     ))
                 }
-            </div>
-        </section>
-        <section class="wrapper stack gap-20 lg:gap-48">
-            <div class="container px-6 py-12 mx-auto">
-                <div>
-                    <p class="text-3xl font-medium text-blue-500 dark:text-blue-400 text-center">Contact Me</p>
-
-                    <p class="mt-2 text-2xl   md:text-3xl dark:text-white text-center">
-                        I’d love to hear from you
-                    </p>
-
-                </div>
-                <div class="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-
-                    <div class="p-4 rounded-lg md:p-6 dark:bg-gray-800">
-                        <p class="text-base font-medium  ">Video Meeting</p>
-
-                        <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                            <!-- Calendly link widget begin -->
-                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-                                    async></script>
-                            <a class="text-blue-500  dark:text-blue-400" title="contact me" href="#"
-                               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/saturnphp/30minn'});return false;">
-                                Book a 30-minute chat with me to discuss your project.
-                            </a>
-                            <!-- Calendly link widget end -->
-                        </p>
-                    </div>
-
-                    <div class="p-4 rounded-lg md:p-6">
-                        <p class="text-base font-medium ">Call me</p>
-                        <p class="mt-2 text-sm ">Mon-Fri from 8am to 5pm.</p>
-                        <p class="mt-2 text-sm  dark:text-blue-400">
-                            <a title="laravel developer london contact number" class="text-blue-500  dark:text-white"
-                               href="tel:+447448218899">+44 (744) 821-8899</a>
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </section>
     </main>

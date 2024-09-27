@@ -1,0 +1,65 @@
+---
+import CallToAction from './CallToAction.astro';
+import Icon from './Icon.astro';
+---
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<section class="wrapper stack flex justify-center items-center">
+    <div class="container px-6 py-12 mx-auto">
+        <div class="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+            <div class="p-4 rounded-lg md:p-6 dark:bg-gray-800">
+                <p class="text-base font-medium text-center">Video Meeting</p>
+                <p class="mt-2 text-sm text-center">Mon-Fri from 9am to 5pm.</p>
+                <p class="mt-2 text-sm text-blue-500 dark:text-blue-400 text-center">
+                    <!-- Calendly link widget begin -->
+                    <a class="text-blue-500 dark:text-blue-400" title="contact me" href="#"
+                       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/izdrail/'});return false;">
+                        Book a 30-minute videochat
+                    </a>
+                </p>
+            </div>
+
+            <div class="p-4 rounded-lg md:p-6">
+                <p class="text-base font-medium text-center">Call me</p>
+                <p class="mt-2 text-sm text-center">Mon-Fri from 9am to 5pm.</p>
+                <p class="mt-2 text-sm dark:text-blue-400 text-center">
+                    <a title="laravel developer london contact number" class="text-blue-500 dark:text-white"
+                       href="tel:+447448218899">+44 (744) 821-8899</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        border-top: 1px solid var(--gray-800);
+        border-bottom: 1px solid var(--gray-800);
+        padding: 5rem 1.5rem;
+        background-color: var(--gray-999_40);
+        box-shadow: var(--shadow-sm);
+    }
+
+    h2 {
+        font-size: var(--text-xl);
+        text-align: center;
+        max-width: 15ch;
+    }
+
+    @media (min-width: 50em) {
+        aside {
+            padding: 7.5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: var(--text-3xl);
+            text-align: left;
+        }
+    }
+</style>

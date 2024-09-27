@@ -9,7 +9,7 @@ import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 
 interface Props {
-	entry: CollectionEntry<'blog'>;
+	entry: CollectionEntry<'work'>;
 }
 
 // This is a dynamic route that generates a page for every Markdown file in src/content/
@@ -32,7 +32,7 @@ const { Content } = await entry.render();
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/blog/"><Icon icon="arrow-left" /> Work</a>
+					<a class="back-link" href="/blog/"><Icon icon="arrow-left" /> Blog</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
@@ -51,7 +51,6 @@ const { Content } = await entry.render();
 				</div>
 			</main>
 		</div>
-		<ContactCTA />
 	</div>
 </BaseLayout>
 
@@ -110,7 +109,6 @@ const { Content } = await entry.render();
 
 	.content :global(blockquote) {
 		font-size: var(--text-lg);
-		font-family: var(--font-brand);
 		font-weight: 600;
 		line-height: 1.1;
 		padding-inline-start: 1.5rem;

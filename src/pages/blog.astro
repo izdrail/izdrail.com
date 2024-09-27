@@ -1,49 +1,37 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
-import {getCollection} from 'astro:content';
+import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog'))
-console.log(posts)
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+import BlogPreview from "../components/BlogPreview.astro";
+
+const projects = (await getCollection('blog')).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
 ---
 
-
 <BaseLayout
-	title="Latest Posts"
-	description="My thoughts on software development, design, and more."
+	title="Projects"
+	description="Hobby Projects"
 >
 	<div class="stack gap-20">
-
-		<main class="wrapper stack gap-12">
+		<main class="wrapper stack gap-8">
 			<Hero
 				title="Blog"
-				tagline="My thoughts on software development, design, and more."
-				align="center"
+				tagline="Some of my toughts on software development, free tools"
 			/>
-
-            <section class="dark:bg-gray-900">
-                <div class="container px-6 mx-auto">
-                    <div class="grid grid-cols-1  md:mt-16 md:grid-cols-2">
-						{posts.map((post) => (
-							<div class="flex flex-col gap-6">
-								<div class="flex flex-col gap-2">
-									<h2 class="text-2xl font-bold">
-										<a href={post.url}>{post.title}</a>
-									</h2>
-									<p class="text-sm text-gray-400">
-										{post.data.description}
-									</p>
-								</div>
-								<div class="flex gap-2">
-									meta info
-								</div>
-							</div>
-						))}
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-    </div>
+			<Grid variant="offset">
+				{
+					projects.map((project) => (
+						<li>
+							<BlogPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+	</div>
 </BaseLayout>

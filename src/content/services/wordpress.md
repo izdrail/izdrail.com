@@ -82,8 +82,8 @@ Ready to embark on your next WordPress development journey?
 Get in touch with us today to discuss your project requirements and receive a personalized quote.
 We're here to turn your digital vision into reality.
 
+
 - **Name:** Stefan
 - **Email:** stefan@izdrail.com
-- **Location:** London, United Kingdom
 
 Let's build something extraordinary together!

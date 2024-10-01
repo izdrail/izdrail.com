@@ -77,7 +77,6 @@ Get in touch with us today to discuss your project requirements and receive a pe
 We're here to turn your digital vision into reality.
 
 - **Name:** Stefan
-- **Email:** stefan@LZOMedia.com
-- **Location:** London, United Kingdom
+- **Email:** stefan@izdrail.com
 
 Let's build something extraordinary together!

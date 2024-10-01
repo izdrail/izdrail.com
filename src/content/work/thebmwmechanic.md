@@ -1,16 +1,20 @@
 ---
-title: Bmw Tutorials
+title: The Bmw Mechanic
 publishDate: 2019-10-02 00:00:00
 img: https://i.imgur.com/BL3cMNQ.png
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+
 description: |
   Looking for a reliable and convenient way to maintain your BMW car?
   Look no further than our app, the ultimate tool for car enthusiasts and DIY mechanics alike!.
 tags:
-  - Design
-  - Branding
-  - Implementation
+  - BMW
+  - Car
+  - Maintenance
+  - DIY
   - Mobile App
+  - Web App
+  - Dev App
+
 ---
 Looking for a reliable and convenient way to maintain your BMW car?
 Look no further than our app, the ultimate tool for car enthusiasts and DIY mechanics alike!

@@ -1,9 +1,9 @@
 ---
-title: Understanding First-Order Transient Circuits - A Comprehensive Guide
+title: Understanding Transient Circuits
 
 publishDate: 2023-19-04 00:00:00
 description: |
-  Learn all about first-order transient circuits, how they differ from steady-state circuits, and the role of energy-storing components like capacitors and inductors. Understand transient responses, time constants, and the basic differential equations governing these circuits.
+  Learn all about first-order transient circuits, how they differ from steady-state circuits.
 image: https://i.ytimg.com/vi/ZThYkQhcPEE/maxresdefault.jpg
 tags:
   - First-Order Circuits

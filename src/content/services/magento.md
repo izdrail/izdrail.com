@@ -66,8 +66,8 @@ My team comprises PHP professionals with a wealth of experience in Magento devel
 
 Ready to embark on your next Magento development journey? Get in touch with us today to discuss your project requirements and receive a personalized quote. We're here to turn your e-commerce vision into reality.
 
+
 - **Name:** Stefan
-- **Email:** stefan@LZOMedia.com
-- **Location:** London, United Kingdom
+- **Email:** stefan@izdrail.com
 
 Let's build something extraordinary together!

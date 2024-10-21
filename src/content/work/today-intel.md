@@ -4,7 +4,7 @@ publishDate: 2024-03-02 00:00:00
 img: https://i.imgur.com/98wN3R6.png
 img_alt: today intel
 description: |
-  The API is designed to provide various functionalities related to News, Trends, Article Summarization
+  The API is designed to provide various functionalities related to NLP, Article Extraction, News, Trends, Article Summarization
 tags:
   - Python
   - Fast Api
@@ -43,7 +43,7 @@ To get started with the Today Intel API, follow these steps:
 3. Set up the required dependencies.
 4. Make requests to the API endpoints as needed.
 
-For more details, refer to the [Terms of Service](https://todayintel.com/terms/) provided by [Stefan Laravel Developer](https://lzomedia.com).
+For more details, refer to the [Terms of Service](https://izdrail.com/terms). provided by [Laravel Developer](https://izdrail.com).
 
 ## API Endpoints
 

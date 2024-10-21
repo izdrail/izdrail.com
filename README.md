@@ -3,15 +3,11 @@
 
 My personal website.
 Built with AstroJS
-Hosted on cloudflare 
+Hosted on Cloudflare 
 
 ```
 npm create astro@latest -- --template portfolio
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![portfolio](https://i.imgur.com/fmNS6rs.png)
 
 
 ## 🧞 Commands

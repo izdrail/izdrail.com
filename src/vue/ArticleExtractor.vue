@@ -82,36 +82,33 @@
         <label for="title" class="block text-2xl mb-2">Workflow</label>
         <input type="text" v-model="workflow" class="w-full h-full gap-10 text-2xl text-black ">
       </div>
-      <div v-if="response.article.title" class="mb-10">
+      <div v-if="article.title" class="mb-10">
         <label for="title" class="block text-2xl mb-2">Title</label>
-        <input type="text" v-model="response.article.title" class="w-full h-full gap-10 text-2xl text-black ">
+        <input type="text" v-model="article.title" class="w-full h-full gap-10 text-2xl text-black ">
       </div>
-      <div v-if="response.article.link" class="mb-10">
+      <div v-if="article.link" class="mb-10">
         <label for="title" class="block text-2xl mb-2">Source</label>
-        <input type="url" v-model="response.article.link" class="w-full h-full gap-10 text-2xl text-black ">
+        <input type="url" v-model="article.link" class="w-full h-full gap-10 text-2xl text-black ">
       </div>
-      <div v-if="response.article.banner" class="mb-10">
+      <div v-if="article.banner" class="mb-10">
         <label for="title" class="block text-2xl mb-2">Banner</label>
-        <img :src="response.article.banner" class="w-full h-full gap-10 text-black " alt="image">
+        <img :src="article.banner" class="w-full h-full gap-10 text-black " alt="image">
       </div>
-      <div v-if="response.article.banner" class="mb-10">
+      <div v-if="article.banner" class="mb-10">
         <label for="title" class="block text-2xl mb-2">Banner</label>
-        <input type="text" v-model="response.article.banner" class="w-full h-full gap-10 text-2xl text-black ">
+        <input type="text" v-model="article.banner" class="w-full h-full gap-10 text-2xl text-black ">
       </div>
-      <div v-if="response.answer.response" class="mb-10">
-        <label for="title" class="block text-2xl mb-2">Answer</label>
-        <v-md-editor v-model="response.answer.response" height="400px" class="w-full h-full gap-10 text-black text-2xl mb-10"></v-md-editor>
-      </div>
-      <div v-if="response.article.markdown" class="mb-10">
+
+      <div v-if="article.markdown" class="mb-10">
        <label for="title" class="block text-2xl mb-2">Original Article</label>
-       <v-md-editor v-model="response.article.markdown" height="400px" class="w-full h-full gap-10 text-black text-2xl mb-10"></v-md-editor>
+       <v-md-editor v-model="article.markdown" height="400px" class="w-full h-full gap-10 text-black text-2xl mb-10"></v-md-editor>
      </div>
-      <div v-if="response.article.tags" class="mb-10">
+      <div v-if="article.tags" class="mb-10">
         <label for="title" class="block text-2xl mb-2">Tags</label>
-        <input type="text" v-model="response.article.tags" class="w-full h-full gap-10 text-2xl text-black ">
+        <input type="text" v-model="article.tags" class="w-full h-full gap-10 text-2xl text-black ">
       </div>
-      <div v-if="response.article.title" class="mb-10 cta">
-        <button type="button" class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400" @click="publishArticle">Publish</button>
+      <div v-if="article.title" class="mb-10 cta">
+        <a type="button" class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400" >Publish</a>
       </div>
     </div>
   </section>
@@ -153,17 +150,12 @@ export default {
       link: '',
       workflow: 'https://automation.lzomedia.com/api/v1/webhooks/agpLuXOtezPpAxykB97Dj',
       showWorkflow: false,
-      response: {
-        article: {
-          title: '',
-          link: '',
-          banner: '',
-          summary: '',
-          markdown: '',
-        },
-        answer: {
-          response: '',
-        },
+      article: {
+        title: '',
+        link: '',
+        banner: '',
+        summary: '',
+        markdown: '',
       },
     }
   },
@@ -172,7 +164,7 @@ export default {
       // Show loading icon
       this.loading = true;
       // Make API call
-      fetch(`https://automation.todayintel.com/api/extract`, {
+      fetch(`https://intel.izdrail.com/nlp/article`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -183,9 +175,8 @@ export default {
       })
           .then(response => response.json())
           .then(response => {
-            this.response = response;
-            this.showWorkflow = true;
-            console.log(this.response);
+            this.article.title = response.data.title;
+            this.article.markdown = response.data.markdown;
             this.loading = false;
           })
           .catch(error => {
@@ -194,37 +185,7 @@ export default {
             //todo show error
           });
     },
-    publishArticle() {
-      // Show loading icon
-      this.loading = true;
-      // Make API call
-      fetch(`http://localhost:8004/api/publish`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: this.response.article.title,
-          link: this.link,
-          banner: this.banner,
-          summary: this.response.article.summary,
-          markdown: this.response.article.markdown,
-          answer: this.response.answer.response,
-          workflow: this.workflow,
-        }),
-      })
-          .then(response => response.json())
-          .then(response => {
-            this.response = response;
-            console.log(this.response);
-            this.loading = false;
-          })
-          .catch(error => {
-            console.log(error);
-            this.loading = false;
 
-          });
-    },
   },
   mounted() {
     console.log('Component mounted.')

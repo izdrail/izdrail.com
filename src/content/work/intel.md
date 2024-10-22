@@ -1,5 +1,5 @@
 ---
-title: Today Intel
+title: Intel Application - Discover for free what is trending on the web, media, and more.
 publishDate: 2024-03-02 00:00:00
 img: https://i.imgur.com/98wN3R6.png
 img_alt: today intel
@@ -14,10 +14,11 @@ tags:
   - Sentiment Analysis
 ---
 
-# Today Intel API Documentation
+# Intel API Documentation
 
-This repository contains the API documentation for the Today Intel App.
-The API is designed to provide various functionalities related to news, SEO analysis, NLP, videos, and more.
+This repository contains the API documentation for the tools running on my [Website](https://izdrail.com).
+
+The API was designed to provide various functionalities to developers related to news, SEO analysis, NLP, videos, and more.
 
 ## Table of Contents
 
@@ -31,12 +32,12 @@ The API is designed to provide various functionalities related to news, SEO anal
 
 ## Introduction
 
-This API is the backend for the Today Intel app, providing endpoints for fetching news,
-running SEO analysis, performing NLP tasks, and more. It adheres to the OpenAPI 3.1.0 specification.
+This API is the backend for the all the tools running on my [Website](https://izdrail.com) app. 
+It is a RESTful API, providing endpoints for fetching news, running SEO analysis, performing NLP tasks, and more. It adheres to the OpenAPI 3.1.0 specification.
 
 ## Getting Started
 
-To get started with the Today Intel API, follow these steps:
+To get started with the this Intel API, follow these steps:
 
 1. Clone the repository.
 2. Review the API documentation to understand available endpoints and their functionalities.
@@ -47,7 +48,7 @@ For more details, refer to the [Terms of Service](https://izdrail.com/terms). pr
 
 ## API Endpoints
 
-- **POST /feed/reader:** Fetch news feed.
+- **POST /feed/reader:** Reads the rss feed and return latest items from the feed in a json format
 - **POST /feed/finder:** Find relevant feeds.
 - **POST /run/scrapper:** Run a web scraper.
 - **POST /jobs:** Searches fo jobs.
@@ -65,13 +66,44 @@ For detailed information on request and response formats, refer to the OpenAPI s
 ## Request Examples
 
 ### Fetch News Feed
+
+This endpoint will efficiently retrieve and process new items from a specified RSS or Atom feed. 
+It will extract relevant data from each item, such as title, description, publication date, author, and any custom fields defined in the feed. 
+The response will be a well-structured JSON object, providing a clear and concise representation of the feed content.
+
+- `link`: The link to the feed.
+- `format`: The format of the feed.
+- `items`: The list of items in the feed.
+
+
+Example Request:
 ```json
 {
   "link": "https://example.com/feed"
 }
 ```
 
+Example Response:
+```json
+{
+  "link": "https://example.com/feed",
+  "format": "json",
+  "items": [
+    {
+      "title": "My Title",
+      "link": "https://example.com/article",
+      "description": "My Description"
+    }
+    ]}
+
+```
+
 ### Run SEO Analysis
+
+This endpoint will leverage Lighthouse, a powerful web performance auditing tool, to conduct a comprehensive analysis of a specified web page. 
+It will evaluate various aspects of the page's performance, accessibility, best practices, and SEO, providing valuable insights for optimization. 
+The results will be returned in a well-structured JSON format, making it easy to interpret and integrate into client applications.
+
 ```json
 {
   "link": "https://example.com",
@@ -79,6 +111,9 @@ For detailed information on request and response formats, refer to the OpenAPI s
 }
 ```
 ### Perform NLP Analysis
+This endpoint will extract content from a provided url and return the results as a JSON Format.
+
+
 ```json
 {
   "link": "https://example.com/article"

@@ -1,18 +1,16 @@
 ---
-title: Laravel Mail
+title: Laravel Mail Package
 publishDate: 2020-03-02 00:00:00
 img: https://i.imgur.com/nD4rYz4.png
 img_alt: Laravel Mail
 description: |
-  Community inspired mail platform for your laravel application.
+  Community inspired mail platform for your laravel application that you can self host and it will be easy to integrate with your existing mail system.
 tags:
   - GrapesJS Editor
   - IMAP Client
   - Spider Foot Client
   - Advanced Workflows
   - Multiple workspaces
-  
-
 ---
 
 ## Laravel Mail
@@ -26,8 +24,10 @@ Reduce your mail costs and focus on your business. Use Workflows to drive your b
 With the help of GrapesJS you will be able to create your own templates for your mail campaigns.
 
 ### Advanced Workflows
-I've inspired from the42coders/workflows for this platform
-so that you will be able to use drag and drop to build workflows for your mail campaigns.
+Design email workflows with the help of laravel workflow package much easier than before.
+Create your own workflow for your mail campaigns.
+
+
 
 
 ### Advanced Imports.

@@ -103,7 +103,7 @@ export default {
       // Show loading icon
       this.loading = true;
       // Make API call
-      fetch(`https://api.todayintel.com/google/trending`, {
+      fetch(`https://intel.izdrail.com/google/trending`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

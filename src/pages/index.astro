@@ -6,15 +6,12 @@ import {getCollection} from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
-import CallToAction from '../components/CallToAction.astro';
-import Grid from '../components/Grid.astro';
+
 import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
+
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
-// Page section components
-import Skills from '../components/Skills.astro';
 
 
 // Content Fetching: List four most recent work projects
@@ -57,7 +54,7 @@ const projects = (await getCollection('work'))
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/>
                             </svg>
-                            #Web Developer
+                            #Agency
                         </Pill>
 
                         <Pill>
@@ -66,7 +63,7 @@ const projects = (await getCollection('work'))
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/>
                             </svg>
-                            #Hardware enthusiast
+                            #Hardware
                         </Pill>
 
                     </div>
@@ -82,64 +79,51 @@ const projects = (await getCollection('work'))
             <div class="with-background bg-variant">
                 <header class="section-header stack gap-y-20 lg:gap-4">
                     <h2 title="Senior Software Developer">
-                        Technologies
+                       Services
                     </h2>
                     <p>
-                        Some of the technologies I use in my daily activities
+                        Some of the most popular programming languages for web development.
                     </p>
                 </header>
 
 
-                <main class="grid grid-cols-3 gap-7">
+                <div class="grid grid-cols-3 gap-7">
                     {
                         [
-                            { name: 'Php', url: '#' },
+                            { name: 'PHP', url: '/services/php' },
                             { name: 'Python', url: '/services/python' },
                             { name: 'Laravel', url: '/services/laravel' },
                             { name: 'Symfony', url: '/services/symfony' },
                             { name: 'Magento', url: '/services/magento' },
                             { name: 'Drupal', url: '/services/drupal' },
                             { name: 'Wordpress', url: '/services/wordpress' },
-                            { name: 'Rest Apis', url: '#' },
-                            { name: 'React', url: '#' },
-                            { name: 'VueJS', url: '#' },
-                            { name: 'Ionic', url: '#' },
-                            { name: 'DevOps', url: '#' },
-                            { name: 'IOT', url: '#' },
-                            { name: 'Arduino', url: '#' },
-                            { name: 'LoraWan', url: '#' },
-                            { name: "LLM's", url: '#' }
+                            { name: 'ReactJS', url: '/services/reactjs' },
+                            { name: 'VueJs', url: '/services/vuejs' },
                         ].map((language) => (
                                 <div class="mention-card">
-                                    <h3 title={language.name + ' developer London available for hire'}>
-                                        <a href={language.url} target="_same">
+                                    <h3 title={language.name + ' retainer agency'}>
+                                        <a href={language.url} target="_same" >
                                             {language.name}
                                         </a>
                                     </h3>
                                 </div>
                         ))
                     }
-                </main>
-
+                </div>
 
             </div>
-            <Skills/>
+
         </section>
         <section class="wrapper mt-20 mb-10 stack gap-20 lg:gap-48">
             <div class="section with-background with-cta">
                 <header class="section-header stack lg:gap-20 ">
-                    <h3 title="my work as a php developer">Works</h3>
+                    <h3 title="Laravel Agency London">Works</h3>
                     <p>
                         You can take a look bellow to some of projects that I've done in the past or see what I'm
                         currently cracking own
                     </p>
                 </header>
-                <div class="cta">
-                    <CallToAction title="laravel developer my works" href="/work/">
-                        More
-                        <Icon icon="arrow-right" size="1.2em"/>
-                    </CallToAction>
-                </div>
+
             </div>
         </section>
 

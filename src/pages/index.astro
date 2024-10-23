@@ -27,7 +27,7 @@ const projects = (await getCollection('work'))
             <header class="hero">
                 <Hero
                         title="Senior Software Developer "
-                        tagline="I'm Stefan &hearts; an senior software developer available for hire in London! With expert skills in PHP Python & Golang I can bring any ideea to life "
+                        tagline="I'm Stefan &hearts; an senior software developer available for hire in London! "
                         align="start"
                 >
                     <div class="roles">
@@ -78,59 +78,53 @@ const projects = (await getCollection('work'))
             </header>
 
 
-            <div class="with-background bg-variant">
-                <header class="section-header stack gap-y-20 lg:gap-4">
-                    <h2 title="Senior Software Developer">
-                        Services
-                    </h2>
-                    <p>
-                        Some of the most popular programming languages for web development.
-                    </p>
-                </header>
 
-
-                <div class="grid grid-cols-3 gap-7">
-                    {
-                        [
-                            {name: 'PHP', url: '/services/php'},
-                            {name: 'Python', url: '/services/python'},
-                            {name: 'Laravel', url: '/services/laravel'},
-                            {name: 'Symfony', url: '/services/symfony'},
-                            {name: 'Magento', url: '/services/magento'},
-                            {name: 'Drupal', url: '/services/drupal'},
-                            {name: 'Wordpress', url: '/services/wordpress'},
-                            {name: 'ReactJS', url: '/services/reactjs'},
-                            {name: 'VueJs', url: '/services/vuejs'},
-                        ].map((language) => (
-                                <div class="mention-card">
-                                    <h3 title={language.name + ' retainer agency'}>
-                                        <a href={language.url} target="_same">
-                                            {language.name}
-                                        </a>
-                                    </h3>
-                                </div>
-                        ))
-                    }
-                </div>
-
-            </div>
 
         </section>
-        <section class="wrapper mt-20 mb-10 stack gap-20 lg:gap-48">
-            <div class="section with-background with-cta">
-                <header class="section-header stack lg:gap-20 ">
-                    <h3 title="Laravel Agency London">Works</h3>
-                    <p>
-                        You can take a look bellow to some of projects that I've done in the past or see what I'm
-                        currently cracking own
-                    </p>
-                </header>
 
+        <section class="with-background bg-variant">
+            <header class="section-header stack gap-y-20 lg:gap-4">
+                <h2 title="Senior Software Developer">
+                    Services
+                </h2>
+                <p>
+                    Some of the most popular programming languages for web development.
+                </p>
+            </header>
+            <div class="grid grid-cols-3 gap-7">
+                {
+                    [
+                        {name: 'PHP', url: '/services/php'},
+                        {name: 'Python', url: '/services/python'},
+                        {name: 'Laravel', url: '/services/laravel'},
+                        {name: 'Symfony', url: '/services/symfony'},
+                        {name: 'Magento', url: '/services/magento'},
+                        {name: 'Drupal', url: '/services/drupal'},
+                        {name: 'Wordpress', url: '/services/wordpress'},
+                        {name: 'ReactJS', url: '/services/reactjs'},
+                        {name: 'VueJs', url: '/services/vuejs'},
+                    ].map((language) => (
+                            <div class="mention-card">
+                                <h3 title={language.name + ' retainer agency'}>
+                                    <a href={language.url} target="_same">
+                                        {language.name}
+                                    </a>
+                                </h3>
+                            </div>
+                    ))
+                }
             </div>
         </section>
 
-        <section class="wrapper stack gap-20 lg:gap-48">
 
+        <section class="wrapper stack gap-10 lg:gap-18">
+            <header class="section-header stack lg:gap-20 ">
+                <h1 title="Laravel Agency London">Works</h1>
+                <p>
+                    You can take a look bellow to some of projects that I've done in the past or see what I'm
+                    currently cracking own
+                </p>
+            </header>
             <div class="grid grid-cols-2 gap-7">
                 {
                     projects.map((project) => (
@@ -247,7 +241,7 @@ const projects = (await getCollection('work'))
         }
 
         .section-header h3 {
-            font-size: var(--text-4xl);
+            font-size: var(--text-5xl);
         }
 
         .with-cta .section-header {
@@ -277,6 +271,13 @@ const projects = (await getCollection('work'))
         color: var(--gray-300);
         background: var(--gradient-subtle);
         box-shadow: var(--shadow-sm);
+
+        h3 {
+            font-size: var(--text-2xl);
+            @media (max-width: 32em) {
+                font-size: inherit;
+            }
+        }
     }
 
     @media (min-width: 50em) {

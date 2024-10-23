@@ -8,7 +8,7 @@ import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 import BlogPreview from "../components/BlogPreview.astro";
 
-const projects = (await getCollection('blog')).sort(
+const blog = (await getCollection('blog')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 ---
@@ -25,7 +25,7 @@ const projects = (await getCollection('blog')).sort(
 			/>
 			<Grid variant="offset">
 				{
-					projects.map((project) => (
+					blog.map((project) => (
 						<li>
 							<BlogPreview project={project} />
 						</li>

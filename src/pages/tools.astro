@@ -3,129 +3,79 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import Icon from "../components/Icon.astro";
 import CallToAction from "../components/CallToAction.astro";
+
+const tools = [
+    {
+        title: "SEO Analyzer",
+        description: "SEO Analyzer is a comprehensive, free tool designed to conduct in-depth SEO analysis across multiple data points. It provides clear, actionable recommendations to enhance your online presence and improve your search engine rankings.",
+        link: "/tools/free-seo-analyzer",
+        cta: "Try Now"
+    },
+    {
+        title: "Article Extractor",
+        description: "Article Extractor is a free tool designed to help you streamline the process of content curation and management. By extracting the main content from any URL, it converts the text into clean HTML, making it ready for seamless integration into your preferred content management system (CMS). This tool simplifies the task of reusing and repurposing online content, ensuring that you can focus on what matters most—delivering valuable information to your audience.",
+        link: "/tools/article-extractor",
+        cta: "Try Now"
+    },
+    {
+        title: "Trending Now",
+        description: "Gain insights into what people are saying about your brand, product, or service with Trending Now. This free SEO tool helps you identify current trends across the web and media, keeping you informed and ahead of the curve.",
+        link: "/tools/trending-now",
+        cta: "Try Now"
+    },
+    {
+        title: "PDF Extractor",
+        description: "The PDF Extractor tool enables you to efficiently extract text and data from PDF documents, simplifying your workflow and enhancing productivity. It streamlines the process of converting PDFs into editable formats, allowing you to leverage the information contained in these files.",
+        link: "/tools/pdf-extractor",
+        cta: "Try Now"
+    },
+    {
+        title: "Email Generator",
+        description: "Generate professional-looking email templates with our easy-to-use email generator tool. Save time and effort by streamlining the process of creating visually appealing and effective email campaigns. Just provide information about your customer, and it will generate the perfect email for you.",
+        link: "/tools/email-generator",
+        cta: "Try Now"
+    }
+];
+
 ---
 
 <BaseLayout
-        title="Free Tools for SEO, NLP, Article Extractor and more"
-        description="Boost your website's performance with a complimentary set of free tools like article extractor, SEO analyzer and more."
+        title="Free Tools for SEO, NLP, Article Extraction, and More"
+        description="Boost your website's performance with a complimentary set of free tools, including an article extractor, SEO analyzer, and more. Discover how these tools can enhance your online presence and efficiency."
+
 >
     <main class="wrapper stack gap-12">
         <Hero
-                title="Free Tools"
-                tagline="Boost your website's performance with a complimentary set of free tools like article extractor, NLP, SEO analyzer and more."
+                title="Free Tools to Boost Your Online Performance"
+                tagline="Discover a range of complimentary tools designed to enhance your website's performance and streamline your workflow."
                 align="center"
         />
 
-
-        <!-- SEO Analyzer -->
         <section class="container px-6 mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
-                <a title="Free SEO Analyzer" href="https://izdrail.com/tools/free-seo-analyzer"
-                   class="dark:text-white hover:text-blue-500">
-                    SEO Analyzer
-                </a>
-            </h2>
-            <p class="mt-3 text-xl font-semibold mb-6 dark:text-white">
-                SEO Analyzer is a comprehensive, free tool designed to conduct in-depth SEO analysis across multiple
-                data points.
-                It provides clear, actionable recommendations to enhance your online presence and improve your search
-                engine rankings.
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">Developer Free Tools</h2>
+            <p class="mt-3 text-lg font-semibold mb-6 dark:text-white">
+                Explore my free tools that can help you with SEO analysis, content extraction, email generation, and more.
             </p>
-            <div class="cta">
-                <CallToAction title="Free SEO Analyzer" href="https://izdrail.com/tools/free-seo-analyzer/">
-                    Try Now
-                    <Icon icon="arrow-right" size="1.2em"/>
-                </CallToAction>
-            </div>
         </section>
 
-        <!-- Article Extractor -->
-        <section class="container px-6 mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
-                <a title="Article Extractor Free Tool" href="https://izdrail.com/tools/article-extractor"
-                   class="dark:text-white hover:text-blue-500">
-                    Article Extractor
-                </a>
-            </h2>
-            <p class="mt-3 text-xl font-semibold mb-6 dark:text-white">
-                Article Extractor is a free tool designed to help you streamline the process of content curation and
-                management.
-                By extracting the main content from any URL, it converts the text into clean HTML, making it ready for
-                seamless integration into your preferred content management system (CMS).
-                This tool simplifies the task of reusing and repurposing online content, ensuring that you can focus on
-                what matters most—delivering valuable information to your audience. </p>
+        {tools.map(tool => (
+                <section class="container px-6 mx-auto" key={tool.title}>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl">
+                        <a title={tool.title} href={tool.link} class="dark:text-white hover:text-blue-500">
+                            {tool.title}
+                        </a>
+                    </h3>
+                    <p class="mt-3 text-lg font-normal mb-6 dark:text-gray-400">
+                        {tool.description}
+                    </p>
+                    <div class="cta">
+                        <CallToAction title={tool.title} href={tool.link}>
+                            {tool.cta}
+                            <Icon icon="arrow-right" size="1.2em"/>
+                        </CallToAction>
+                    </div>
+                </section>
+        ))}
 
-            <div class="cta">
-                <CallToAction title="Free Article Extractor" href="https://izdrail.com/tools/article-extractor">
-                    Try Now
-                    <Icon icon="arrow-right" size="1.2em"/>
-                </CallToAction>
-            </div>
-        </section>
-
-        <!-- Trending Now -->
-        <section class="container px-6 mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
-                <a title="Find What Is Trending Now on the Web" href="https://izdrail.com/tools/trending-now"
-                   class="dark:text-white hover:text-blue-500">
-                    Trending Now
-                </a>
-            </h2>
-            <p class="mt-3 text-xl font-semibold mb-6 dark:text-gray-200">
-                Gain insights into what people are saying about your brand, product, or service with Trending Now.
-                This free SEO tool helps you identify current trends across the web and media, keeping you informed and
-                ahead of the curve.
-            </p>
-            <div class="cta">
-                <CallToAction href="/tools/trending-now/">
-                    Try Now
-                    <Icon icon="arrow-right" size="1.2em"/>
-                </CallToAction>
-            </div>
-        </section>
-
-        <!-- Trending Now -->
-        <section class="container px-6 mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
-                <a title="Find What Is Trending Now on the Web" href="https://izdrail.com/tools/pdf-extractor"
-                   class="dark:text-white hover:text-blue-500">
-                    Pdf Extractor
-                </a>
-            </h2>
-            <p class="mt-3 text-xl font-semibold mb-6 dark:text-gray-200">
-                Gain insights into what people are saying about your brand, product, or service with Trending Now.
-                This free SEO tool helps you identify current trends across the web and media, keeping you informed and
-                ahead of the curve.
-            </p>
-            <div class="cta">
-                <CallToAction href="https://izdrail.com/tools/pdf-extractor/">
-                    Try Now
-                    <Icon icon="arrow-right" size="1.2em"/>
-                </CallToAction>
-            </div>
-        </section>
-
-
-        <!--
-        <section class="container px-6 mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
-                <a title="email generator" href="https://izdrail.com/tools/email-generator" class="dark:text-white hover:text-blue-500">
-                    Email Generator
-                </a>
-            </h2>
-            <p class="mt-3 text-xl font-semibold mb-6 dark:text-gray-200">
-                Generate professional-looking email templates with our easy-to-use email generator tool.
-                Save time and effort by streamlining the process of creating visually appealing and effective email campaigns.
-                Just provide him with information about your customer and he will generate the perfect email for you.
-            </p>
-            <div class="cta">
-                <CallToAction href="https://izdrail.com/tools/email-generator">
-                    Try Now
-                    <Icon icon="arrow-right" size="1.2em" />
-                </CallToAction>
-            </div>
-        </section>
-        Email Generator Now -->
     </main>
-
 </BaseLayout>

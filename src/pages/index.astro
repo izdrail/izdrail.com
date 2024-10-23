@@ -1,18 +1,13 @@
 ---
-import {getCollection} from 'astro:content';
-
+import { getCollection } from 'astro:content';
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
-
 import Hero from '../components/Hero.astro';
-
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
-
-
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -20,14 +15,16 @@ const projects = (await getCollection('work'))
     .slice(0, 4);
 ---
 
-<BaseLayout>
-
+<BaseLayout
+        title="Expert Laravel Developer in London | Hire Senior Software Developer"
+        description="Stefan is a senior software developer based in London, specializing in Laravel development. Discover his projects and services."
+>
     <main>
         <section class="wrapper stack gap-20 lg:gap-48">
             <header class="hero">
                 <Hero
-                        title="Senior Software Developer "
-                        tagline="I'm Stefan &hearts; an senior software developer available for hire in London! "
+                        title="Senior Backend Developer"
+                        tagline="I'm Stefan &hearts; a senior software developer specializing in Laravel, available for hire in London!"
                         align="start"
                 >
                     <div class="roles">
@@ -37,7 +34,7 @@ const projects = (await getCollection('work'))
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
                             </svg>
-                            #Software Developer
+                            #Laravel Developer
                         </Pill>
                         <Pill>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -45,7 +42,7 @@ const projects = (await getCollection('work'))
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
                             </svg>
-                            #London
+                            #London Developer
                         </Pill>
 
                         <Pill>
@@ -63,49 +60,44 @@ const projects = (await getCollection('work'))
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/>
                             </svg>
-                            #Hardware
+                            #Full Stack Developer
                         </Pill>
-
                     </div>
                 </Hero>
 
                 <img
-                        alt="php developer laravel london"
+                        alt="Senior PHP and Laravel developer in London"
                         style="box-shadow: none !important;aspect-ratio: 3/3;"
                         height="620"
                         src="https://avatars.githubusercontent.com/u/2276408?s=400&v=4"
                 />
             </header>
-
-
-
-
         </section>
 
-        <section class="with-background bg-variant">
+        <section class="wrapper with-background bg-variant mt-20">
             <header class="section-header stack gap-y-20 lg:gap-4">
-                <h2 title="Senior Software Developer">
-                    Services
+                <h2 title="Laravel Development Services">
+                    My Services
                 </h2>
                 <p>
-                    Some of the most popular programming languages for web development.
+                    Explore my expertise in popular programming languages and web development frameworks.
                 </p>
             </header>
             <div class="grid grid-cols-3 gap-7">
                 {
                     [
-                        {name: 'PHP', url: '/services/php'},
-                        {name: 'Python', url: '/services/python'},
-                        {name: 'Laravel', url: '/services/laravel'},
-                        {name: 'Symfony', url: '/services/symfony'},
-                        {name: 'Magento', url: '/services/magento'},
-                        {name: 'Drupal', url: '/services/drupal'},
-                        {name: 'Wordpress', url: '/services/wordpress'},
-                        {name: 'ReactJS', url: '/services/reactjs'},
-                        {name: 'VueJs', url: '/services/vuejs'},
+                        { name: 'PHP', url: '/services/php' },
+                        { name: 'Python', url: '/services/python' },
+                        { name: 'Laravel', url: '/services/laravel' },
+                        { name: 'Symfony', url: '/services/symfony' },
+                        { name: 'Magento', url: '/services/magento' },
+                        { name: 'Drupal', url: '/services/drupal' },
+                        { name: 'WordPress', url: '/services/wordpress' },
+                        { name: 'ReactJS', url: '/services/reactjs' },
+                        { name: 'VueJS', url: '/services/vuejs' },
                     ].map((language) => (
-                            <div class="mention-card">
-                                <h3 title={language.name + ' retainer agency'}>
+                            <div class="mention-card" key={language.name}>
+                                <h3 title={`${language.name} Development Services`}>
                                     <a href={language.url} target="_same">
                                         {language.name}
                                     </a>
@@ -116,28 +108,25 @@ const projects = (await getCollection('work'))
             </div>
         </section>
 
-
-        <section class="wrapper stack gap-10 lg:gap-18">
+        <section class="wrapper container stack gap-10 lg:gap-18 mt-20">
             <header class="section-header stack lg:gap-20 ">
-                <h1 title="Laravel Agency London">Works</h1>
+                <h1 title="Portfolio of Laravel Projects">
+                    Portfolio
+                </h1>
                 <p>
-                    You can take a look bellow to some of projects that I've done in the past or see what I'm
-                    currently cracking own
+                    Take a look below at some of the projects I've completed or what I'm currently working on.
                 </p>
             </header>
             <div class="grid grid-cols-2 gap-7">
                 {
                     projects.map((project) => (
-                            <PortfolioPreview project={project}/>
+                            <PortfolioPreview project={project} key={project.title} />
                     ))
                 }
             </div>
         </section>
-
-
     </main>
 </BaseLayout>
-
 <style>
     .hero {
         display: flex;

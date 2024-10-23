@@ -1,5 +1,5 @@
 ---
-title: Laravel Mail Package
+title: Laravel Mail Package - Discover how community inspired the free mail platform for your laravel app.
 publishDate: 2020-03-02 00:00:00
 img: https://i.imgur.com/nD4rYz4.png
 img_alt: Laravel Mail

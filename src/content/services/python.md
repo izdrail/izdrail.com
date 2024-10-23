@@ -14,7 +14,7 @@ tags:
 
 Welcome to my premier [Python development company](https://lzomedia.com) based in the vibrant city of London, United Kingdom.
 I am committed to delivering top-notch Python solutions tailored to meet the unique needs of businesses across various industries.
-With a solid foundation built on expertise, innovation, and dedication, I strive to be your trusted partner in realizing your digital ambitions.
+With a solid foundation built on expertise, innovation, and dedication, I strive to be your trusted partner in realising your digital ambitions.
 
 ## Who is Behind the Company?
 
@@ -29,7 +29,7 @@ including web application development, data analysis, machine learning, and auto
 - **Expertise:** With 9 years of dedicated [Python development](https://lzomedia.com) experience, we possess the proficiency to tackle projects of any complexity.
 - **Quality Focus:** We are committed to delivering high-quality Python applications that not only meet but exceed client expectations.
 - **Industry Standards:** Our solutions adhere to industry standards and best practices, ensuring robustness, scalability, and security.
-- **Comprehensive Services:** From frontend to backend development, we offer a comprehensive suite of services to cater to all your Python development needs.
+- **Comprehensive Services:** From front-end to back-end development, we offer a comprehensive suite of services to cater to all your Python development needs.
 - **Competitive Rates:** Our competitive pricing structure provides excellent value compared to traditional agency prices, making premium Python development accessible to businesses of all sizes.
 
 ## Our Services
@@ -37,22 +37,22 @@ including web application development, data analysis, machine learning, and auto
 ### Python Development
 
 - **Web Application Development:** Crafting dynamic and user-friendly web applications tailored to your specific requirements.
-- **Data Analysis:** Analyzing and visualizing data to extract valuable insights and inform business decisions.
+- **Data Analysis:** Analysing and visualising data to extract valuable insights and inform business decisions.
 - **Machine Learning:** Developing predictive models and AI solutions to automate processes and enhance efficiency.
 - **Automation Solutions:** Building custom automation scripts and tools to streamline repetitive tasks and workflows.
 
-### Frontend Python Development
+### Front-end Python Development
 
 - **Responsive Web Design:** Designing visually appealing and responsive websites that adapt seamlessly to various devices and screen sizes.
 - **User Interface Design:** Creating intuitive and engaging user interfaces to enhance user experience and drive engagement.
 - **Single Page Applications:** Developing interactive and dynamic single-page applications for a smooth and fluid user experience.
 
-### Backend Python Development
+### Back-end Python Development
 
-- **Database Design and Optimization:** Designing efficient and scalable databases to support your application's data management needs.
+- **Database Design and Optimisation:** Designing efficient and scalable databases to support your application's data management needs.
 - **Server-side Scripting:** Implementing server-side logic to handle business logic and ensure smooth application functionality.
-- **RESTful API Development:** Building RESTful APIs adhering to industry standards for seamless integration with third-party services.
-- **Performance Optimization:** Optimizing application performance to deliver fast response times and enhance user experience.
+- **Restful API Development:** Building Restful APIs adhering to industry standards for seamless integration with third-party services.
+- **Performance Optimisation:** Optimising application performance to deliver fast response times and enhance user experience.
 - **Security Implementation:** Implementing robust security measures to protect your application from potential threats and vulnerabilities.
 - **Code Refactoring:** Refactoring existing code to improve maintainability, scalability, and performance.
 - **Testing and Debugging:** Conducting thorough testing and debugging to ensure the reliability and stability of your Python applications.
@@ -70,11 +70,11 @@ including web application development, data analysis, machine learning, and auto
 ## Contact
 
 Ready to embark on your next Python development journey?
-Get in touch with us today to discuss your project requirements and receive a personalized quote.
+Get in touch with us today to discuss your project requirements and receive a personalised quote.
 We're here to turn your digital vision into reality.
 
 - **Name:** Stefan
-- **Email:** stefan@LZOMedia.com
-- **Location:** London, United Kingdom
+- **Email:** stefan@izdrail.com
+- **Location:** Essex, United Kingdom
 
 Let's build something extraordinary together!

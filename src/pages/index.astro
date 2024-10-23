@@ -76,10 +76,12 @@ const projects = (await getCollection('work'))
                         src="https://avatars.githubusercontent.com/u/2276408?s=400&v=4"
                 />
             </header>
+
+
             <div class="with-background bg-variant">
                 <header class="section-header stack gap-y-20 lg:gap-4">
                     <h2 title="Senior Software Developer">
-                       Services
+                        Services
                     </h2>
                     <p>
                         Some of the most popular programming languages for web development.
@@ -90,19 +92,19 @@ const projects = (await getCollection('work'))
                 <div class="grid grid-cols-3 gap-7">
                     {
                         [
-                            { name: 'PHP', url: '/services/php' },
-                            { name: 'Python', url: '/services/python' },
-                            { name: 'Laravel', url: '/services/laravel' },
-                            { name: 'Symfony', url: '/services/symfony' },
-                            { name: 'Magento', url: '/services/magento' },
-                            { name: 'Drupal', url: '/services/drupal' },
-                            { name: 'Wordpress', url: '/services/wordpress' },
-                            { name: 'ReactJS', url: '/services/reactjs' },
-                            { name: 'VueJs', url: '/services/vuejs' },
+                            {name: 'PHP', url: '/services/php'},
+                            {name: 'Python', url: '/services/python'},
+                            {name: 'Laravel', url: '/services/laravel'},
+                            {name: 'Symfony', url: '/services/symfony'},
+                            {name: 'Magento', url: '/services/magento'},
+                            {name: 'Drupal', url: '/services/drupal'},
+                            {name: 'Wordpress', url: '/services/wordpress'},
+                            {name: 'ReactJS', url: '/services/reactjs'},
+                            {name: 'VueJs', url: '/services/vuejs'},
                         ].map((language) => (
                                 <div class="mention-card">
                                     <h3 title={language.name + ' retainer agency'}>
-                                        <a href={language.url} target="_same" >
+                                        <a href={language.url} target="_same">
                                             {language.name}
                                         </a>
                                     </h3>
@@ -137,6 +139,8 @@ const projects = (await getCollection('work'))
                 }
             </div>
         </section>
+
+
     </main>
 </BaseLayout>
 
@@ -164,7 +168,7 @@ const projects = (await getCollection('work'))
         .hero {
             display: grid;
             grid-template-columns: 6fr 4fr;
-            padding-inline: 2.5rem;
+
             gap: 3.75rem;
         }
 
@@ -217,7 +221,7 @@ const projects = (await getCollection('work'))
     .section-header {
         justify-self: center;
         text-align: center;
-margin-bottom: 2vh;
+        margin-bottom: 2vh;
         font-size: var(--text-md);
         color: var(--gray-300);
     }

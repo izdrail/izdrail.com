@@ -31,12 +31,12 @@
       <div v-if="jobs.length">
         <h2>Job Results</h2>
         <ul>
-          <li v-for="job in jobs" :key="job.job_url">
+          <li v-for="job in jobs" :key="job.job_url" :class="{ 'applied': job.applied }">
             <h3>{{ job.title }} at {{ job.company }}</h3>
             <p>Location: {{ job.location }}</p>
             <p>Date Posted: {{ new Date(job.date_posted).toLocaleDateString() }}</p>
             <p>Salary: {{ job.min_amount }} - {{ job.max_amount }} {{ job.currency }}</p>
-            <a :href="job.job_url" target="_blank">View Job</a>
+            <a :href="job.job_url" target="_blank" @click.prevent="markAsApplied(job)">View Job</a>
           </li>
         </ul>
       </div>
@@ -48,6 +48,11 @@
 <style>
 .page-header {
   display: none;
+}
+
+.applied {
+  background-color: #d1fae5; /* Light green background for applied jobs */
+  color: #064e3b; /* Darker color for applied jobs */
 }
 </style>
 
@@ -90,6 +95,7 @@ export default {
       if (cachedJobs) {
         // If cached data exists, parse and use it
         this.jobs = JSON.parse(cachedJobs);
+        this.loadAppliedStatus(); // Load applied status from local storage
         this.loading = false;
         console.log("Loaded from cache:", this.jobs);
         return; // Exit early to use cached data
@@ -109,6 +115,7 @@ export default {
 
             // Cache the response data
             localStorage.setItem(this.keyword, JSON.stringify(this.jobs));
+            this.loadAppliedStatus(); // Load applied status
             console.log("Fetched from API:", this.jobs);
 
             this.loading = false;
@@ -118,6 +125,22 @@ export default {
             this.loading = false;
             // TODO: show error
           });
+    },
+    markAsApplied(job) {
+      // Mark the job as applied
+      job.applied = true;
+
+      // Save the applied status to local storage
+      const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+      appliedJobs.push(job.job_url);
+      localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
+    },
+    loadAppliedStatus() {
+      // Load applied jobs from local storage
+      const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+      this.jobs.forEach(job => {
+        job.applied = appliedJobs.includes(job.job_url); // Set applied status
+      });
     },
   },
   mounted() {

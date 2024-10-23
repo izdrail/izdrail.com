@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import Hero from '../../components/Hero.astro';
+
+import ArticleExtractor from '../../vue/ArticleExtractor.vue';
+
+import Jobs from '../../vue/Jobs.vue';
+---
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Find the latest jobs in the tech industry">
+<meta property="og:url" content="https://izdrail.com/tools/jobs/">
+<meta property="og:image" content="https://i.imgur.com/XF92B0Q.png">
+<meta property="og:description" content="Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS.">
+<meta property="product:plural_title" content="">
+<meta property="product:price.amount" content="0">
+<meta property="product:price.currency" content="GBP">
+<meta name="author" content="Stefan ♥">
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Jobs Finder",
+        "description": "Find the latest jobs to apply for",
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "bestRating": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Stefan"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.4,
+            "reviewCount": 89
+        }
+    }
+</script>
+<BaseLayout
+	title="Jobs Finder"
+	description="Find the latest jobs to apply for in the tech industry"
+>
+	<div class="stack gap-20">
+
+		<main class="wrapper stack gap-12">
+			<Hero
+				title="Job Finder"
+				tagline="Find the latest jobs to apply for in the tech industry"
+
+			/>
+
+			<Jobs client:visible />
+
+
+        </main>
+	</div>
+</BaseLayout>

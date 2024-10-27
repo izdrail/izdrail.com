@@ -1,81 +1,87 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import Icon from "../components/Icon.astro";
 import CallToAction from "../components/CallToAction.astro";
+import Icon from "../components/Icon.astro";
 
 const tools = [
-    {
-        title: "SEO Analyzer",
-        description: "SEO Analyzer is a comprehensive, free tool designed to conduct in-depth SEO analysis across multiple data points. It provides clear, actionable recommendations to enhance your online presence and improve your search engine rankings.",
-        link: "/tools/free-seo-analyzer",
-        cta: "Try Now"
+{
+    title: "Google SEO Checker",
+    subtitle: "Get now your SEO Score and create an SEO Checklist of errors and suggestions to improve your Search Engine Ranking. Be #1 on Google",
+    description: "Discover the best free Google SEO tools for optimizing rankings, including keyword search, SEO audits, Google My Business, Analytics integration, and comprehensive site analysis.\n",
+    link: "/tools/free-seo-analyzer",
+    cta: "Try Now",
+    images: [
+        'https://cdni.iconscout.com/illustration/premium/thumb/businessman-is-presenting-on-presentation-board-illustration-download-in-svg-png-gif-file-formats--analytics-logo-business-data-marketing-startup-pack-illustrations-8870060.png?f=webp'
+    ],
     },
-    {
-        title: "Article Extractor",
-        description: "Article Extractor is a free tool designed to help you streamline the process of content curation and management. By extracting the main content from any URL, it converts the text into clean HTML, making it ready for seamless integration into your preferred content management system (CMS). This tool simplifies the task of reusing and repurposing online content, ensuring that you can focus on what matters most—delivering valuable information to your audience.",
-        link: "/tools/article-extractor",
-        cta: "Try Now"
+{
+    title: "Article Extractor",
+    subtitle: "Streamline Your Content Workflow with Advanced Text Extraction and NLP",
+    description: "Find the best free article extractor tools for efficient content extraction and summarization, including options for Python, PHP, Node, NPM, and online smart extraction tools.\n",
+    link: "/tools/article-extractor",
+    cta: "Try Now",
+    images: [
+        'https://cdni.iconscout.com/illustration/premium/thumb/computer-application-web-response-illustration-download-in-svg-png-gif-file-formats--programs-applications-technology-and-business-pack-illustrations-7786220.png?f=webp'
+    ],
     },
-    {
-        title: "Trending Now",
-        description: "Gain insights into what people are saying about your brand, product, or service with Trending Now. This free SEO tool helps you identify current trends across the web and media, keeping you informed and ahead of the curve.",
-        link: "/tools/trending-now",
-        cta: "Try Now"
+{
+    title: "Trending Now",
+    subtitle: "",
+    description: "Stay ahead with insights on current trends about your brand or product across the web.",
+    link: "/tools/trending-now",
+    cta: "Try Now",
+    images: [
+        'https://cdni.iconscout.com/illustration/premium/thumb/the-boy-is-watching-news-illustration-download-in-svg-png-gif-file-formats--read-telecast-breaking-service-article-pack-network-communication-illustrations-7969428.png?f=webp'
+    ],
     },
-    {
-        title: "PDF Extractor",
-        description: "The PDF Extractor tool enables you to efficiently extract text and data from PDF documents, simplifying your workflow and enhancing productivity. It streamlines the process of converting PDFs into editable formats, allowing you to leverage the information contained in these files.",
-        link: "/tools/pdf-extractor",
-        cta: "Try Now"
+{
+    title: "PDF Extractor",
+    subtitle: "",
+    description: "Extract text from PDFs and convert them into editable formats to enhance productivity.",
+    link: "/tools/pdf-extractor",
+    cta: "Try Now",
+    images: [
+        'https://cdni.iconscout.com/illustration/premium/thumb/man-signing-online-contract-illustration-download-in-svg-png-gif-file-formats--digital-signature-remote-agreements-legal-documentation-business-pack-illustrations-10330020.png?f=webp'
+    ],
     },
-    {
-        title: "Email Generator",
-        description: "Generate professional-looking email templates with our easy-to-use email generator tool. Save time and effort by streamlining the process of creating visually appealing and effective email campaigns. Just provide information about your customer, and it will generate the perfect email for you.",
-        link: "/tools/email-generator",
-        cta: "Try Now"
-    }
 ];
-
 ---
-
 <BaseLayout
-        title="Free Tools for SEO, NLP, Article Extraction, and More"
-        description="Boost your website's performance with a complimentary set of free tools, including an article extractor, SEO analyzer, and more. Discover how these tools can enhance your online presence and efficiency."
-
+        title="Free Tools for SEO, NLP, and More"
+        description="Enhance your website with free tools for SEO, content extraction, email generation, and more."
 >
     <main class="wrapper stack gap-12">
         <Hero
                 title="Free Tools to Boost Your Online Performance"
-                tagline="Discover a range of complimentary tools designed to enhance your website's performance and streamline your workflow."
+                tagline="Explore tools to enhance website performance and streamline workflows."
                 align="center"
         />
-
-        <section class="container px-6 mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">Developer Free Tools</h2>
-            <p class="mt-3 text-lg font-semibold mb-6 dark:text-white">
-                Explore my free tools that can help you with SEO analysis, content extraction, email generation, and more.
-            </p>
-        </section>
-
-        {tools.map(tool => (
-                <section class="container px-6 mx-auto" key={tool.title}>
-                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl">
-                        <a title={tool.title} href={tool.link} class="dark:text-white hover:text-blue-500">
-                            {tool.title}
-                        </a>
-                    </h3>
-                    <p class="mt-3 text-lg font-normal mb-6 dark:text-gray-400">
-                        {tool.description}
-                    </p>
-                    <div class="cta">
-                        <CallToAction title={tool.title} href={tool.link}>
-                            {tool.cta}
-                            <Icon icon="arrow-right" size="1.2em"/>
-                        </CallToAction>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6 lg:py-24">
+            {tools.map((tool, index) => (
+                    <div class="mx-auto items-center gap-8 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16">
+                        <div class={`text-gray-500 dark:text-gray-400 sm:text-lg ${index % 2 !== 0 && 'lg:order-2'}`}>
+                            <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-white-900 dark:text-white">
+                                {tool.title}
+                            </h2>
+                            <h3 class="mb-4 text-2xl">
+                                {tool.subtitle}
+                            </h3>
+                            <p class="text-2xl mb-5">
+                                {tool.description}
+                            </p>
+                            <CallToAction title={tool.title} href={tool.link}>
+                                {tool.cta}
+                                <Icon icon="arrow-right" size="1.2em"/>
+                            </CallToAction>
+                        </div>
+                        <div class="mt-8 grid grid-cols-1 gap-4 lg:mt-0">
+                            {tool.images.map((image) => (
+                                    <img alt={tool.title} src={image} class="w-full rounded-lg" />
+                            ))}
+                        </div>
                     </div>
-                </section>
-        ))}
-
+            ))}
+        </div>
     </main>
 </BaseLayout>

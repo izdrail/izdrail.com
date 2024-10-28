@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import {getCollection} from 'astro:content';
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -20,6 +20,7 @@ const projects = (await getCollection('work'))
         description="Stefan is a senior software developer based in London, specializing in Laravel development. Discover his projects and services."
 >
     <main>
+
         <section class="wrapper stack gap-20 lg:gap-48">
             <header class="hero">
                 <Hero
@@ -86,15 +87,15 @@ const projects = (await getCollection('work'))
             <div class="grid grid-cols-3 gap-7">
                 {
                     [
-                        { name: 'PHP', url: '/services/php' },
-                        { name: 'Python', url: '/services/python' },
-                        { name: 'Laravel', url: '/services/laravel' },
-                        { name: 'Symfony', url: '/services/symfony' },
-                        { name: 'Magento', url: '/services/magento' },
-                        { name: 'Drupal', url: '/services/drupal' },
-                        { name: 'WordPress', url: '/services/wordpress' },
-                        { name: 'ReactJS', url: '/services/reactjs' },
-                        { name: 'VueJS', url: '/services/vuejs' },
+                        {name: 'PHP', url: '/services/php'},
+                        {name: 'Python', url: '/services/python'},
+                        {name: 'Laravel', url: '/services/laravel'},
+                        {name: 'Symfony', url: '/services/symfony'},
+                        {name: 'Magento', url: '/services/magento'},
+                        {name: 'Drupal', url: '/services/drupal'},
+                        {name: 'WordPress', url: '/services/wordpress'},
+                        {name: 'ReactJS', url: '/services/reactjs'},
+                        {name: 'VueJS', url: '/services/vuejs'},
                     ].map((language) => (
                             <div class="mention-card" key={language.name}>
                                 <h2 title={`${language.name} Development Services`}>
@@ -120,11 +121,12 @@ const projects = (await getCollection('work'))
             <div class="grid grid-cols-2 gap-7">
                 {
                     projects.map((project) => (
-                            <PortfolioPreview project={project} />
+                            <PortfolioPreview project={project}/>
                     ))
                 }
             </div>
         </section>
+
     </main>
 </BaseLayout>
 <style>

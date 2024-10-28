@@ -9,14 +9,14 @@ import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 
 interface Props {
-	entry: CollectionEntry<'books'>;
+	entry: CollectionEntry<'articles'>;
 }
 
 // This is a dynamic route that generates a page for every Markdown file in src/content/
 // Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
 // https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
-	const work = await getCollection('books');
+	const work = await getCollection('articles');
 	return work.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
@@ -32,7 +32,7 @@ const { Content } = await entry.render();
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/blog/"><Icon icon="arrow-left" /> Blog</a>
+					<a class="back-link" href="/articles/"><Icon icon="arrow-left" /> Articles </a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
@@ -52,6 +52,29 @@ const { Content } = await entry.render();
 			</main>
 		</div>
 	</div>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "NewsArticle",
+			"headline": {entry.data.title},
+			"image": [
+				"https://example.com/photos/1x1/photo.jpg",
+				"https://example.com/photos/4x3/photo.jpg",
+				"https://example.com/photos/16x9/photo.jpg"
+			],
+			"datePublished": "2024-01-05T08:00:00+08:00",
+			"dateModified": "2024-02-05T09:20:00+08:00",
+			"author": [{
+				"@type": "Person",
+				"name": "Jane Doe",
+				"url": "https://example.com/profile/janedoe123"
+			},{
+				"@type": "Person",
+				"name": "John Doe",
+				"url": "https://example.com/profile/johndoe123"
+			}]
+		}
+	</script>
 </BaseLayout>
 
 <style>

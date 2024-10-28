@@ -8,20 +8,20 @@ import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 import BlogPreview from "../components/BlogPreview.astro";
 
-const blog = (await getCollection('blog')).sort(
+const blog = (await getCollection('articles')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 ---
 
 <BaseLayout
-	title="Projects"
-	description="Hobby Projects"
+	title="Articles & tools"
+	description="Software Development Insights and Free Tool Recommendations"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="Blog"
-				tagline="Some of my toughts on software development, free tools"
+				title="Articles"
+				tagline="Software Development Insights and Free Tool Recommendations"
 			/>
 			<Grid variant="offset">
 				{

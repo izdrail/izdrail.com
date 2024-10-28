@@ -76,8 +76,8 @@ const projects = (await getCollection('work'))
 
         <section class="wrapper with-background bg-variant mt-20">
             <header class="section-header stack gap-y-20 lg:gap-4">
-                <h2 title="Laravel Development Services">
-                    My Services
+                <h2 title="Softwaer Development Services">
+                    Services
                 </h2>
                 <p>
                     Explore my expertise in popular programming languages and web development frameworks.
@@ -97,11 +97,11 @@ const projects = (await getCollection('work'))
                         { name: 'VueJS', url: '/services/vuejs' },
                     ].map((language) => (
                             <div class="mention-card" key={language.name}>
-                                <h3 title={`${language.name} Development Services`}>
+                                <h2 title={`${language.name} Development Services`}>
                                     <a href={language.url} target="_same">
                                         {language.name}
                                     </a>
-                                </h3>
+                                </h2>
                             </div>
                     ))
                 }
@@ -111,7 +111,7 @@ const projects = (await getCollection('work'))
         <section class="wrapper container stack gap-10 lg:gap-18 mt-20">
             <header class="section-header stack lg:gap-20 ">
                 <h1 title="Portfolio of Laravel Projects">
-                    Portfolio
+                    Works
                 </h1>
                 <p>
                     Take a look below at some of the projects I've completed or what I'm currently working on.
@@ -120,7 +120,7 @@ const projects = (await getCollection('work'))
             <div class="grid grid-cols-2 gap-7">
                 {
                     projects.map((project) => (
-                            <PortfolioPreview project={project} key={project.title} />
+                            <PortfolioPreview project={project} />
                     ))
                 }
             </div>

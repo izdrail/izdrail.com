@@ -20,6 +20,7 @@ tags:
 
 ###### Building Multi-Tenant SaaS Architectures
 
+
 Software as a service (SaaS) is on the path to becoming
 the de facto model for building, delivering, and operating
 software solutions. Adopting a multi-tenant SaaS model

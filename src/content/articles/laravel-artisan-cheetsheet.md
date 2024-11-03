@@ -68,7 +68,7 @@ Remove the compiled class file
 -----
 
 # docs
-Access the Laravel documentation
+Access the [Laravel](https://izdrail.com/services/laravel) documentation
 
 
 # down
@@ -104,7 +104,7 @@ OPTIONAL
 
 
 # docs
-Access the Laravel documentation
+Access the [Laravel](https://izdrail.com/services/laravel) documentation
 
 # Arguments
 
@@ -882,7 +882,7 @@ exception OPTIONAL
 -----
 
 # install:api
-Create an API routes file and install Laravel Sanctum or Laravel Passport
+Create an API routes file and install [Laravel](https://izdrail.com/services/laravel) Sanctum or Laravel Passport
 
 # Options
 ```

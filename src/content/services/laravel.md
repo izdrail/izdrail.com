@@ -18,7 +18,7 @@ With a solid foundation built on expertise, innovation, and dedication, I strive
 
 ## Who is Behind the Company?
 
-My team comprises php professionals with a wealth of experience in Laravel development,
+My team comprises php professionals with a wealth of experience in [Laravel development](https://izdrail.com/services/laravel),
 web design, and UX/UI design.
 My team brings over 9 years of hands-on experience to the table.
 Our collective expertise encompasses a diverse array of projects,

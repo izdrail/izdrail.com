@@ -12,573 +12,20 @@ tags:
 
 # Building  Multi-Tenant SaaS  Architectures
 
-
-##### Principles, Practices, and  Patterns Using AWS
-
-
------
-
-###### Building Multi-Tenant SaaS Architectures
+## Building Multi-Tenant SaaS Architectures
 
 
-Software as a service (SaaS) is on the path to becoming
-the de facto model for building, delivering, and operating
-software solutions. Adopting a multi-tenant SaaS model
-requires builders to take on a broad range of new architecture,
-implementation, and operational challenges. How data
-is partitioned, how resources are isolated, how tenants are
-authenticated, how microservices are built—these are just
-a few of the many areas that need to be on your radar when
-you’re designing and creating SaaS offerings.
+###### • Describe, classify, and characterize core SaaS patterns and strategies
 
-In this book, Tod Golding, a global SaaS technical lead
-at AWS, provides an end-to-end view of the SaaS architectural
-landscape, outlining the practical techniques, strategies,
-and patterns that every architect must navigate as part
-of building a SaaS environment.
+###### • Identify the key building blocks, trade-offs, and considerations that will shape the design and implementation of your multi-tenant solution
 
-###### • Describe, classify, and characterize core
+###### • Examine essential multi-tenant architecture strategies,including tenant isolation, noisy neighbor, data partitioning, onboarding, identity, and multi-tenant DevOps
 
-SaaS patterns and strategies
-
-###### • Identify the key building blocks, trade-offs,
-
-and considerations that will shape the design
-and implementation of your multi-tenant solution
-
-###### • Examine essential multi-tenant architecture strategies,
-
-including tenant isolation, noisy neighbor, data partitioning,
-onboarding, identity, and multi-tenant DevOps
-
-###### • Explore how multi-tenancy influences the design
-
-and implementation of microservices
+###### • Explore how multi-tenancy influences the design and implementation of microservices
 
 ###### • Learn how multi-tenancy shapes the operational
 
-footprint of your SaaS environment
 
-SOFTWARE ENGINEERING
-
-US $79.99 CAN $99.99
-ISBN: 978-1-098-14064-9
-
-
-###### “Whether you’re new
-to SaaS or a seasoned pro, Tod’s real-world insights and hard-won best practices will help you architect robust and scalable SaaS solutions. This book is an indispensable guidebook for anyone looking to successfully deliver their SaaS software on AWS.”
-
-—Toby Buckley
-
-Sr. Solutions Architect, AWS
-
-
-Tod Golding is a cloud applications
-architect who has spent the last
-10 years immersed in cloud-optimized
-application design and architecture.
-As a global SaaS lead at AWS, he’s
-been a SaaS technology thought
-leader, publishing and providing
-SaaS best practices guidance through
-speaking, writing, and working
-directly with a wide range of SaaS
-companies. Tod has over 20 years
-of experience as a technical leader,
-architect, and developer.
-
-linkedin.com/company/oreilly-media
-youtube.com/oreillymedia
-
-
-5 7 9 9 9
-
-
------
-
-###### Praise for Building Multi-Tenant SaaS Architectures
-
-For anyone looking to build, sustain, and thrive in the software-as-a-service business, the
-guidance in this book is invaluable. Not only is it grounded in real-world solutions for
-common challenges, but the patterns and practices will stand the test of time.
-
-_—Adrian De Luca, Director of Cloud Acceleration, AWS_
-
-A complete reference of SaaS concepts that goes deep detailing real-world architecture
-patterns that address security, tenant isolation, scalability, and more. A must-have
-companion for anyone building multi-tenant SaaS solutions.
-
-_—Tony Pallas, Chief Commercial and Technology Officer,_
-
-_ShyTouch Technology_
-
-This book focuses brilliantly on the crucial domain concepts and levers that you need to
-master to put together a successful SaaS, or PaaS, product.
-
-_—Russ Miles, Platform Engineer, Clear.Bank_
-
-Tod’s many years of real-world experience working with a wide variety of customers really
-shines through in this book. It will be a great resource for those who want to build
-scalable and secure SaaS solutions, particularly on AWS.
-
-_—Anubhav Sharma, Principal Solutions Architect, AWS_
-
-
------
-
-With his conversational style and practical examples, Tod Golding demystifies the
-complex world of building SaaS applications on AWS. He breaks down complicated
-technical concepts into easy-to-grasp explanations that builders of all levels can
-understand. Whether you’re new to SaaS or a seasoned pro, Tod’s real-world insights and
-hard-won best practices will help you architect robust and scalable SaaS solutions.
-This book is an indispensable guidebook for anyone looking
-to successfully deliver their SaaS software on AWS.
-
-_—Toby Buckley, Sr. Solutions Architect, AWS_
-
-Tod is the mastermind behind the multi-tenant architecture we’ve implemented at Stedi.
-He is years ahead of the market, and we have realized tremendous advantages
-by adopting his framework early. This book is a goldmine.
-
-_—Zack Kanter, Founder and CEO, Stedi_
-
-
------
-
-## Building Multi-Tenant SaaS Architectures
-###### Principles, Practices, and Patterns Using AWS
-
-Tod Golding
-
-BeijingBeijing BostonBoston FarnhamFarnham SebastopolSebastopol TokyoTokyo
-
-
------
-
-**Building Multi-Tenant SaaS Architectures**
-by Tod Golding
-
-Copyright © 2024 Tod Golding. All rights reserved.
-
-Printed in the United States of America.
-
-Published by O’Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol, CA 95472.
-
-O’Reilly books may be purchased for educational, business, or sales promotional use. Online editions are
-[also available for most titles (http://oreilly.com). For more information, contact our corporate/institutional](http://oreilly.com)
-sales department: 800-998-9938 or corporate@oreilly.com.
-
-
-**Acquisitions Editor: Louise Corrigan**
-**Development Editor: Melissa Potter**
-**Production Editor: Gregory Hyman**
-**Copyeditor: Charles Roumeliotis**
-**Proofreader: Tove Innis**
-
-May 2024: First Edition
-
-**Revision History for the First Edition**
-2024-04-24: First Release
-
-
-**Indexer: nSight, Inc.**
-**Interior Designer: David Futato**
-**Cover Designer: Karen Montgomery**
-**Illustrator: Kate Dullea**
-
-
-[See http://oreilly.com/catalog/errata.csp?isbn=9781098140649 for release details.](http://oreilly.com/catalog/errata.csp?isbn=9781098140649)
-
-The O’Reilly logo is a registered trademark of O’Reilly Media, Inc. Building Multi-Tenant SaaS Architec‐
-_tures, the cover image, and related trade dress are trademarks of O’Reilly Media, Inc._
-
-The views expressed in this work are those of the author and do not represent the publisher’s views. While
-the publisher and the author have used good faith efforts to ensure that the information and instructions
-contained in this work are accurate, the publisher and the author disclaim all responsibility for errors or
-omissions, including without limitation responsibility for damages resulting from the use of or reliance
-on this work. Use of the information and instructions contained in this work is at your own risk. If any
-code samples or other technology this work contains or describes is subject to open source licenses or the
-intellectual property rights of others, it is your responsibility to ensure that your use thereof complies
-with such licenses and/or rights.
-
-978-1-098-14064-9
-
-[LSI]
-
-
------
-
-#### Table of Contents
-
-###### Preface. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xiii
-
-1. The SaaS Mindset. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
-   Where We Started                                                       2
-   The Move to a Unified Model                                             5
-   Redefining Multi-Tenancy                                                9
-   Where Are the Boundaries of SaaS?                                     13
-   The Managed Service Provider Model                                   14
-   At Its Core, SaaS Is a Business Model                                      16
-   Building a Service—Not a Product                                        19
-   Defining SaaS                                                          20
-   Conclusion                                                            21
-
-###### 2. Multi-Tenant Architecture Fundamentals. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
-Adding Tenancy to Your Architecture                                     24
-The Two Halves of Every SaaS Architecture                                27
-Inside the Control Plane                                                 29
-Onboarding                                                          29
-Identity                                                              30
-Metrics                                                              32
-Billing                                                               32
-Tenant Management                                                  33
-Inside the Application Plane                                             33
-Tenant Context                                                       34
-Tenant Isolation                                                      35
-Data Partitioning                                                     36
-Tenant Routing                                                       37
-Multi-Tenant Application Deployment                                   39
-
-
------
-
-The Gray Area                                                         40
-Tiering                                                              40
-Tenant, Tenant Admin, and System Admin Users                         41
-Tenant Provisioning                                                   42
-Integrating the Control and Application Planes                             44
-Picking Technologies for Your Planes                                      45
-Avoiding the Absolutes                                                  45
-Conclusion                                                            46
-
-###### 3. Multi-Tenant Deployment Models. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
-What’s a Deployment Model?                                            48
-Picking a Deployment Model                                             50
-Introducing the Silo and Pool Models                                     51
-Full Stack Silo Deployment                                              53
-Where Full Stack Silo Fits                                              54
-Full Stack Silo Considerations                                          56
-Full Stack Silo in Action                                               59
-Remaining Aligned on a Full Stack Silo Mindset                          66
-The Full Stack Pool Model                                               67
-Full Stack Pool Considerations                                          69
-A Sample Architecture                                                72
-A Hybrid Full Stack Deployment Model                                   74
-The Mixed Mode Deployment Model                                     75
-The Pod Deployment Model                                             77
-Conclusion                                                            80
-
-###### 4. Onboarding and Identity. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
-Creating a Baseline Environment                                         82
-Creating Your Baseline Environment                                    83
-Creating and Managing System Admin Identities                         86
-Triggering Onboarding from the Admin Console                         86
-Control Plane Provisioning Options                                     87
-The Onboarding Experience                                             88
-Onboarding Is Part of Your Service                                      88
-Self-Service Versus Internal Onboarding                                 89
-The Fundamental Parts of Onboarding                                  90
-Tracking and Surfacing Onboarding States                               93
-Tier-Based Onboarding                                                94
-Tracking Onboarded Resources                                         97
-Handling Onboarding Failures                                         98
-Testing Your Onboarding Experience                                    99
-Creating a SaaS Identity                                                100
-
-
------
-
-Attaching a Tenant Identity                                           102
-Populating Custom Claims During Onboarding                         105
-Using Custom Claims Judiciously                                      105
-No Centralized Services for Resolving Tenant Context                    106
-Federated SaaS Identity                                               107
-Tenant Grouping/Mapping Constructs                                 109
-Sharing User IDs Across Tenants                                       111
-Tenant Authentication Is Not Tenant Isolation                           111
-Conclusion                                                           112
-
-###### 5. Tenant Management. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
-Tenant Management Fundamentals                                      116
-Building a Tenant Management Service                                 118
-Generating a Tenant Identifier                                         119
-Storing Infrastructure Configuration                                   120
-Managing Tenant Configuration                                         121
-Managing Tenant Lifecycle                                              124
-Activating and Deactivating a Tenant                                   125
-Decommissioning a Tenant                                           127
-Changing Tenant Tiers                                               130
-Conclusion                                                           134
-
-###### 6. Tenant Authentication and Routing. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
-Entering the Front Door                                                138
-Access via a Tenant Domain                                           138
-Access via a Single Domain                                           143
-The Man in the Middle Challenge                                      145
-The Multi-Tenant Authentication Flow                                   146
-A Sample Authentication Flow                                        147
-Federated Authentication                                             148
-No One-Size-Fits-All Authentication                                   148
-Routing Authenticated Tenants                                          149
-Routing with Different Technology Stacks                                150
-Serverless Tenant Routing                                             151
-Container Tenant Routing                                            153
-Conclusion                                                           155
-
-###### 7. Building Multi-Tenant Services. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
-Designing Multi-Tenant Services                                        158
-Services in Classic Software Environments                              158
-Services in Pooled Multi-Tenant Environments                          159
-Extending Existing Best Practices                                      161
-
-
------
-
-Addressing Noisy Neighbor                                           162
-Identifying Siloed Services                                            164
-The Influence of Compute Technologies                                167
-The Influence of Storage Considerations                                168
-Using Metrics to Analyze Your Design                                  169
-One Theme, Many Lenses                                             170
-Inside Multi-Tenant Services                                            170
-Extracting Tenant Context                                            172
-Logging and Metrics with Tenant Context                               173
-Accessing Data with Tenant Context                                    176
-Supporting Tenant Isolation                                           178
-Hiding Away and Centralizing Multi-Tenant Details                        181
-Interception Tools and Strategies                                        183
-Aspects                                                             184
-Sidecars                                                            185
-Middleware                                                         185
-AWS Lambda Layers/Extensions                                       186
-Conclusion                                                           186
-
-###### 8. Data Partitioning. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
-Data Partitioning Fundamentals                                         190
-Workloads, SLAs, and Experience                                      192
-Blast Radius                                                         193
-The Influence of Isolation                                             193
-Management and Operations                                          194
-The Right Tool for the Job                                             195
-Defaulting to a Pooled Model                                          195
-Supporting Multiple Environments                                    196
-The Rightsizing Challenge                                              196
-Throughput and Throttling                                           198
-Serverless Storage                                                    198
-Relational Database Partitioning                                         199
-Pooled Relational Data Partitioning                                    200
-Siloed Relational Data Partitioning                                     201
-NoSQL Data Partitioning                                               202
-Pooled NoSQL Data Partitioning                                       203
-Siloed NoSQL Data Partitioning                                       204
-NoSQL Tuning Options                                              205
-Object Data Partitioning                                                206
-Pooled Object Data Partitioning                                       206
-Siloed Object Data Partitioning                                        207
-Database Managed Access                                            208
-
-
------
-
-OpenSearch Data Partitioning                                           210
-Pooled OpenSearch Data Partitioning                                  211
-Siloed OpenSearch Data Partitioning                                   212
-A Mixed Mode Partitioning Model                                     214
-Sharding Tenant Data                                                  215
-Data Lifecycle Considerations                                           216
-Multi-Tenant Data Security                                             217
-Conclusion                                                           217
-
-###### 9. Tenant Isolation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
-Core Concepts                                                        220
-Categorizing Isolation Models                                         223
-Application-Enforced Isolation                                        225
-RBAC, Authorization, and Isolation                                    225
-Application Isolation Versus Infrastructure Isolation                      226
-The Layers of the Isolation Model                                        227
-Deployment-Time Versus Runtime Isolation                              228
-Isolation Through Interception                                        232
-Scaling Considerations                                               234
-Real-World Examples                                                  235
-Full Stack Isolation                                                   235
-Resource-Level Isolation                                              237
-Item-Level Isolation                                                  239
-Managing Isolation Policies                                             240
-Conclusion                                                           242
-
-###### 10. EKS (Kubernetes) SaaS: Architecture Patterns and Strategies. . . . . . . . . . . . . . . . . . . . 245
-The EKS–SaaS Fit                                                     246
-Deployment Patterns                                                   248
-Pooled Deployment                                                  250
-Siloed Deployments                                                  251
-Mixing Pooled and Siloed Deployments                                254
-The Control Plane                                                   255
-Routing Considerations                                                256
-Onboarding and Deployment Automation                                259
-Configuring Onboarding with Helm                                   260
-Automating with Argo Workflows and Flux                             262
-Tenant-Aware Service Deployments                                    264
-Tenant Isolation                                                       265
-Node Type Selection                                                   271
-Mixing Serverless Compute with EKS                                    274
-Conclusion                                                           275
-
-
------
-
-###### 11. Serverless SaaS: Architecture Patterns and Strategies. . . . . . . . . . . . . . . . . . . . . . . . . . . 277
-The SaaS and Serverless Fit                                             278
-Deployment Models                                                   282
-Pooled and Siloed Deployments                                       283
-Mixed Mode Deployments                                            284
-More Deployment Considerations                                     285
-Control Plane Deployment                                            286
-Operations Implications                                              288
-Routing Strategies                                                     288
-Onboarding and Deployment Automation                                291
-Tenant Isolation                                                       296
-Pooled Isolation with Dynamic Injection                                296
-Deployment-Time Isolation                                           298
-Simultaneously Supporting Silo and Pool Isolation                       299
-Route-Based Isolation                                                301
-Concurrency and Noisy Neighbor                                       302
-Beyond Serverless Compute                                             304
-Conclusion                                                           305
-
-###### 12. Tenant-Aware Operations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 307
-The SaaS Operations Mindset                                           308
-Multi-Tenant Operational Metrics                                       310
-Tenant Activity Metrics                                               311
-Agility Metrics                                                      313
-Consumption Metrics                                                315
-Cost-per-Tenant Metrics                                              318
-Business Health Metrics                                              321
-Composite Metrics                                                   322
-Baseline Metrics                                                     322
-Metrics Instrumentation and Aggregation                               323
-Building a Tenant-Aware Operations Console                             324
-Combining Experience and Technical Metrics                           328
-Tenant-Aware Logs                                                  329
-Creating Proactive Strategies                                          329
-Persona-Specific Dashboards                                          329
-Multi-Tenant Deployment Automation                                   330
-Scoping Deployments                                                332
-Targeted Releases                                                    332
-Conclusion                                                           334
-
-
------
-
-###### 13. SaaS Migration Strategies. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 337
-The Migration Balancing Act                                            338
-Timing Considerations                                               339
-What Kind of Fish Are You?                                           342
-Thinking Beyond Technology Transformation                           343
-Migration Patterns                                                     344
-The Foundation                                                     344
-Silo Lift-and-Shift                                                    346
-Layered Migration                                                   348
-Service-by-Service Migration                                          351
-Comparing Patterns                                                  356
-A Phased Approach                                                  357
-Where You Start Matters                                               358
-Conclusion                                                           361
-
-###### 14. Tiering Strategies. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 363
-Tiering Patterns                                                       364
-Consumption-Focused Tiering                                        365
-Value-Focused Tiering                                                367
-Deployment-Focused Tiering                                          368
-Free Tiers                                                           370
-Composite Tiering Strategies                                          370
-Billing and Tiering                                                   371
-Tiering and Product-Led Growth                                      372
-Implementing Tiering                                                  372
-API Tiering                                                         373
-Compute Tiering                                                    375
-Storage Tiering                                                      377
-Deployment Models and Tiering                                       380
-Throttling and Tenant Experience                                      381
-Tier Management                                                    382
-Operations and Tiering                                                 382
-Conclusion                                                           383
-
-###### 15. SaaS Anywhere. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 385
-The Fundamental Concepts                                             386
-Ownership                                                          387
-Limiting Drift                                                       389
-Multiple Flavors of Remote Environments                              390
-Regional Deployments Versus Remote Resources                        391
-
-
------
-
-Architecture Patterns                                                  391
-Remote Data                                                        393
-Remote Application Services                                          394
-Remote Application Plane                                            396
-Staying in the Same Cloud                                            397
-Integration Strategies                                                 397
-Operations Impacts and Considerations                                  398
-Provisioning and Onboarding                                         398
-Access to Remote Resources                                           399
-Scale and Availability                                                 400
-Operational Insights                                                 400
-Deploying Updates                                                   400
-Conclusion                                                           401
-
-###### 16. GenAI and Multi-Tenancy. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 403
-Core Concepts                                                        404
-The Influence of Multi-Tenancy                                       406
-Creating Custom Tenant AI Experiences                                409
-A Broad Range of Possibilities                                         410
-SaaS and AI/ML                                                     411
-Introducing Tenant Refinements                                         412
-Supporting Tenant-Level Refinement with RAG                         412
-Supporting Tenant Refinement with Fine-Tuning                        416
-Combining RAG and Fine-Tuning                                     420
-Applying General Multi-Tenant Principles                                421
-Onboarding                                                         421
-Noisy Neighbor                                                      422
-Tenant Isolation                                                     423
-GenAI Pricing and Tiering Considerations                                424
-Developing a Pricing Model                                           424
-Creating Tiered Tenant Experiences                                    427
-Conclusion                                                           428
-
-###### 17. Guiding Principles. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 431
-Vision, Strategy, and Structure                                          432
-Build a Business Model and Strategy                                   432
-A Clear Focus on Efficiency                                           433
-Avoiding the Tech-First Trap                                          434
-Thinking Beyond Cost Savings                                        435
-Be All-In with SaaS                                                  435
-Adopt a Service-Centric Mindset                                      436
-Think Beyond Existing Tenant Personas                                437
-
-
------
-
-Core Technical Considerations                                          438
-No One-Size-Fits-All Model                                           438
-Protect the Multi-Tenant Principles                                    439
-Build Your Multi-Tenant Foundation on Day One                        440
-Avoid One-Off Customization                                         441
-Measure Your Multi-Tenant Architecture                               442
-Streamline the Developer Experience                                   442
-Operations Mindset                                                    443
-Thinking Beyond System Health                                       443
-Introducing Proactive Constructs                                      445
-Validating Your Multi-Tenant Strategies                                 445
-You’re Part of the Team                                               447
-Conclusion                                                           447
-
-###### Index. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 449
-
-
------
-
------
 
 #### Preface
 
@@ -613,10 +60,6 @@ tional considerations that would directly shape their multi-tenant architecture.
 ting there meant I would need to create a clear taxonomy of SaaS principles and
 strategies that could span a range of domains, workloads, customer profiles, and so
 on. In many respects, this was also about intentionally moving away from wide-open
-
-
------
-
 notions of what it meant to be a SaaS solution, defining a more specific set of guard‐
 rails that could help organizations plot their path forward.
 
@@ -663,8 +106,6 @@ meant to be SaaS. These environments typically employed a model where customers
 shared one compute cluster and stored each customer’s data in a separate database. I
 
 
------
-
 suspect there are still plenty of systems that are using this model today—especially in
 environments where teams are hosting and managing their own SaaS infrastructure.
 
@@ -707,7 +148,6 @@ the emergence of new technologies continue to introduce new strategies, mecha‐
 nisms, and constructs that may influence future guidance. It’s fair to assume that SaaS
 best practices and strategies will continue to morph based on the shifting technology
 landscape.
-
 
 -----
 
@@ -837,132 +277,12 @@ Constant width
 Used for program listings, as well as within paragraphs to refer to program ele‐
 ments such as variable or function names, databases, data types, environment
 variables, statements, and keywords.
-
-This element signifies a general note.
-
-
 -----
 
-###### Using Code Examples
+# CHAPTER 1
 
-[Code examples from Chapters 10 and 11 are available for download at https://oreil.ly/](https://oreil.ly/saas-ch10-code)
-_[saas-ch10-code and](https://oreil.ly/saas-ch10-code)_ _[https://oreil.ly/saas-ch11-code, respectively. Links are also pro‐](https://oreil.ly/saas-ch11-code)_
-vided in those chapters.
+## The SaaS Mindset
 
-If you have a technical question or a problem using the code examples, please send
-[email to support@oreilly.com.](mailto:support@oreilly.com)
-
-This book is here to help you get your job done. In general, if example code is offered
-with this book, you may use it in your programs and documentation. You do not
-need to contact us for permission unless you’re reproducing a significant portion of
-the code. For example, writing a program that uses several chunks of code from this
-book does not require permission. Selling or distributing examples from O’Reilly
-books does require permission. Answering a question by citing this book and quoting
-example code does not require permission. Incorporating a significant amount of
-example code from this book into your product’s documentation does require
-permission.
-
-We appreciate, but generally do not require, attribution. An attribution usually
-includes the title, author, publisher, and ISBN. For example: “Building Multi-Tenant
-_SaaS Architectures by Tod Golding (O’Reilly). Copyright 2024 Tod Golding,_
-978-1-098-14064-9.”
-
-If you feel your use of code examples falls outside fair use or the permission given
-[above, feel free to contact us at permissions@oreilly.com.](mailto:permissions@oreilly.com)
-
-###### O’Reilly Online Learning
-
-[For more than 40 years, O’Reilly Media has provided technol‐](https://oreilly.com)
-ogy and business training, knowledge, and insight to help
-companies succeed.
-
-Our unique network of experts and innovators share their knowledge and expertise
-through books, articles, and our online learning platform. O’Reilly’s online learning
-platform gives you on-demand access to live training courses, in-depth learning
-paths, interactive coding environments, and a vast collection of text and video from
-[O’Reilly and 200+ other publishers. For more information, visit https://oreilly.com.](https://oreilly.com)
-
-
------
-
-###### How to Contact Us
-
-Please address comments and questions concerning this book to the publisher:
-
-O’Reilly Media, Inc.
-1005 Gravenstein Highway North
-Sebastopol, CA 95472
-800-889-8969 (in the United States or Canada)
-707-827-7019 (international or local)
-707-829-0104 (fax)
-_[support@oreilly.com](mailto:support@oreilly.com)_
-_[https://www.oreilly.com/about/contact.html](https://www.oreilly.com/about/contact.html)_
-
-We have a web page for this book, where we list errata, examples, and any additional
-[information. You can access this page at https://oreil.ly/bldg-multitenant-saas.](https://oreil.ly/bldg-multitenant-saas)
-
-[For news and information about our books and courses, visit https://oreilly.com.](https://oreilly.com)
-
-[Find us on LinkedIn: https://linkedin.com/company/oreilly-media](https://linkedin.com/company/oreilly-media)
-
-[Watch us on YouTube: https://youtube.com/oreillymedia](https://youtube.com/oreillymedia)
-
-###### Acknowledgments
-
-I’ve had the good fortune of being surrounded, influenced, supported, and inspired
-by a great number of people that have contributed directly and indirectly to the cre‐
-ation of this book. The best place to start is probably at the beginning, looking at my
-earliest days at AWS when I was the new SaaS solutions architect hired to try to
-define and shape a vision for what it meant to build SaaS offerings in the cloud. It’s in
-this time that I was lucky enough to be guided by Matt Yanchyshyn, who pushed me
-to dig in, move fast, and deliver results. Matt has this ability to ask a lot, give you
-room to operate, and inspire you to think big. His early encouragement set me off on
-this path and I’m not sure how or if I would have made the early progress I did
-without his words of wisdom.
-
-My ability to go deep and develop my SaaS insights has also been directly connected
-to the experiences I’ve had working with SaaS companies. Being able to get in the
-room with organizations and go deep on their SaaS solutions exposed me to a broad
-range of industries, domains, business cases, and adoption scenarios. The data, pat‐
-terns, and code that came out of these engagements was and continues to be priceless.
-I’ve also been fortunate to be surrounded by an amazing team of SaaS architects and
-business leads that have played a key role in advancing the state of SaaS and helping
-me continually reevaluate best practices strategies and patterns. There’s too many to
-mention here, but I’d like to call out Craig Wicks, Seth Fox, Emily Tyack, and Michael
-
-
------
-
-Schmidt for their early leadership and collaboration. Adrian De Luca was also a con‐
-stant source of inspiration, providing ongoing guidance and encouragement.
-
-Writing a book also relies heavily on a team of behind-the-scenes contributors that go
-down this path with you. The team at O’Reilly has been amazing throughout all pha‐
-ses of this book’s creation. At the center of so much of my day-to-day O’Reilly interac‐
-tions was Melissa Potter. Melissa was key to every bit of the book’s evolution, helping
-me navigate the process, reviewing my first drafts, answering questions, and always
-being there with encouraging words of guidance. O’Reilly’s Louise Corrigan was also
-there from the outset, guiding me during the early stages of shaping the book’s struc‐
-ture and leaning into key decisions all along the way. I also want to thank the book’s
-technical reviewers, Anubhav Sharma, Russell Miles, and Toby Buckley. Thanks for
-investing the time and sharing your insights. Your perspectives helped me refine this
-story and made this a better book.
-
-Of course, at the core of every journey I take is my family. Even though they’ve never
-quite understood what it is I do, they’ve always been right there in my corner encour‐
-aging me along the way. My wife, Janine, has been supportive of everything I do, and
-this effort was no exception. Her words of encouragement always make it easier for
-me to keep pushing forward. Then there’s my kids, Chelsea and Ryan. While they’re
-grown now and are on their own paths, they still find ways to brighten my day and
-remind me just how fortunate I am.
-
-
------
-
------
-
-###### CHAPTER 1
-#### The SaaS Mindset
 
 I’ve worked with a number of teams that were building software-as-a-service (SaaS)
 solutions. When I sit down with them to map out their path to SaaS, they tend to start
@@ -993,9 +313,6 @@ To get there, we’ll need to look at the forces that motivated the move to SaaS
 how these forces directly influenced the resulting architectural models. Following this
 evolution will provide a more concrete view into the foundational principles that are
 used to create a SaaS solution that realizes the full value proposition of SaaS, blending
-
-
------
 
 the technical and business parameters that are at the core of developing modern SaaS
 environments. It’s essential for SaaS architects to understand that SaaS is not a
@@ -1034,9 +351,6 @@ efforts.
 
 Figure 1-1 provides a conceptual view of the footprint of the traditional software
 delivery model.
-
-
------
 
 _Figure 1-1. The installed software model_
 
@@ -1131,7 +445,7 @@ operational model of the cloud shifted the mindset of the industry, placing a gr
 emphasis on agility and economies of scale. Together, these forces motivated software
 providers to rethink how they build, deliver, operate, and sell their solutions.
 
-###### The Move to a Unified Model
+## The Move to a Unified Model
 
 By now, the basic challenges of the traditional model should be clear. While some
 organizations were struggling with this model, others already understood this
@@ -1263,7 +577,7 @@ have these surrounding services represent the foundational elements of our unifi
 model. Then, from there, we can think about how/if the application architecture can
 also be optimized to maximize efficiency and agility.
 
-###### Redefining Multi-Tenancy
+## Redefining Multi-Tenancy
 
 Up to this point, I’ve avoided introducing the idea of multi-tenancy. It’s a term that is
 used heavily in the SaaS space and will appear throughout the remainder of this book.
@@ -1389,7 +703,7 @@ some of the ambiguity that is attached to multi-tenancy.
 
 -----
 
-###### Where Are the Boundaries of SaaS?
+## Where Are the Boundaries of SaaS?
 
 We’ve laid a foundation for what it means to be SaaS, but there are lots of nuances
 that we haven’t really talked about. For example, suppose your SaaS application
@@ -1433,7 +747,7 @@ service. The tools, technologies, and resources that are used to bring that serv
 life should be entirely hidden from our tenants. In many respects, this is the hard bar‐
 rier that prevents our system from falling back into patterns that might lead to oneoff dependencies and variations.
 
-###### The Managed Service Provider Model
+## The Managed Service Provider Model
 
 There’s one last wrinkle that we need to address as we try to refine our view of what it
 means to be a multi-tenant SaaS environment. Some organizations have opted into
@@ -1507,7 +821,7 @@ push forward toward its SaaS delivery model. The key is that we have a clear und
 standing of the boundaries between SaaS and MSP and avoid viewing SaaS and MSP
 as somehow being synonymous.
 
-###### At Its Core, SaaS Is a Business Model
+## At Its Core, SaaS Is a Business Model
 
 By now you should have a better sense of how we characterize what it means to be
 SaaS. It should be clear that SaaS is very much about creating a technology, business,
@@ -1639,7 +953,7 @@ and management footprint of the solution you ultimately build. If you don’t ha
 clarity and alignment with the business around these points, you’re unlikely to be in a
 position to build a SaaS offering that fully realizes your business goals.
 
-###### Building a Service—Not a Product
+## Building a Service—Not a Product
 
 Many software providers would view themselves as being in the business of creating
 products. And, in many respects, this aligns well with their business model. The
@@ -1703,7 +1017,7 @@ view this as something that can be bolted onto your service at some future date.
 ever, many successful SaaS organizations rely on these metrics as a key pillar of their
 SaaS business.
 
-###### The B2B and B2C SaaS Story
+## The B2B and B2C SaaS Story
 
 As teams talk about SaaS, they’ll often map strategies and patterns to the business-toconsumer (B2C) and business-to-business (B2B) models. As I discussed in the pref‐
 ace, it’s important to understand that there are clear differences in how you might

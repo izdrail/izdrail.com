@@ -13,9 +13,10 @@ tags:
   - Multiple workspaces
 ---
 
-## Laravel Mail
-Community inspired mail platform for your laravel application.
-Reduce your mail costs and focus on your business. Use Workflows to drive your business revenue.
+## [Laravel Mail](https://laravelmail.com)
+Community inspired mail platform for your [Laravel Mail](https://laravelmail.com) application.
+Reduce your mail costs and focus on your business. 
+Use Workflows to drive your business revenue.
 
 
 ## Features
@@ -24,9 +25,8 @@ Reduce your mail costs and focus on your business. Use Workflows to drive your b
 With the help of GrapesJS you will be able to create your own templates for your mail campaigns.
 
 ### Advanced Workflows
-Design email workflows with the help of laravel workflow package much easier than before.
-Create your own workflow for your mail campaigns.
-
+Design email workflows with the help of [laravel workflow](https://laravelmail.com) package much easier than before.
+Create your own workflow for your [mail](https://laravelmail.com) campaigns.
 
 
 
@@ -38,5 +38,8 @@ Handle multiple workspaces or teams through a single interface.
 
 ### Email Intelligence
 Using the power of docker, you will be able to run risk assessments and check for your users' email addresses.
+
+### Email Validation
+Get endpoint for email validation and check if your email address is valid.
 
 © 2024 Stefan & Andrei. All rights reserved.

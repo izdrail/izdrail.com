@@ -5,7 +5,7 @@ export async function GET(context) {
     const blog = await getCollection('articles');
     return rss({
         title: 'Software development agency',
-        description: 'A humble Astronaut’s guide to the stars',
+        description: 'Software development agency london. find and discover the latest software development news, tutorials and much more',
         site: "https://izdrail.com",
         items: blog.map((post) => ({
             title: post.data.title,

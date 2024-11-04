@@ -37,7 +37,7 @@ It is a RESTful API, providing endpoints for fetching news, running SEO analysis
 
 ## Getting Started
 
-To get started with the this Intel API, follow these steps:
+To get started with the Intel API, follow these steps:
 
 1. Clone the repository.
 2. Review the API documentation to understand available endpoints and their functionalities.

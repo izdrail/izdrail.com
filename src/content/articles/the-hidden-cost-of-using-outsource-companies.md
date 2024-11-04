@@ -4,10 +4,10 @@ publishDate: 2023-19-04 00:00:00
 description:  This article is your ultimate guide to 100 PHP packages that'll make your life as a developer a lot easier.
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
 tags:
-  - Tools
-  - PHP
-  - Development
-  - Learn
+  - Management
+  - Developers
+  - Websites
+  - Cheap
 ---
 
 ## The Hidden Costs of Cut-Rate Development: A Senior Engineer's Perspective

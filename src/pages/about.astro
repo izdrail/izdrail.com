@@ -1,6 +1,76 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "Stefan",
+	"jobTitle": "Senior PHP and Python Developer",
+	"description": "Senior software developer with 13+ years of experience specializing in PHP and Python development",
+	"nationality": "Romanian",
+	"workLocation": {
+		"@type": "Place",
+		"address": {
+			"@type": "PostalAddress",
+			"addressCountry": "United Kingdom"
+		}
+	},
+	"alumniOf": {
+		"@type": "CollegeOrUniversity",
+		"name": "University of Bucharest",
+		"department": "Computer Science",
+		"yearStarted": "2010",
+		"yearEnded": "2014"
+	},
+	"knowsAbout": [
+		"PHP Development",
+		"Python Development",
+		"IoT Development",
+		"NLP & AI"
+	],
+	"hasCredential": [
+		{
+			"@type": "EducationalOccupationalCredential",
+			"name": "CloudAmpq Certified Developer",
+			"dateCreated": "2023"
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			"name": "AWS Certified Solutions Architect",
+			"dateCreated": "2020"
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			"name": "AWS Certified Developer",
+			"dateCreated": "2018"
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			"name": "Google Cloud Certified Associate Cloud Engineer",
+			"dateCreated": "2018"
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			"name": "Magento 2 Certification",
+			"dateCreated": "2018"
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			"name": "Laravel Certification",
+			"dateCreated": "2016"
+		}
+	],
+	"skills": [
+		"PHP",
+		"Python",
+		"IoT",
+		"NLP",
+		"AI",
+		"Cloud Computing",
+		"Laravel",
+		"AWS"
+	]
+};
 ---
 
 <BaseLayout title="About me as senior Laravel developer" description="Welcome to Lzo Media, where innovation meets expertise! I'm Stefan, a seasoned Laravel developer based in the United Kingdom with over 13 years of hands-on experience. Here's a glimpse into what I bring to the table:">
@@ -67,7 +137,7 @@ import Hero from '../components/Hero.astro';
 				</p>
 			</div>
 		</section>
-
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	</main>
 </BaseLayout>
 

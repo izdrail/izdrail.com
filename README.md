@@ -1,28 +1,36 @@
-# Izdrail.com
+# Personal Portfolio Website - izdrail.com
 
+A modern, fast, and responsive personal website showcasing my work and experiences.
 
-My personal website.
-Built with AstroJS
-Hosted on Cloudflare 
+## 🚀 Tech Stack
 
+- Built with [AstroJS](https://astro.build) - a modern static site builder that delivers lightning-fast performance
+- Deployed and hosted on [Cloudflare](https://www.cloudflare.com) for optimal global content delivery
+- Zero JavaScript by default - ensuring minimal client-side overhead
+- SEO optimized structure
+
+## ✨ Features
+
+- Responsive design that works across all devices
+- Optimized asset loading and delivery
+- Built-in SEO best practices
+- Static site generation for maximum performance
+- Easy-to-maintain content structure
+
+## 🛠️ Frontend Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
-npm create astro@latest -- --template portfolio
-```
-
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-
-## Tools
-
+## 🛠️ Backend Development
+For development of the backend, you can see the following GitHub repository: https://github.com/izdrail/intel.izdrail.com

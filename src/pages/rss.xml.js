@@ -5,7 +5,7 @@ export async function GET(context) {
     const blog = await getCollection('articles');
     return rss({
         title: 'Software development agency',
-        description: 'Software development agency london. find and discover the latest software development news, tutorials and much more',
+        description: 'Leading software development agency in London delivering custom enterprise solutions, web applications, and digital transformation services. Expert developers, proven results, and innovative tech solutions.',
         site: "https://izdrail.com",
         items: blog.map((post) => ({
             title: post.data.title,

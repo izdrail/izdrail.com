@@ -72,15 +72,15 @@ const tools = [
             {tools.map((tool, index) => (
                     <div class="mx-auto items-center gap-8 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16">
                         <div class={`text-gray-500 dark:text-gray-400 sm:text-lg ${index % 2 !== 0 && 'lg:order-2'}`}>
-                            <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-white-900 dark:text-white">
+                            <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-white-900 dark:text-white" title={tool.title}>
                                 {tool.title}
                             </h2>
                             <h3 class="mb-4 text-2xl">
                                 {tool.subtitle}
                             </h3>
-                            <p class="text-2xl mb-5">
+                            <h4 class="text-2xl mb-5">
                                 {tool.description}
-                            </p>
+                            </h4>
                             <CallToAction title={tool.title} href={tool.link}>
                                 {tool.cta}
                                 <Icon icon="arrow-right" size="1.2em"/>

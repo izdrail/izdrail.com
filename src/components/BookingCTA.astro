@@ -9,13 +9,15 @@ import Icon from './Icon.astro';
 
 <!-- Main wrapper section -->
 <section class="wrapper stack flex justify-center items-center">
+
+
     <!-- Contact options container -->
     <div class="container px-6 py-12 mx-auto">
-        <div class="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div class="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
 
             <!-- Video Meeting option -->
             <div class="p-4 rounded-lg md:p-6 dark:bg-gray-800">
-                <p class="text-base font-medium text-center">Video Meeting</p>
+                <p class=" text-2xl  font-medium text-center">Video Meeting</p>
                 <p class="mt-2 text-sm text-center">Mon-Fri from 9am to 5pm.</p>
                 <p class="mt-2 text-sm text-blue-500 dark:text-blue-400 text-center">
                     <!-- Calendly booking link -->
@@ -35,16 +37,25 @@ import Icon from './Icon.astro';
                        href="tel:+447448218899">+44 (744) 821-8899</a>
                 </p>
             </div>
+            <!-- Call option -->
+            <div class="p-4 rounded-lg md:p-6">
+                <p class="text-2xl text-center">Email me</p>
+                <p class="mt-2 text-sm text-center">Anytime.</p>
+                <p class="mt-2 text-sm dark:text-blue-400 text-center">
+                    <a title="laravel developer london contact number" class="text-blue-500 dark:text-white"
+                       href="tel:stefan@izdrail.com">stefan@izdrail.com</a>
+                </p>
+            </div>
         </div>
     </div>
 
-    <!-- Call to Action Button at the bottom -->
+    <!--  -->
     <div class="p-4 rounded-lg md:p-8 mt-8">
+
         <CallToAction title="my cv" href="https://cv.izdrail.com" target="_blank">
             <p class="text-center">
                 View my CV
             </p>
-
         </CallToAction>
     </div>
 </section>

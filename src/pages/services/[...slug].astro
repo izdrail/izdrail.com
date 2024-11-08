@@ -28,7 +28,6 @@ const { Content } = await entry.render();
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/services/"><Icon icon="arrow-left" /> Services</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
@@ -40,7 +39,7 @@ const { Content } = await entry.render();
 			</header>
 			<main class="wrapper">
 				<div class="">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					{entry.data.image && <img src={entry.data.image} alt={entry.data.title || 'laravel project'}  loading="lazy" decoding="async"/>}
 					<div class="content text-xl">
 						<Content />
 					</div>

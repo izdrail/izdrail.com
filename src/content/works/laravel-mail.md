@@ -1,7 +1,7 @@
 ---
 title: Laravel Mail
 publishDate: 2020-03-02 00:00:00
-img: ../../public/assets/tools/laravel-mail.svg
+img: /assets/tools/laravel-mail.svg
 img_alt: Laravel Mail
 description: Marketing automation software for Laravel.
 tags:

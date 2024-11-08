@@ -10,7 +10,7 @@ const { data, slug } = Astro.props.project;
 
 
 <a class="card" title={data.title} href={`/services/${slug}`}>
-	<img src={data.image} alt={data.title || ''} loading="lazy" style="width: 100vw; height: auto; object-fit: contain; object-position: center center;" decoding="async" />
+	<img src={data.image} alt={data.title || ''} loading="lazy" style=object-fit: contain; object-position: center center;" decoding="async" />
 	<p class="title text-5xl">
 		{data.title}
 	</p>

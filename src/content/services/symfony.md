@@ -3,7 +3,7 @@ title: Symfony Development Company, London
 publishDate: 2023-19-04 00:00:00
 description: |
   Welcome to my premier Symfony development company based in London, UK. I specialize in delivering top-notch Symfony solutions tailored to meet the unique needs of businesses across various industries.
-image: ../public/assets/services/symfony.svg
+image: /assets/services/symfony.svg
 tags:
   - Symfony
   - Company

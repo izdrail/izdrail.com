@@ -3,7 +3,7 @@ title: Python Development Company, London
 publishDate: 2023-04-19 00:00:00
 description: |
   Welcome to my premier Python development company based in London, UK. I specialize in delivering top-notch Python solutions tailored to meet the unique needs of businesses across various industries.
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/640px-Python_logo_and_wordmark.svg.png
+image: /assets/services/python.svg
 tags:
   - Python
   - Company

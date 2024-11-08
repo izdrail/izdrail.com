@@ -1,7 +1,7 @@
 ---
 title: OSINT Mobile Application
 publishDate: 2024-03-02 00:00:00
-img: ../../public/assets/tools/osint.svg
+img: /assets/tools/osint.svg
 img_alt: OSINT mobile application
 description: Community-driven mobile application for OSINT tasks.
 tags:

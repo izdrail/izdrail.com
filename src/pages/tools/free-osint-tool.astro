@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import Hero from '../../components/Hero.astro';
+
+import Osint from '../../vue/Osint.vue';
+---
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Free osint tool">
+<meta property="og:url" content="https:/izdrail.com/tools/free-osint-tool/">
+<meta property="og:image" content="https://i.imgur.com/j6PglyK.png">
+<meta property="og:description" content="Run a osint analysis on any website, get a compreive overview of a website, mail, phone number, ip, domain, etc.">
+<meta property="product:plural_title" content="">
+<meta property="product:price.amount" content="0">
+<meta property="product:price.currency" content="GBP">
+
+
+
+<BaseLayout
+	title="Free osint tool - Gain deep insights to enhance your security and intelligence gathering."
+	description="Comprehensive OSINT analysis for any website. Uncover a website's metadata, email addresses, phone numbers, IP addresses, and more. Gain deep insights to enhance your security and intelligence gathering."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-12">
+			<Hero
+				title="Free osint tool"
+				tagline="Comprehensive OSINT analysis for any website. Uncover a website's metadata, email addresses, phone numbers, IP addresses, and more. Gain deep insights to enhance your security and intelligence gathering."
+				align="center"
+			/>
+
+			<Osint client:visible />
+
+
+        </main>
+	</div>
+</BaseLayout>

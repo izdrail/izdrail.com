@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Google SEO Checker",
+    "subtitle": "Get to know now your Google SEO Score and suggestions to improve your Google SEO Score . Be #1 on Google",
+    "description": "Discover the best free Google SEO tool for optimizing rankings, including keyword search, SEO audits, Google My Business, Analytics integration, and comprehensive site analysis.",
+    "link": "/tools/free-seo-analyzer",
+    "cta": "Try Now",
+    "hero": "../../public/assets/tools/seo.svg"
+  },
+  {
+    "title": "Article Extractor",
+    "subtitle": "Streamline Your Content Workflow with Advanced Text Extraction and NLP",
+    "description": "Discover the best free article extractor tool for content extraction, summarization, and NLP analysis. Extract text, summarize key points, and leverage advanced natural language processing - all without cost.",
+    "link": "/tools/article-extractor",
+    "cta": "Try",
+    "hero": "../../public/assets/tools/article-extractor.svg"
+  },
+  {
+    "title": "Trending Now",
+    "subtitle": "Stay ahead with insights on current trends about your brand or product across the web.",
+    "description": "Unpacking Search Trends for Actionable Insights. Discover the underlying search queries that power a trend and leverage this knowledge to optimize your content and marketing strategies",
+
+    "link": "/tools/trending-now",
+    "cta": "Try Now",
+    "hero": "../../public/assets/tools/trending.svg"
+  },
+  {
+    "title": "PDF Extractor",
+    "subtitle": "Easily Extract PDF Pages Online. Upload your PDF and download them instantly.\n",
+    "description": "Extract text from PDFs and convert them into editable formats to enhance productivity.Free Online PDF Page Extractor: Extract PDF Pages Without Hassle. No software installation or registration required.\n",
+    "link": "/tools/pdf-extractor",
+    "cta": "Try Now",
+    "hero": "../../public/assets/tools/pdf.svg"
+  },
+  {
+    "title": "Jobs Finder",
+    "subtitle": "find latest jobs adverts from top 10 websites linkendin, glasdoor, cv jobs...",
+    "description": "Find latest jobs adverts from top 10 websites linkendin, glasdoor, cv jobs...",
+    "link": "/tools/jobs",
+    "cta": "Try Now",
+    "hero": "../../public/assets/tools/jobs.svg"
+  },
+  {
+    "title": "Osint Tool",
+    "subtitle": "Free osint tool, Osint online tool, ",
+    "description": "Comprehensive OSINT analysis for any website. Uncover a website's metadata, email addresses, phone numbers, IP addresses, and more. Gain deep insights to enhance your security and intelligence gathering.",
+    "link": "/tools/free-osint-tool",
+    "cta": "Run Analysis",
+    "hero": "../../public/assets/tools/osint.svg"
+  }
+]

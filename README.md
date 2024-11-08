@@ -4,7 +4,6 @@ A modern, fast, and responsive personal website showcasing my work and experienc
 
 ## 🚀 Tech Stack
 
-- Built with [AstroJS](https://astro.build) - a modern static site builder that delivers lightning-fast performance
 - Deployed and hosted on [Cloudflare](https://www.cloudflare.com) for optimal global content delivery
 - Zero JavaScript by default - ensuring minimal client-side overhead
 - SEO optimized structure

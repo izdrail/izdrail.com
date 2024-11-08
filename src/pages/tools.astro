@@ -3,79 +3,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import CallToAction from "../components/CallToAction.astro";
 import Icon from "../components/Icon.astro";
-
-const tools = [
-{
-    title: "Google SEO Checker",
-    subtitle: "Get now your SEO Score and create an SEO Checklist of errors and suggestions to improve your Search Engine Ranking. Be #1 on Google",
-    description: "Discover the best free Google SEO tools for optimizing rankings, including keyword search, SEO audits, Google My Business, Analytics integration, and comprehensive site analysis.\n",
-    link: "/tools/free-seo-analyzer",
-    cta: "Try Now",
-    images: [
-        'https://cdni.iconscout.com/illustration/premium/thumb/businessman-is-presenting-on-presentation-board-illustration-download-in-svg-png-gif-file-formats--analytics-logo-business-data-marketing-startup-pack-illustrations-8870060.png?f=webp'
-    ],
-    },
-{
-    title: "Article Extractor",
-    subtitle: "Streamline Your Content Workflow with Advanced Text Extraction and NLP",
-    description: "Find the best free article extractor tools for efficient content extraction and summarization, including options for Python, PHP, Node, NPM, and online smart extraction tools.\n",
-    link: "/tools/article-extractor",
-    cta: "Try Now",
-    images: [
-        'https://cdni.iconscout.com/illustration/premium/thumb/computer-application-web-response-illustration-download-in-svg-png-gif-file-formats--programs-applications-technology-and-business-pack-illustrations-7786220.png?f=webp'
-    ],
-    },
-{
-    title: "Trending Now",
-    subtitle: "Stay ahead with insights on current trends about your brand or product across the web.",
-    description: "Unpacking Search Trends for Actionable Insights. Discover the underlying search queries that power a trend and leverage this knowledge to optimize your content and marketing strategies",
-
-    link: "/tools/trending-now",
-    cta: "Try Now",
-    images: [
-        'https://cdni.iconscout.com/illustration/premium/thumb/the-boy-is-watching-news-illustration-download-in-svg-png-gif-file-formats--read-telecast-breaking-service-article-pack-network-communication-illustrations-7969428.png?f=webp'
-    ],
-    },
-    {
-    title: "PDF Extractor",
-    subtitle: "Easily Extract PDF Pages Online. Upload your PDF and download them instantly.\n",
-    description: "Extract text from PDFs and convert them into editable formats to enhance productivity.Free Online PDF Page Extractor: Extract PDF Pages Without Hassle. No software installation or registration required.\n",
-    link: "/tools/pdf-extractor",
-    cta: "Try Now",
-    images: [
-        'https://cdni.iconscout.com/illustration/premium/thumb/man-signing-online-contract-illustration-download-in-svg-png-gif-file-formats--digital-signature-remote-agreements-legal-documentation-business-pack-illustrations-10330020.png?f=webp'
-    ],
-    },
-    {
-        title: "Jobs Finder",
-        subtitle: "find latest jobs adverts from top 10 websites linkendin, glasdoor, cv jobs...",
-        description: "Find latest jobs adverts from top 10 websites linkendin, glasdoor, cv jobs...",
-        link: "/tools/jobs",
-        cta: "Try Now",
-        images: [
-            'https://cdni.iconscout.com/illustration/premium/thumb/job-seekers-research-the-company-and-prepare-for-interviews-illustration-download-in-svg-png-gif-file-formats--employee-preparing-resume-cv-drafting-recruitment-pack-business-illustrations-7162653.png?f=webp'
-        ],
-    },
-];
+import Logo from '../../public/assets/logo.svg';
+import tools from './tools/tools.json';
 ---
 <BaseLayout
-        title="Free Tools for SEO, NLP, and More"
+        title="Free Tools to Boost Your Online Performance or use in your AI projects"
         description="Enhance your website with free tools for SEO, content extraction, email generation, and more."
 >
     <main class="wrapper stack gap-12">
         <Hero
-                title="Free Tools to Boost Your Online Performance"
-                tagline="Explore tools to enhance website performance and streamline workflows."
+                title="Free Tools"
+                tagline="Explore my list of tools to enhance website performance and streamline workflows. "
                 align="center"
         />
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6 lg:py-24">
             {tools.map((tool, index) => (
                     <div class="mx-auto items-center gap-8 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16">
                         <div class={`text-gray-500 dark:text-gray-400 sm:text-lg ${index % 2 !== 0 && 'lg:order-2'}`}>
-                            <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-white-900 dark:text-white" title={tool.title}>
+                            <h2 class="mb-4 text-4xl " title={tool.title}>
                                 {tool.title}
                             </h2>
-                            <h3 class="mb-4 text-2xl">
+                            <h3 class="mb-4 text-2xl" title={tool.subtitle}>
                                 {tool.subtitle}
                             </h3>
                             <h4 class="text-2xl mb-5">
@@ -87,9 +35,7 @@ const tools = [
                             </CallToAction>
                         </div>
                         <div class="mt-8 grid grid-cols-1 gap-4 lg:mt-0">
-                            {tool.images.map((image) => (
-                                    <img alt={tool.title} src={image} class="w-full rounded-lg" />
-                            ))}
+                            <img src={tool.hero} alt={tool.title} class="w-full rounded-lg" />
                         </div>
                     </div>
             ))}

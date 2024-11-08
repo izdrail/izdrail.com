@@ -1,44 +1,54 @@
 ---
+// Import components
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
 ---
+<!-- Calendly widget styles and script -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<!-- Main wrapper section -->
 <section class="wrapper stack flex justify-center items-center">
-    <div class="p-4 rounded-lg md:p-8">
-        <CallToAction title="my cv" href="https://cv.izdrail.com" target="_blank">
-                <p class="text-base font-medium text-center">Download my CV</p>
-            <Icon icon="arrow-right" size="1.2em"/>
-        </CallToAction>
-    </div>
+    <!-- Contact options container -->
     <div class="container px-6 py-12 mx-auto">
         <div class="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+
+            <!-- Video Meeting option -->
             <div class="p-4 rounded-lg md:p-6 dark:bg-gray-800">
                 <p class="text-base font-medium text-center">Video Meeting</p>
                 <p class="mt-2 text-sm text-center">Mon-Fri from 9am to 5pm.</p>
                 <p class="mt-2 text-sm text-blue-500 dark:text-blue-400 text-center">
-                    <!-- Calendly link widget begin -->
+                    <!-- Calendly booking link -->
                     <a class="text-blue-500 dark:text-blue-400" title="contact me" href="#"
-                       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/izdrail/'});
-                       return false;">
+                       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/izdrail/'}); return false;">
                         Book a 30-minute videochat
                     </a>
                 </p>
             </div>
 
+            <!-- Call option -->
             <div class="p-4 rounded-lg md:p-6">
-                <p class="text-base font-medium text-center">Call me</p>
+                <p class="text-2xl text-center">Call me</p>
                 <p class="mt-2 text-sm text-center">Mon-Fri from 9am to 5pm.</p>
                 <p class="mt-2 text-sm dark:text-blue-400 text-center">
                     <a title="laravel developer london contact number" class="text-blue-500 dark:text-white"
                        href="tel:+447448218899">+44 (744) 821-8899</a>
                 </p>
             </div>
-
-
         </div>
     </div>
+
+    <!-- Call to Action Button at the bottom -->
+    <div class="p-4 rounded-lg md:p-8 mt-8">
+        <CallToAction title="my cv" href="https://cv.izdrail.com" target="_blank">
+            <p class="text-center">
+                View my CV
+            </p>
+
+        </CallToAction>
+    </div>
 </section>
+
 <style>
     aside {
         display: flex;

@@ -5,7 +5,7 @@
     "description": "Discover the best free Google SEO tool for optimizing rankings, including keyword search, SEO audits, Google My Business, Analytics integration, and comprehensive site analysis.",
     "link": "/tools/free-seo-analyzer",
     "cta": "Try Now",
-    "hero": "../../public/assets/tools/seo.svg"
+    "hero": "/assets/tools/seo.svg"
   },
   {
     "title": "Article Extractor",
@@ -13,7 +13,7 @@
     "description": "Discover the best free article extractor tool for content extraction, summarization, and NLP analysis. Extract text, summarize key points, and leverage advanced natural language processing - all without cost.",
     "link": "/tools/article-extractor",
     "cta": "Try",
-    "hero": "../../public/assets/tools/article-extractor.svg"
+    "hero": "/assets/tools/article-extractor.svg"
   },
   {
     "title": "Trending Now",
@@ -22,7 +22,7 @@
 
     "link": "/tools/trending-now",
     "cta": "Try Now",
-    "hero": "../../public/assets/tools/trending.svg"
+    "hero": "/assets/tools/trending.svg"
   },
   {
     "title": "PDF Extractor",
@@ -30,7 +30,7 @@
     "description": "Extract text from PDFs and convert them into editable formats to enhance productivity.Free Online PDF Page Extractor: Extract PDF Pages Without Hassle. No software installation or registration required.\n",
     "link": "/tools/pdf-extractor",
     "cta": "Try Now",
-    "hero": "../../public/assets/tools/pdf.svg"
+    "hero": "/assets/tools/pdf.svg"
   },
   {
     "title": "Jobs Finder",
@@ -38,7 +38,7 @@
     "description": "Find latest jobs adverts from top 10 websites linkendin, glasdoor, cv jobs...",
     "link": "/tools/jobs",
     "cta": "Try Now",
-    "hero": "../../public/assets/tools/jobs.svg"
+    "hero": "/assets/tools/jobs.svg"
   },
   {
     "title": "Osint Tool",
@@ -46,6 +46,6 @@
     "description": "Comprehensive OSINT analysis for any website. Uncover a website's metadata, email addresses, phone numbers, IP addresses, and more. Gain deep insights to enhance your security and intelligence gathering.",
     "link": "/tools/free-osint-tool",
     "cta": "Run Analysis",
-    "hero": "../../public/assets/tools/osint.svg"
+    "hero": "/assets/tools/osint.svg"
   }
 ]

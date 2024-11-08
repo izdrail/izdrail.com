@@ -1,7 +1,7 @@
 ---
 title: Intel Application - Discover for free what is trending on the web, media, and more.
 publishDate: 2024-03-02 00:00:00
-img: https://i.imgur.com/98wN3R6.png
+img: ../../public/assets/tools/intel.svg
 img_alt: today intel
 description: |
   A comprehensive API platform for discovering web trends, performing NLP analysis, and extracting insights from various online sources.
@@ -39,9 +39,8 @@ Live Demo: [Intel Application](https://izdrail.com)
 - Entity Extraction System
 - Sentiment Analysis Tools
 
-## 🛠️ Installation & Setup
 
-### Using Docker Compose
+
 
 ```yaml
 version: '3'
@@ -54,6 +53,4 @@ services:
       - "8003:8003"
 ```
 
-## 📚 API Endpoints
 
-## Core Functionality

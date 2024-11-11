@@ -23,9 +23,8 @@
       <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-sm text-gray-700">
         <div class="flex items-center mb-4">
           <i class="fas fa-question-circle mr-2 text-gray-500"></i>
-          <span>Your scan target may be one of the following. SpiderFoot will automatically detect the target type:</span>
+          <span>Your scan target may be one of the following. Our system will automatically detect the target type:</span>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <b>Domain Name</b>: e.g., <i>example.com</i><br />

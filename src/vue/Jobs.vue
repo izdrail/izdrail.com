@@ -102,7 +102,7 @@ export default {
       }
 
       // Make API call if no cached data is found
-      fetch(`https://intel.izdrail.com/jobs`, {
+      fetch(`https://backend.izdrail.com/jobs`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -164,7 +164,7 @@ export default {
       // Show loading icon
       this.loading = true;
       // Make API call
-      fetch(`https://intel.izdrail.com/nlp/article`, {
+      fetch(`https://backend.izdrail.com/nlp/article`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

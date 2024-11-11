@@ -23,6 +23,11 @@ export default defineConfig({
         '@astrojs/vue',
         'astro-component-lib',
       ]
-    }
+    },
+    optimizeDeps: {
+      include: [
+        '@kangc/v-md-editor',
+      ],
+    },
   }
 });

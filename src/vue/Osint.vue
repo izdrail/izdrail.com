@@ -79,28 +79,62 @@ export default {
   },
   methods: {
     async startScan() {
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'insomnia/10.0.0'
+        },
+        body: new URLSearchParams({
+          scanname: `Scan for - ${this.query}`,
+          scantarget: `${this.query}`,
+          usecase: 'all',
+          modulelist: '',  // Placeholder for future modules
+          typelist: ''
+        }),
+        redirect: 'manual'
+      };
+
       try {
-        this.loading = true;
-        this.errorMessage = null;  // Clear any previous errors
+        const response = await fetch('https://osint.izdrail.com/startscan', options);
+        console.log(response);
+        // Handle redirection
+        if ([301, 303].includes(response.status)) {
+          const redirectUrl = response.headers.get('Location');
+          if (!redirectUrl) throw new Error('Redirect URL not found.');
+          return { redirectUrl };
+        }
 
-        // Generate a default scan name based on the query value
-        const scanname = `Scan for ${this.query || 'target'}`;
+        // Parse HTML response for scan ID
+        if (response.ok) {
+          const htmlContent = await response.text();
+          const match = htmlContent.match(/downloadLogs\("([A-Za-z0-9]+)"\)/);
 
-        // Use axios to send a POST request with both scanname and query
-        const response = await axios.post('https://osint.izdrail.com/startscan', {
-          scanname,
-          keyword: this.query,
-        });
+          if (!match || !match[1]) throw new Error('Scan ID not found in HTML content.');
 
-        console.log('Scan started:', response.data); // Handling the response data
-      } catch (error) {
-        console.error('API request failed:', error);
-        this.errorMessage = error.response?.data?.message || 'An unexpected error occurred. Please try again later.';
-      } finally {
-        this.loading = false;
+          const extractedId = match[1];
+
+          // Retrieve and update scan list
+          const { value } = await Preferences.get({ key: 'scans' });
+          const scans = value ? JSON.parse(value) : [];
+
+          scans.push({ scanID: extractedId, name: domain });
+
+          await Preferences.set({
+            key: localdb ?? 'scans',
+            value: JSON.stringify(scans)
+          });
+
+          return { extractedId };
+        }
+
+        throw new Error(`HTTP error: ${response.status}`);
+      } catch (err) {
+        console.error('Error during performScan:', err);
+        throw new Error('An error occurred while performing the scan.');
       }
-    },
-  },
+      },
+  }
 };
 </script>
 

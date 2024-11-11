@@ -101,7 +101,7 @@ export default {
       formData.append("file", this.file);
 
       // Make API call to FastAPI backend
-      fetch(`https://intel.izdrail.com/testing/pdf-reader/`, {
+      fetch(`https://backend.izdrail.com/testing/pdf-reader/`, {
         method: 'POST',
         body: formData,
       })

@@ -24,7 +24,7 @@ const projects = (await getCollection('works'))
             <header class="hero">
                 <Hero
                         title="Senior Software Developer"
-                        tagline="I'm Stefan, a senior software developer specializing in software development, available for hire in London!"
+                        tagline="I'm Stefan, a senior software developer specializing in software development, available for hire.!"
                         align="start"
                 >
                     <div class="roles">
@@ -44,9 +44,14 @@ const projects = (await getCollection('works'))
                             </svg>
                             #London
                         </Pill>
-
-
-
+                        <Pill>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
+                            </svg>
+                            #Essex
+                        </Pill>
                     </div>
                 </Hero>
 
@@ -78,12 +83,11 @@ const projects = (await getCollection('works'))
                         {name: 'Magento', url: '/services/magento'},
                         {name: 'Drupal', url: '/services/drupal'},
                         {name: 'WordPress', url: '/services/wordpress'},
-                        {name: 'ReactJS', url: '/services/reactjs'},
-                        {name: 'VueJS', url: '/services/vuejs'},
+                        {name: 'Cybersecurity', url: '/services/cybersecurity'},
                     ].map((language) => (
-                            <div class="mention-card" key={language.name}>
+                            <div class={`mention-card ${language.name === 'Cybersecurity' ? 'col-span-2' : ''}`}>
                                 <h2 title={`${language.name} Development Services`}>
-                                    <a href={language.url} target="_same">
+                                    <a href={language.url} title={language.name}>
                                         {language.name}
                                     </a>
                                 </h2>
@@ -91,6 +95,7 @@ const projects = (await getCollection('works'))
                     ))
                 }
             </div>
+
         </section>
 
         <section class="wrapper container stack gap-10 lg:gap-18 mt-20">

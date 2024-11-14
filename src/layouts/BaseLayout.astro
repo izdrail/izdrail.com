@@ -4,7 +4,7 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import ReloadPrompt from '../components/ReloadPromt.astro';
-import { fade } from 'astro:transitions';
+import {fade, slide} from 'astro:transitions';
 
 interface Props {
 	title?: string | undefined;
@@ -20,9 +20,11 @@ const { title, description } = Astro.props;
 		<MainHead title={title} description={description} />
 		<ViewTransitions />
 
-		<link href="https://fonts.cdnfonts.com/css/terminal" rel="stylesheet">
+
 	</head>
-	<body transition:animate={fade({ duration: '0.5s' })} class="dark:bg-gray-900">
+	<!-- Add a better astrojs animation -->
+
+	<body transition:animate={slide({ duration: '0.7s' })} >
 
 		<div class="stack backgrounds">
 			<Nav />

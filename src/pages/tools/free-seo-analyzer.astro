@@ -9,7 +9,7 @@ import SeoAnalyzer from '../../vue/SeoAnalyzer.vue'
 
 <meta property="og:type" content="product">
 <meta property="og:title" content="Website Seo Analyzer - Free Tools">
-<meta property="og:url" content="https://lzomedia.com/tools/free-seo-analyze/">
+<meta property="og:url" content="https://izdrail.com/tools/free-seo-analyze/">
 <meta property="og:image" content="https://i.imgur.com/Dd466rF.jpg">
 <meta property="og:description"
       content="Get a more in-depth look at your website's SEO. Analyze your website for free with our SEO analyzer tool.">
@@ -51,18 +51,18 @@ import SeoAnalyzer from '../../vue/SeoAnalyzer.vue'
     <div class="stack gap-20">
         <main class="wrapper stack gap-12">
             <Hero
-                    title="Website Seo Analyzer - Free Tools"
-                    tagline="Get a more in-depth look at your website's SEO. Analyze your website for free with our SEO analyzer tool."
+                    title="Free Website Seo Analyzer"
+                    tagline="Get a more in-depth look at your website's SEO. Analyze your website seo for free with our analyzer tool."
                     align="center"
             />
 
             <SeoAnalyzer client:visible/>
 
-            <img class="banner" src="https://i.imgur.com/Dd466rF.jpg" alt="Website Seo Analyzer - Free Tools"/>
+            <img class="banner" src="https://i.imgur.com/Dd466rF.jpg" alt="Free Website Seo Analyzer"/>
             <!-- About the project sections -->
             <section>
-                <h3>
-                    About Website SEO Analyzer
+                <h3 class="text-3xl mb-5">
+                    About Free Website SEO Analyzer
                 </h3>
                 <div class="text-2xl">
                     <p>
@@ -79,55 +79,50 @@ import SeoAnalyzer from '../../vue/SeoAnalyzer.vue'
             </section>
 
             <!--Requirements for running -->
-            <section>
-                <h3>
-                    Requirements for Running <b>Website SEO Analyzer</b>
-                </h3>
-                <div class="text-2xl">
-                    <p>
-                        This tool is meticulously engineered to exemplify proficiency in developing cutting-edge web applications, harnessing the latest technologies such as Python, FastAPI, Vue.js, Tailwind CSS, and Docker.
-                    </p>
-                </div>
-            </section>
-
 
             <!-- Run your own section -->
             <section>
-                <h3>
-                    Run Your Own Website SEO Analyzer
+                <h3 class="text-3xl mb-5">
+                    Run your own free seo analyzer
                 </h3>
-                <div class="text-2xl">
-                    <p>
-                        In an endeavor to foster collaboration and empower users, the source code of this invaluable tool has been made publicly available. You can effortlessly deploy your personalized instance by adhering to the comprehensive instructions meticulously outlined in the GitHub repository.
 
-                    </p>
-                    <p>
-                        For optimal convenience and seamless integration, consider running the tool locally on your machine utilizing Docker and Docker Compose:
-                    </p>
-
-                    <p>
-                        <code>
-                            docker pull izdrail/intel.izdrail.com:latest
-                        </code>
-                    </p>
-                </div>
-            </section>
-
-            <!-- Open API Documentation section -->
-            <section>
-                <h3>
-                    Open API Documentation
-                </h3>
                 <div class="text-2xl">
 
                     <p>
-                        Discover comprehensive insights and unleash the full potential of the API through our meticulously curated online documentation, available at this
-                            <a href="https://intel.izdrail.com/docs">address</a> .
+                        In an endeavor to foster collaboration and empower users, I've decided the source code of this invaluable tool to be been made publicly available.
                     </p>
+
+                    <p>
+                        You can effortlessly deploy your personalized instance by following the instructions outlined in the <a href="https://github.com/pythoncompany/backend.izdrail.com/">README</a> file.
+                    </p>
+
+                    <p>For optimal convenience and seamless integration, consider running the tool locally on your machine utilizing Docker and Docker Compose</p>
+
+                    <pre>docker pull izdrail/backend.izdrail.com:latest</pre>
+
+                    <pre>docker-compose up</pre>
+
+
+                   <h3> Docker Compose
+                   </h3>
+
+                    <pre>
+                        services:
+                          backend:
+                            image: izdrail/backend.izdrail.com:latest
+                            ports:
+                              - "8003:8003"
+                            depends_on:
+                              - db
+                            environment:
+                    </pre>
+
+                    <p>
+                        <b>Note:</b> The tool is currently under active development and is subject to change.
+                     </p>
+
                 </div>
             </section>
-
-            <!-- Seo structured data section -->
 
         </main>
     </div>

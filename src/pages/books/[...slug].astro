@@ -9,13 +9,13 @@ import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 
 interface Props {
-	entry: CollectionEntry<'articles'>;
+	entry: CollectionEntry<'books'>;
 }
 
 
 export async function getStaticPaths() {
-	const work = await getCollection('articles');
-	return work.map((entry) => ({
+	const books = await getCollection('books');
+	return books.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
 	}));
@@ -30,8 +30,8 @@ const { Content } = await entry.render();
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/articles/"><Icon icon="arrow-left" /> Articles </a>
-					<Hero title={entry.data.title} align="start">
+					<a class="back-link" href="/books/"><Icon icon="arrow-left" /> Books </a>
+					<Hero title={entry.data.title} align="center">
 						<div class="details">
 							<div class="tags">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}

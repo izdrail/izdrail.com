@@ -1,38 +1,46 @@
 ---
-title: OSINT Mobile Application
+title: Kids Security
 publishDate: 2024-03-02 00:00:00
 img: /assets/tools/osint.svg
 img_alt: OSINT mobile application
 description: Community-driven mobile application for OSINT tasks.
 tags:
-  - Ionic
+  - Mobile Application
   - O.S.I.N.T
   - Cyber Intelligence
-  - Cyber Security
+  - Orange Hackathon
 ---
-
-## Overview
-
-Developed during the [**2024 Orange Hackathon**](https://hackathon.developer.orange.com/), this mobile application is a comprehensive solution for conducting O.S.I.N.T tasks on the go.
 
 ## Motivation
 
 The creation of this application was driven by the demand for a mobile-friendly solution to perform intelligence tasks efficiently and reducing fraudulent activities.
-By building upon the capabilities of the well-known O.S.I.N.T tool, **SpiderFoot**, we have crafted a versatile and user-friendly application that addresses the growing needs of cybersecurity professionals.
+By building upon the capabilities of the well-known O.S.I.N.T tool, **SpiderFoot**, 
+I have crafted a versatile and user-friendly application that addresses the growing needs of cybersecurity professionals.
 
-## Key Features
+OSINT is a term that refers to the collection of information about a person, organization, phone number, or email address.
 
-- **User-Friendly Interface:** Intuitive design for seamless navigation and usage.
-- **Comprehensive Data Analysis:** Aggregates and analyzes data from various sources.
-- **Real-Time Updates:** Provides up-to-date information to stay ahead of potential threats.
-- **Customizable Reports:** Generate detailed reports tailored to specific needs.
+## Who is it for?
+Parents, teachers, students, and anyone else who wants to learn more about a person, organization, phone number, or email address.
+Governments use OSINT to gather information on potential threats and adversaries.
+Law enforcement agencies use OSINT to investigate crimes and identify suspects.
+Cybersecurity professionals use OSINT to identify vulnerabilities and potential cyberattacks.
+Businesses use OSINT to gather information on competitors, customers, and market trends.
+Journalists use OSINT to research and report on news stories.
+Researchers use OSINT to gather information for their research projects.
 
-## Technologies Used
 
-- **Ionic Framework:** Ensures cross-platform compatibility and a smooth user experience.
-- **SpiderFoot Integration:** Enhances the app's capabilities with advanced O.S.I.N.T functionalities.
+## What can it do?
 
+It is a mobile application that allows users to search for information about a phone number,email address, or domain name.
+The application uses the available free SpiderFoot modules to perform the search.
+The results are displayed in a user-friendly format, making it easy for users to understand and interpret the information.
 
-My mobile application stands out as a vital tool for cybersecurity experts, enabling them to conduct O.S.I.N.T tasks on the go. 
-Whether you're an intelligence analyst or a security researcher, this app equips you with the necessary tools to safeguard digital assets and maintain cyber vigilance.
+## Demo
+You can view a live version of the application [here](https://kids.izdrail.com).
 
+## Frontend
+The frontend is built with Vue.js and Ionic.
+The application uses the Ionic Framework to create a responsive and mobile-first interface.
+
+## Backend
+The backend is powered by the SpiderFoot API.

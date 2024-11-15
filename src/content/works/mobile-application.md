@@ -35,6 +35,19 @@ It is a mobile application that allows users to search for information about a p
 The application uses the available free SpiderFoot modules to perform the search.
 The results are displayed in a user-friendly format, making it easy for users to understand and interpret the information.
 
+
+## Python Spider Foot Module
+The application also includes a Python module developed for querying orange hub.
+
+
+## Source code
+The source code for the application is available on GitHub at:
+
+[izdrail/osint.izdrail.com](https://github.com/izdrail/osint.izdrail.com).
+
+[izdrail/kids-security](https://github.com/izdrail/kids-security).
+
+
 ## Demo
 You can view a live version of the application [here](https://kids.izdrail.com).
 

@@ -10,8 +10,8 @@ const { align = 'center', tagline, title } = Astro.props;
 
 <header class:list={['hero stack gap-4 ', align]}>
 	<div class="stack">
-		<h1 class="title mb-15 mb-10 text-4xl text-white">{title}</h1>
-		{tagline && <h2 class="tagline font-bold text-3xl text-white">{tagline}</h2>}
+		<h1 class="title mb-15 mb-10 text-4xl ">{title}</h1>
+		{tagline && <h2 class="tagline font-bold text-3xl ">{tagline}</h2>}
 	</div>
 	<slot />
 </header>

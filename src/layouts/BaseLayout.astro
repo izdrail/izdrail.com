@@ -1,10 +1,14 @@
 ---
+import { pwaInfo } from 'virtual:pwa-info';
+
 // Component Imports
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import ReloadPrompt from '../components/ReloadPromt.astro';
 import {fade, slide} from 'astro:transitions';
+// replaced dynamically
+
 
 interface Props {
 	title?: string | undefined;
@@ -19,12 +23,13 @@ const { title, description } = Astro.props;
 	<head>
 		<MainHead title={title} description={description} />
 		<ViewTransitions />
-
+		{ pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
+		<script src="/src/pwa.ts"></script>
 
 	</head>
 	<!-- Add a better astrojs animation -->
 
-	<body transition:animate={slide({ duration: '0.7s' })} >
+	<body transition:swap={'slide'} >
 
 		<div class="stack backgrounds">
 			<Nav />
@@ -36,6 +41,29 @@ const { title, description } = Astro.props;
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
 		</script>
 
+
+        <ReloadPrompt />
+
+		<!-- Analytics -->
+		<script>
+			var _paq = window._paq = window._paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://izdrail.matomo.cloud/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '1']);
+				_paq.push(['setCustomUrl', window.location.href]);
+				_paq.push(['trackPageView']);
+				_paq.push(['enableHeartBeatTimer']);
+				_paq.push(['enableLinkTracking']);
+				_paq.push(['requireCookieConsent']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.async=true; g.src='https://cdn.matomo.cloud/izdrail.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 		<style>
 			:root {
 
@@ -116,31 +144,6 @@ const { title, description } = Astro.props;
 				}
 			}
 		</style>
-
-        <ReloadPrompt />
-
-		<!-- Matomo -->
-		<script>
-			var _paq = window._paq = window._paq || [];
-			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-				var u="https://izdrail.matomo.cloud/";
-				_paq.push(['setTrackerUrl', u+'matomo.php']);
-				_paq.push(['setSiteId', '1']);
-				_paq.push(['setCustomUrl', window.location.href]);
-				_paq.push(['trackPageView']);
-				_paq.push(['enableHeartBeatTimer']);
-				_paq.push(['enableLinkTracking']);
-				_paq.push(['requireCookieConsent']);
-
-
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.async=true; g.src='https://cdn.matomo.cloud/izdrail.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-			})();
-		</script>
-		<!-- End Matomo Code -->
 
 	</body>
 </html>

@@ -41,10 +41,10 @@
     "hero": "/assets/tools/jobs.svg"
   },
   {
-    "title": "Osint Tool",
-    "subtitle": "Free osint tool, Osint online tool, ",
-    "description": "Comprehensive OSINT analysis for any website. Uncover a website's metadata, email addresses, phone numbers, IP addresses, and more. Gain deep insights to enhance your security and intelligence gathering.",
-    "link": "https://kids.izdrail.com",
+    "title": "Social Security",
+    "subtitle": "Free osint tool, Osint online tool, mobile osint, cybersecurity, scan tool",
+    "description": "Community inspired  mobile application design to protect you social life.",
+    "link": "/work/social-security",
     "cta": "Run Analysis",
     "hero": "/assets/tools/osint.svg"
   }

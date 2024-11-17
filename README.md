@@ -1,12 +1,11 @@
-# Personal Portfolio Website - izdrail.com
+# Personal Website - izdrail.com
 
 A modern, fast, and responsive personal website showcasing my work and experiences.
 
-## 🚀 Tech Stack
+## ✨ Tech Stack
 
 - Deployed and hosted on [Cloudflare](https://www.cloudflare.com) for optimal global content delivery
-- Zero JavaScript by default - ensuring minimal client-side overhead
-- SEO optimized structure
+
 
 ## ✨ Features
 
@@ -16,7 +15,7 @@ A modern, fast, and responsive personal website showcasing my work and experienc
 - Static site generation for maximum performance
 - Easy-to-maintain content structure
 
-## 🛠️ Frontend Development
+## ✨ Frontend Development
 
 ```bash
 # Install dependencies
@@ -31,5 +30,5 @@ npm run build
 # Preview production build
 npm run preview
 ```
-## 🛠️ Backend Development
-For development of the backend, you can see the following GitHub repository: https://github.com/izdrail/intel.izdrail.com
+## ✨️ Backend Development
+For development of the backend, you can see the following GitHub repository: https://github.com/pythoncomapny/backend.izdrail.com

@@ -32,3 +32,9 @@ Talking with friends during my career as Software Engineer, I realized that many
 It is a mobile application that allows users to search for information about a phone number,email address, or domain name.
 The application uses the available free SpiderFoot modules to perform the search.
 The results are displayed in a user-friendly format, making it easy for users to understand and interpret the information.
+
+
+## How do I get it ?
+
+Due to the nature of sensible data and privacy, I can't provide the application to the public.
+If you are interested in using it, please contact me and I will provide you with the necessary information to use it.

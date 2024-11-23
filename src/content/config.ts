@@ -31,4 +31,14 @@ export const collections = {
             publishDate: z.coerce.date(),
         }),
     }),
+
+    blog: defineCollection({
+        schema: z.object({
+            title: z.string(),
+            tags: z.array(z.string()),
+            description: z.string(),
+            link: z.string(),
+            publishDate: z.coerce.date(),
+        }),
+    }),
 };

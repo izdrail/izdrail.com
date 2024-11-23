@@ -14,14 +14,10 @@ tags:
   - UK
 ---
 
-# Cybersecurity company in London
-
+# Cybersecurity engineer in London
 
 ## Protecting companies since 2012
 
-### Osint reports & assessments
+### Free ISO27001 report
 
-### Free tools
-
-### ISO27001 Report
-
+#### Generate ISO27001 Report

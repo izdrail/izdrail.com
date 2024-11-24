@@ -416,7 +416,7 @@ const projects = (await getCollection('works'))
     }
 
     .with-background::before {
-        --hero-bg: var(--bg-image-subtle-2);
+        --hero-bg: "url('https://craftinginterpreters.com/image/background.png')";
 
         content: '';
         position: absolute;
@@ -434,7 +434,7 @@ const projects = (await getCollection('works'))
     }
 
     .with-background.bg-variant::before {
-        --hero-bg: var(--bg-image-subtle-1);
+        --hero-bg: "url('https://craftinginterpreters.com/image/background.png')";
     }
 
     .section-header {

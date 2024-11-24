@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+import BookPreview from "../components/BookPreview.astro";
+
+const cheatsheets = (await getCollection('cheatsheets')).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+---
+<BaseLayout
+	title="Cheatsheets"
+	description="Some of my cheatsheets I found useful while working with various technologies."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Cheatsheets"
+				tagline="In this section you can find some of my cheatsheets I found useful while working with various technologies."
+			/>
+			<Grid variant="offset">
+				{
+					cheatsheets.map((book) => (
+						<BookPreview project={book} />
+					))
+				}
+			</Grid>
+		</main>
+	</div>
+</BaseLayout>

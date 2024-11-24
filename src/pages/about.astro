@@ -2,244 +2,261 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 const jsonLd = {
-	"@context": "https://schema.org",
-	"@type": "Person",
-	"name": "Stefan Bogdan",
-	"jobTitle": "Senior Software Engineer",
-	"description": "Lets talk about software engineering, software development, and the latest trends in the tech industry.",
-	"nationality": "Romanian",
-	"workLocation": {
-		"@type": "Place",
-		"address": {
-			"@type": "PostalAddress",
-			"addressCountry": "United Kingdom"
-		}
-	},
-	"alumniOf": {
-		"@type": "CollegeOrUniversity",
-		"name": "University of Bucharest",
-		"department": "Computer Science",
-		"yearStarted": "2010",
-		"yearEnded": "2014"
-	},
-	"knowsAbout": [
-		"PHP Development",
-		"Python Development",
-		"NLP & AI"
-	],
-	"hasCredential": [
-		{
-			"@type": "EducationalOccupationalCredential",
-			"name": "CloudAmpq Certified Developer",
-			"dateCreated": "2023"
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"name": "AWS Certified Solutions Architect",
-			"dateCreated": "2020"
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"name": "AWS Certified Developer",
-			"dateCreated": "2018"
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"name": "Google Cloud Certified Associate Cloud Engineer",
-			"dateCreated": "2018"
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"name": "Magento 2 Certification",
-			"dateCreated": "2018"
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"name": "Laravel Certification",
-			"dateCreated": "2016"
-		}
-	],
-	"skills": [
-		"PHP",
-		"Python",
-		"IoT",
-		"NLP",
-		"AI",
-		"Cloud Computing",
-		"Laravel",
-		"AWS",
-		"React",
-		"Vue",
-		"Tailwind",
-		"Node",
-		"JavaScript",
-		"HTML",
-		"CSS",
-		"Cybersecurity"
-	]
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Stefan Bogdan",
+    "jobTitle": "Senior Software Engineer",
+    "description": "Lets talk about software engineering, software development, and the latest trends in the tech industry.",
+    "nationality": "Romanian",
+    "workLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "United Kingdom"
+        }
+    },
+    "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Bucharest",
+        "department": "Computer Science",
+        "yearStarted": "2010",
+        "yearEnded": "2014"
+    },
+    "knowsAbout": [
+        "PHP Development",
+        "Python Development",
+        "NLP & AI"
+    ],
+    "hasCredential": [
+        {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CloudAmpq Certified Developer",
+            "dateCreated": "2023"
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "name": "AWS Certified Solutions Architect",
+            "dateCreated": "2020"
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "name": "AWS Certified Developer",
+            "dateCreated": "2018"
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Google Cloud Certified Associate Cloud Engineer",
+            "dateCreated": "2018"
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Magento 2 Certification",
+            "dateCreated": "2018"
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Laravel Certification",
+            "dateCreated": "2016"
+        }
+    ],
+    "skills": [
+        "PHP",
+        "Python",
+        "IoT",
+        "NLP",
+        "AI",
+        "Cloud Computing",
+        "Laravel",
+        "AWS",
+        "React",
+        "Vue",
+        "Tailwind",
+        "Node",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Cybersecurity"
+    ]
 };
 ---
 
-<BaseLayout title="About me" description=" I'm Stefan, an experienced software developer based in the United Kingdom with over 13 years of hands-on experience. Here's a glimpse into what I bring to the table:">
+<BaseLayout title="About me"
+            description=" I'm Stefan, an experienced software developer based in the United Kingdom with over 13 years of hands-on experience. Here's a glimpse into what I can help you with:">
 
-	<main class="stack gap-20 wrapper about">
-		<Hero
-			title="About"
-			tagline="Hello! I’m Stefan, a skilled software engineer with a focus on refining existing solutions for optimal efficiency and effectiveness."
-		></Hero>
+    <main class="stack gap-20 wrapper about">
+        <Hero
+                title="About"
+                tagline="Hello! I’m Stefan, a skilled software engineer with a focus on refining existing solutions for optimal efficiency and effectiveness."
+        ></Hero>
 
-		<img style="border-radius:0;box-shadow:none" src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.69d82ff1b2861e1089539ebba906c70b011b928a.png" loading="lazy" alt="aws certified developer" class="profile-img">
 
-		<section>
-			<h2 class="section-title" title="Professional Background">
-				Journey so far
-			</h2>
-			<div class="content text-3xl">
-				<p class="mb-10 text-4xl">
+        <section>
+            <h2 class="section-title" title="Professional Background">
+                Journey so far
+            </h2>
+            <div class="content text-3xl">
+                <p class="mb-10 text-4xl">
 
-					<strong>I'm</strong> originally from Romania <em>(Moldova)</em> where I earned my Computer Science degree from the University of Bucharest.
-	</p>
-				I In the first years of my career, I worked on a variety of of projects in the Aviation, Telecom and Finance sectors,
-				where I gained strong experience in <strong>PHP</strong> and <strong>Python</strong> programming.
+                    <strong>I'm</strong> originally from Romania <em>(Moldova)</em> and currently reside in Greater
+                    London, UK. I have a strong academic background in Computer Science from the University of
+                    Bucharest, where I graduated in 2012.
+                </p>
+				<br />
+                For the part of my career, I worked on a variety of of projects in the Aviation, Telecom and
+                Finance sectors, where I've gained experience in <strong>PHP</strong> and <strong>Python</strong>
+                programming.
 
-				Between 2012-2014 I've lived in Italy for a wile where I had the opportunity to work in different incubators and startups.
+				<br />
+                Between 2012-2014 I've lived in <em>Italy</em> where I've work in different incubators and startups. One
+                of the notable incubators was NetTen in <em>Milan</em> where I worked on a project to build a <strong>e-commerce
+                platform</strong> for the <strong>CNC market</strong>.
 
-					In my  <strong>over 10+ years of hands-on experience</strong> in <strong>software development</strong>, I specialize in building <strong>enterprise-level applications</strong> that tackle complex, real-world problems effectively.
+                In my <strong>over 10+ years of hands-on experience</strong> in <strong>software development</strong>, I
+                specialize in building <strong>enterprise-level applications</strong> that tackle complex, real-world
+                problems effectively.
 
-				<p class="mb-10">
-					My work is driven by a love for coding and problem-solving, utilizing the best-suited programming language and tools to deliver optimal results.
-				</p>
-				<p class="mb-10">
-					Each project is an opportunity to push the boundaries of what’s possible in software. Whether it’s creating new features in <strong>PHP</strong> for a web application or building <strong>Python data processing solutions</strong>, I am dedicated to delivering top-quality code that aligns with my clients’ needs and expectations.
-				</p>
-				<p class="mb-10">
-					If you’re looking for a <strong><a href="#">PHP</a> or <a href="#">Python</a> developer</strong> in the London area, I’m available for hire and eager to take on your next development challenge. Let’s work together to bring your vision to life and drive exceptional results with expert programming solutions!
-				</p>
-			</div>
-		</section>
+                <p class="mb-10">
+                    My work is driven by a love for coding and problem-solving, utilizing the best-suited programming
+                    language and tools to deliver optimal results.
+                </p>
+                <p class="mb-10">
+                    Each project is an opportunity to push the boundaries of what’s possible in software. Whether it’s
+                    creating new features in <strong>PHP</strong> for a web application or building <strong>Python data
+                    processing solutions</strong>, I am dedicated to delivering top-quality code that aligns with my
+                    clients’ needs and expectations.
+                </p>
+                <p class="mb-10">
+                    If you’re looking for a <strong><a href="#">PHP</a> or <a href="#">Python</a> developer</strong> in
+                    the London area, I’m available for hire and eager to take on your next development challenge. Let’s
+                    work together to bring your vision to life and drive exceptional results with expert programming
+                    solutions!
+                </p>
+            </div>
+        </section>
 
-		<section>
-			<h2 class="section-title" title="My educations">Education</h2>
-			<div class="content">
-				<p>
-					<strong>University of Bucharest</strong>
-					<br />
-					<span>Computer Science</span>
-					<br />
-					<span>2010 - 2014</span>
-				</p>
-			</div>
-		</section>
+        <section>
+            <h2 class="section-title" title="My educations">Education</h2>
+            <div class="content">
+                <p>
+                    <strong>University of Bucharest</strong>
+                    <br/>
+                    <span>Computer Science</span>
+                    <br/>
+                    <span>2010 - 2014</span>
+                </p>
+            </div>
+        </section>
 
-		<section>
-			<h2 class="section-title">Skills</h2>
-			<div class="content">
-				<ul>
-					<li>PHP - spanning over 10+ years of experience</li>
-					<li>Python - 7 years of experience</li>
-					<li>IoT - spanning over 6 years of experience</li>
-					<li>NLP & AI - 5+ years of experience</li>
-					<li>Sentiment analysis, Token Extraction, Document processing, Spacy NLP</li>
-				</ul>
-			</div>
-		</section>
+        <section>
+            <h2 class="section-title">Skills</h2>
+            <div class="content">
+                <ul>
+                    <li>PHP - spanning over 10+ years of experience</li>
+                    <li>Python - 7 years of experience</li>
+                    <li>IoT - spanning over 6 years of experience</li>
+                    <li>NLP & AI - 5+ years of experience</li>
+                    <li>Sentiment analysis, Token Extraction, Document processing, Spacy NLP</li>
+                </ul>
+            </div>
+        </section>
 
-		<section>
-			<h2 class="section-title">Certifications</h2>
-			<div class="content">
-				<p>
-					<strong>CloudAmpq <i> Certified Developer, 2023</i></strong><br />
-					<strong>AWS <i>Certified Solutions Architect, 2020</i></strong><br />
-					<strong>Google Cloud Certified Associate Cloud Engineer, 2018</strong><br />
-					<strong>Symfony Certified Engineer, 2013</strong><br />
-				</p>
-			</div>
-		</section>
-		<section>
-			<h2 class="section-title">Research Papers</h2>
-			<div class="content">
-				<p>
-					<strong>Educating kids in cyber security (2024)</strong>
-				</p>
-			</div>
-		</section>
-		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-	</main>
+        <section>
+            <h2 class="section-title">Certifications</h2>
+            <div class="content">
+                <p>
+                    <strong>CloudAmpq <i> Certified Developer, 2023</i></strong><br/>
+                    <strong>AWS <i>Certified Solutions Architect, 2020</i></strong><br/>
+                    <strong>Google Cloud Certified Associate Cloud Engineer, 2018</strong><br/>
+                    <strong>Symfony Certified Engineer, 2013</strong><br/>
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Research Papers</h2>
+            <div class="content">
+                <p>
+                    <strong>Educating kids in cyber security (2024)</strong>
+                </p>
+            </div>
+        </section>
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
+    </main>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+    img {
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: var(--shadow-md);
+    }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-		b, strong {
-			color: var(--gray-400);
-		}
-	}
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--gray-200);
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+        b, strong {
+            color: var(--gray-400);
+        }
+    }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+    .section-title {
+        grid-column-start: 1;
+        font-size: var(--text-xl);
+        color: var(--gray-0);
+    }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+    .content {
+        grid-column: 2 / 4;
+    }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+    .content :global(a) {
+        text-decoration: 1px solid underline transparent;
+        text-underline-offset: 0.25em;
+        transition: text-decoration-color var(--theme-transition);
+    }
 
-	.button {
-		display: inline-block;
-		padding: 0.75rem 1.5rem;
-		background-color: var(--primary-color);
-		color: #fff;
-		border-radius: 0.375rem;
-		text-align: center;
-		font-weight: bold;
-		text-decoration: none;
-		transition: background-color 0.3s ease;
-	}
+    .content :global(a:hover),
+    .content :global(a:focus) {
+        text-decoration-color: currentColor;
+    }
 
-	.button:hover {
-		background-color: var(--primary-color-dark);
-	}
+    .button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--primary-color);
+        color: #fff;
+        border-radius: 0.375rem;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+    .button:hover {
+        background-color: var(--primary-color-dark);
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    @media (min-width: 50em) {
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 60% 1fr;
+        }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+        .about > :global(:first-child) {
+            grid-column-start: 2;
+        }
+
+        section {
+            display: contents;
+            font-size: var(--text-lg);
+        }
+    }
 </style>

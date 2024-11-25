@@ -15,9 +15,9 @@ interface Props {
 const currentPath = Astro.url.pathname;
 
 const {
-	title = 'Senior Software Developer',
+	title = 'Senior Software Engineer Essex ',
     author ='Stefan Bogdan',
-	description = 'Are you seeking a senior software developer for hire in London? Look no further! I can bring your web dreams to life #Developer #London #Available #Hire',
+	description = ' A software engineer who spends most of my time refining solutions rather than reinventing them available for hire',
 	logo = '/assets/logo.svg',
     remote_logo = 'https://izdrail.com' + currentPath,
     og_url = 'https://izdrail.com' + currentPath
@@ -45,14 +45,14 @@ console.log(og_url);
 <meta property="og:type" content="website" />
 
 <!--<meta name="twitter:card" content="summary" />-->
-<!--<meta name="twitter:site" content="@thephpteacher" />-->
-<!--<meta name="twitter:creator" content="@thephpteacher" />-->
+<!--<meta name="twitter:site" content="@activistcoder" />-->
+<!--<meta name="twitter:creator" content="@activistcoder" />-->
 
 
 
 <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
-<!--<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />-->
-<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />-->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <!--<link-->
 <!--	href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:wght@500;600&display=swap"-->
 <!--	rel="stylesheet"-->
@@ -74,7 +74,7 @@ console.log(og_url);
 		// Watch the document element and persist user preference when it changes.
 		const observer = new MutationObserver(() => {
 			const isDark = document.documentElement.classList.contains('theme-dark');
-			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			localStorage.setItem('theme', isDark ? 'light' : 'dark');
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}

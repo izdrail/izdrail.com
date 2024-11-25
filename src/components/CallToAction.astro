@@ -6,7 +6,7 @@ interface Props {
 
 const { href, title } = Astro.props;
 ---
-<a title={title} href={href}><slot /></a>
+<a onclick="_paq.push(['trackEvent', title, title, href]);" title={title} href={href}><slot /></a>
 
 <style>
 	a {

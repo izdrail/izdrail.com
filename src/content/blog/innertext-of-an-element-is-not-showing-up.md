@@ -1,8 +1,6 @@
 ---
 title: How to fix inner text of an element is not showing up
-publishDate: 2020-03-02 00:00:00
 img: /assets/blog/data-visualization-with-d3.png
-img_alt: Data Visualization with D3
 description: Learn how to visualize your data with the power of D3.
 tags:
   - Tutorial

@@ -27,8 +27,7 @@ export const collections = {
             title: z.string(),
             tags: z.array(z.string()),
             description: z.string(),
-            link: z.string(),
-            publishDate: z.coerce.date(),
+            img: z.string(),
         }),
     }),
 
@@ -37,8 +36,6 @@ export const collections = {
             title: z.string(),
             tags: z.array(z.string()),
             description: z.string(),
-            link: z.string(),
-            publishDate: z.coerce.date(),
         }),
     }),
 
@@ -46,10 +43,9 @@ export const collections = {
     blog: defineCollection({
         schema: z.object({
             title: z.string(),
-            tags: z.array(z.string()),
+            img: z.string(),
             description: z.string(),
-            link: z.string(),
-            publishDate: z.coerce.date(),
+            tags: z.array(z.string()),
         }),
     }),
 };

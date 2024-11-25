@@ -1,8 +1,6 @@
 ---
 title: Learn how to visualize your data with the power of D3 and Python
-publishDate: 2020-03-02 00:00:00
 img: /assets/blog/data-visualization-with-d3.png
-img_alt: Data Visualization with D3
 description: Learn how to visualize your data with the power of D3.
 tags:
   - Data Visualization

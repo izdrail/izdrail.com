@@ -1,8 +1,8 @@
 ---
 title: 300 Marketing + Sales tips and tricks
-publishDate: 2023-19-04 00:00:00
+
 description:  Learn how to write effective marketing and sales emails with these 300 tips and tricks.
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
+img: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
 tags:
   - Marketing
   - Email

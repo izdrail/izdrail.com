@@ -1,6 +1,5 @@
 ---
 title: Laravel Artisan Cheatsheet
-publishDate: 2023-19-04 00:00:00
 description: A searchable, bookmark cheatsheet for Laravel's Artisan commands.
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
 tags:

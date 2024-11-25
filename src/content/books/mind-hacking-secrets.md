@@ -1,14 +1,12 @@
 ---
 title: Mind Hacking Secrets
-publishDate: 2023-19-04 00:00:00
 description: A article about how to hack your mind to be more productive and successful.
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
+img: ""
 tags:
-  - Tools
-  - PHP
+  - Books
+  - Mind Tricks
   - Development
   - Learn
----
 -----
 
 #### Introduction Chapter 1: Our Sabotaging Ways
@@ -32,9 +30,6 @@ Chapter 5: A Healthier Lifestyle for a Healthier Mind What Is Mindfulness? How t
 Chapter 6: What Is Success Anyway?
 
 Failure, Friend or Foe? Conclusion
-
-References
-
 
 -----
 

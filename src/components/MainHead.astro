@@ -33,6 +33,7 @@ console.log(og_url);
 <meta name="generator" content={Astro.generator} />
 
 
+
 <!-- Share !-->
 <meta property="og:locale" content="en_GB">
 <meta property="og:title" content={title}>
@@ -44,9 +45,15 @@ console.log(og_url);
 
 <meta property="og:type" content="website" />
 
-<!--<meta name="twitter:card" content="summary" />-->
-<!--<meta name="twitter:site" content="@activistcoder" />-->
-<!--<meta name="twitter:creator" content="@activistcoder" />-->
+<!-- Canonical -->
+<link rel="canonical" href={og_url} />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:site" content="@activistcoder" />
+<meta name="twitter:creator" content="@activistcoder" />
 
 
 

@@ -5,7 +5,7 @@ import AstroPWA from '@vite-pwa/astro'
 import config from "tailwindcss/defaultConfig.js";
 
 config.pwa = {
-  mode: 'development',
+  mode: 'production',
   base: '/',
   scope: '/',
   includeAssets: ['assets/logo.svg'],
@@ -48,7 +48,7 @@ config.pwa = {
 
 
 export default defineConfig({
-  integrations: [tailwind(),vue(), AstroPWA(config.pwa)],
+  integrations: [ tailwind(),vue(), AstroPWA(config.pwa)],
   buildOptions: {
     outdir: 'dist',
     emptyOutDir: true,

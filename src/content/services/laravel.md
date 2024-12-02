@@ -59,7 +59,8 @@ My work spans diverse applications, from dynamic web applications and e-commerce
 
 ### Laravel Support & Maintenance
 
-- **Monthly Maintenance:** Ensuring continuous operation with regular maintenance and updates.
+- **Monthly Maintenance:** Ensuring continuous operation with regular maintenance and updates. My prices are competitive, so you can rest assured that you'll never have to worry about downtime.
+- **Support:** Assistance with Laravel installation, configuration, and troubleshooting. I'm here to help you every step of the way.
 - **Retainer Support:** Offering flexible, retainer-based support plans tailored to your needs and budget.
 - **System Updates:** Keeping Laravel applications up-to-date with security patches and new features.
 - **Server Migration:** Facilitating seamless server migrations with minimal downtime.

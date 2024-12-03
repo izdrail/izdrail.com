@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+import BookPreview from "../components/BookPreview.astro";
+import BlogPreview from "../components/BlogPreview.astro";
+const blog = (await getCollection('blog'));
+---
+<BaseLayout
+	title="Thoughts on latests technologies"
+	description="Some of my favorite books"
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Blog"
+				tagline="my thougs on latests technologies, cybersecurity, and other stuff"
+			/>
+			<Grid variant="offset">
+				{
+					blog.map((book) => (
+						<BlogPreview project={book} />
+					))
+				}
+			</Grid>
+		</main>
+	</div>
+</BaseLayout>

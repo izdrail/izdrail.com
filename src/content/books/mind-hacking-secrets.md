@@ -1,17 +1,19 @@
 ---
 title: Mind Hacking Secrets
+author: <Stefan Bogdan>
+date: 2024-12-02 11:00:00 +0800 
+categories: [Books, Mind Tricks]
+tags: [Books, Mind Tricks, Development, Learn]
+pin: false
 description: A article about how to hack your mind to be more productive and successful.
 img: ""
-tags:
-  - Books
-  - Mind Tricks
-  - Development
-  - Learn
 -----
 
-#### Introduction Chapter 1: Our Sabotaging Ways
+#### Introduction
 
-The Devil Is in the Negativity Our Anxious Minds...
+Chapter 1: Our Sabotaging Ways
+
+Chapter 1: Anxious Minds and the Devil in details
 
 Chapter 2: The Weapons of Self-sabotage
 
@@ -23,36 +25,46 @@ Set Ways of Sabotage Rewiring Our Brains
 
 Chapter 4: Weapons Against Self-sabotaging
 
-Challenge Your Negative Thoughts Shoe on the Other Foot... Relinquish Control of Things out of Your Reach Counteract the Negative Bias Minimize Your Expectations Set Solid Goals and Plans Practice Makes Perfect
-
-Chapter 5: A Healthier Lifestyle for a Healthier Mind What Is Mindfulness? How to Be More Mindful Mental Health and a Healthy Diet Ways in Which Healthy Eating Improves Mental Health A Diet for Better Mental Health Mental Health and Exercise What Exercise Is Good for the Brain?
+Chapter 5: Diet and Sport
 
 Chapter 6: What Is Success Anyway?
 
-Failure, Friend or Foe? Conclusion
+Chapter 7: The Sabotage of Success: Failure, Friend or Foe? Conclusion
 
 -----
 
 # Introduction
 
-#### Life can feel like a never-ending race. We’re all rushing around trying to fit everything into the limited amount of time we have here. Some of us know exactly what we want, but don’t know how to get it. We feel stuck or limited by our environment or opportunities. Others have no clue what they want, and therefore have no idea what they are doing or how to get anywhere. They feel completely lost.
-Then, there are also people out there who, much to everyone else's
-annoyance, seem to know exactly what they want, and they also seem to know exactly how to get it. We sit there and watch them sprinting ahead of us, and this only discourages us more by making us feel like failures in our own lives. We wonder what they know that we don’t know, and we become resentful and unhappy. It’s difficult not to let it affect us because we can’t help but take it personally. However, we shouldn’t take it personally - and we definitely shouldn’t let it affect us.
+#### Life can feel like a never-ending rat race. 
+We’re all rushing around trying to fit everything into the limited amount of time we have here. 
+Some of us know exactly what we want, but don’t know how to get it. 
+We feel stuck or limited by our environment or opportunities. 
+Others have no clue what they want, and therefore have no idea what they are doing or how to get anywhere.
+ They feel completely lost.
+
+Then, there are also people out there who, much to everyone else's annoyance, seem to know exactly what they want, and they also seem to know exactly how to get it. 
+
+We sit there and watch them sprinting ahead of us, and this only discourages us more by making us feel like failures in our own lives. We wonder what they know that we don’t know, and we become resentful and unhappy. 
+
+It’s difficult not to let it affect us because we can’t help but take it personally. However, we shouldn’t take it personally - and we definitely shouldn’t let it affect us.
 What we don’t always realize is that everyone is trying to figure it out as
 they go, just like we are. It’s very likely that, although it may not look like it, they too feel lost or unsure of what they are doing at times. Everyone's journey and process are different, and we don’t know what stage they are at in their lives. We are all trying to be the best versions of ourselves we can possibly be. We all want to be successful and happy, and we want to feel like we’ve made our mark on this world. We develop dreams and set goals for ourselves so that we can work towards achieving them. We also all experience setbacks, failures and struggles.
+
 Whoever you are, and whichever category you fall into, things aren’t
 always how we perceive them to be. The reality is that we never know what is going on in someone else's life. Everybody has struggled to stay motivated, focused and positive in the face of all the obstacles that push them to fail. Even the most successful people out there have gone through rough times, and we don’t know what they had to overcome to get to where they are. We’re all on this Earth together, and it’s important to know that you are not alone, that your struggles are not greater than anyone else's, and neither are your successes less than anyone else’s.
+
 It took me realizing this to come to the conclusion that my own lack of
 success was nobody else's fault but my own. I had to face the fact that I was the one holding myself back by not focusing on improving myself, and by not focusing on getting what I wanted out of life. I was becoming sidetracked by what other people were doing, and I was losing sight of what I was meant to be doing. You may not want to admit it to yourself, but most of the time you are your own worst enemy.
+
 It’s so easy to blame everyone but yourself for why your life hasn’t turned
 out the way you wanted it to or thought it would. It’s something I used to do all the time. I used to look at everyone else around me, and think they seemed so much better off than I am, so much happier and more successful. I wondered what they had that I didn’t, and how they were able to get everything they wanted when I couldn’t. It can be easier to feel this way or to shift the blame for why you aren’t successful onto others instead of yourself, but that won’t really help you in any tangible way. When you stop blaming others and start looking at yourself with more honesty, you can start making positive changes in your life that will help you become a better version of yourself and will help you to continue to grow and become stronger and more resilient to life's adversities. Only then will you begin to make the progress necessary to achieve all the things you want out of life.
 Perhaps there are people out there who are more successful than you are,
 but that isn’t really the point. The point is that we shouldn’t be worrying about why or how they got there when you haven’t. You should rather be focusing your energy on learning how you can get there. When I realized this, I felt as though my life had been turned upside down. It unlocked something in me that motivated me to learn more. I became obsessed with trying to figure out how I could change myself in a positive way that would help me get the things I wanted out of my life.
 This is how I began my journey into self-discovery, how I began to learn
-about how I could change my thinking and train my own brain to do what I wanted, rather than continue to stand by powerless as my brain controlled and sabotaged me. It was through this journey that the creation of this book began. This book aims to set you on your own path of self-discovery. It offers the building blocks of knowledge that will help you begin to understand yourself and the way your mind works. It teaches you the importance of introspection and having an understanding of how your brain works. It shows you the ways in which your unconscious mind leads you to engage in self- sabotaging thinking, and how this leads to self-sabotaging behaviors that stop you from being happy and successful. It explains the inner workings of your
-mind, and how this causes you to think and act in self-sabotaging ways without even realizing it.
+about how I could change my thinking and train my own brain to do what I wanted, rather than continue to stand by powerless as my brain controlled and sabotaged me. It was through this journey that the creation of this book began. This book aims to set you on your own path of self-discovery. It offers the building blocks of knowledge that will help you begin to understand yourself and the way your mind works. It teaches you the importance of introspection and having an understanding of how your brain works. It shows you the ways in which your unconscious mind leads you to engage in self- sabotaging thinking, and how this leads to self-sabotaging behaviors that stop you from being happy and successful. It explains the inner workings of your mind, and how this causes you to think and act in self-sabotaging ways without even realizing it.
 One of the greatest obstacles we face in trying to gain success is
 mastering focus and control over our own minds. Sometimes it can feel like we have absolutely no control over our thinking at all. In fact, it can feel like our brains are actively working against us, holding us back and putting us down, and, to make matters worse, you are powerless to stop it. It also highlights the kinds of self-sabotaging thoughts you may fall victim to.
+
 The good news is that you aren’t powerless. There are skills and tools
 that can be learned to help you gain the control and focus you need. After teaching you to recognize your self-sabotaging thoughts and behaviors, this book will teach you how to combat them by training your brain to counteract the sabotaging thoughts that influence your behavior. It highlights better, more positive ways of thinking and behaving that will help you change your mindset and your life. You will learn about how to rewire your brain using a deeper understanding of your conscious mind and techniques from cognitive behavioral therapy Then, it will introduce you to mindfulness and explain how this can help you manage and regulate your emotions and sharpen your focus. It also shows you the benefits of living a healthier lifestyle, through a healthy diet and exercise, to better improve your brain's functioning.
 You will begin to raise important questions about what you want to
@@ -61,14 +73,13 @@ achieve in your life by wondering what success is and how it can mean different 
 
 -----
 
------
-
 # Chapter 1: Our Sabotaging Ways
 
 #### The first thing you need to accept is that self-sabotage is more common in your life than you may even realize. In the race of life, most of us are running with blinders on. We don’t stop and take the time to think about what we’re actually doing in the present moment. We don’t take inventory of our mental and physical states, we don’t always question if we are doing the right thing, and we also don’t recognize the ways in which we could be harming ourselves. If you do stop and take note, you may begin to see that you have unhealthy relationships, whether they are in your personal life or professional life, that you’re stuck in a rut and you aren’t achieving any of your goals, or that you keep finding yourself repeating the same mistakes.
+
 This is the evidence you need to find out that you have been self sabotaging yourself. It starts with self-sabotaging thoughts which lead to sabotaging behaviors, such as procrastination, avoidance, and causing unnecessary conflict in your life. In order to learn how to stop these harmful thoughts and behaviors, you first need to gain a better understanding of the complexity of your mind. Your brain is an amazing organ, capable of achieving much more than you allow it to. Without an understanding of how it works, you are missing vital pieces of information that could help you learn how to control your thinking and your behavior.
-Your mind is made up of consciousness and unconsciousness, and these
-two parts are very intimately connected in ways that psychologists are still working to understand. Thanks to the work and research of Sigmund Freud, we now realize the importance of the unconscious mind, and we recognize the effects and influence it can have on our lived experience. Through Freud’s research, we have learned that the unconscious domain is not always the most rational part of our mind and that our impulses and unconscious thoughts can be somewhat of a mystery to us. Luckily, there is more to us than just this. We also have a stream of consciousness that makes up the more rational, coherent side of our thinking. We make sense of the world around us and understand it through these thoughts.
+
+Your mind is made up of consciousness and unconsciousness, and these two parts are very intimately connected in ways that psychologists are still working to understand. Thanks to the work and research of Sigmund Freud, we now realize the importance of the unconscious mind, and we recognize the effects and influence it can have on our lived experience. Through Freud’s research, we have learned that the unconscious domain is not always the most rational part of our mind and that our impulses and unconscious thoughts can be somewhat of a mystery to us. Luckily, there is more to us than just this. We also have a stream of consciousness that makes up the more rational, coherent side of our thinking. We make sense of the world around us and understand it through these thoughts.
 Problems begin to pop up when these two parts of our mind find
 themselves at war with one another. Our more rational side tries to suppress the unconscious, and the unconscious tries to break through this suppression and make itself heard. Sometimes, the unconscious mind manages to sneak through these barriers in little - and often unexpected - ways. It can be
 through our dreams or through us acting out unpredictably, like when you lose your temper at someone who doesn’t deserve it. You can’t talk to the person who you really have a problem with, because you’re trying to avoid having a fight with them. Maybe because you don’t know how to talk to them about it, or maybe it’s your boss and you’re afraid of jeopardizing your job. Instead, you pick someone else to lose your temper at. Someone less intimidating or less likely to retaliate. The poor soul bears the brunt of it because you’re suppressing your feelings and thoughts, and your unconscious mind can’t hold on to that anger for long. Thus, it forces it out the first chance it gets.
@@ -102,7 +113,7 @@ there, trapped in our own minds and plagued by negativity due to comparing ourse
 From a very young age, we learn from mirroring others. You must have
 seen this in action many times when around children. Maybe you’re playing with your nieces or nephews and you pull a funny face, and they copy you by pulling the same face back. In fact, this happened to me not so long ago. I was having dinner at a friend’s house one night and her one-and-a-half-year-old little girl was sitting next to me at the dinner table. She was very interested in me since I was a new and exciting face in her home. She was watching me very closely and became fascinated at what I was doing at the dinner table; how I sat, how I held my cutlery, how I ate my food. At one point, I reached over to pour myself a glass of water. I put the jug down, reached for my glass and took a nice refreshing sip. Not even five seconds after I put my glass down, she reached over and grabbed my glass off the table, almost spilling its contents before she managed to steady it. She then mirrored my actions by taking a sip of her own. This is known as social learning theory.
 When we get older, this method of learning continues as we begin to form
-our identities and understand ourselves in relation to the world around us. Instead of learning how to drink water out of a glass or brush our teeth, we begin to learn about how to behave socially. Like that time one of your peers was completely unprepared for their speech in class and got a massive scolding from your teacher in front of the class, which left them completely humiliated, and it taught you to never repeat their mistake and always be prepared for your speeches. We also begin to shape our ideas about who we are and what we want to achieve during our lives. We develop role models, we think to ourselves, “That’s who I want to be one day,” and we begin to model ourselves after them in the hopes that we will one day achieve what they have. While this is a necessary process during our development, it also
+our identities and understand ourselves in relation to the world around us. Instead of learning how to drink water out of a glass or brush our teeth, we begin to learn about how to behave socially. Like that time one of your peers was completely unprepared for their speech in class and got a massive scolding from your teacher in front of the class, which left them completely humiliated, and it taught you to never repeat their mistake and always be prepared for your speeches. We also begin to shape our ideas about who we are and what we want to achieve during our lives. We [develop](https://izdrail.com) role models, we think to ourselves, “That’s who I want to be one day,” and we begin to model ourselves after them in the hopes that we will one day achieve what they have. While this is a necessary process during our development, it also
 has an unhealthy side to it. Unfortunately, through this process, we also develop the terrible habit of comparing ourselves with those around us. We wonder why someone else is dating the person you like. Are they smarter than you? More attractive?
 Unfortunately, as adults, we continue to do this, even though you are no
 longer a child or adolescent learning about the world. Surely, by now, you should know who you are and what you want out of life well enough to just focus on your own journey and work hard at making your goals a reality. Surely, this is all you need to be happy and successful without a care in the world. Sadly this is not the case. The very thing that helped shape you now becomes the enemy that works against you and actually stops you from achieving your goals. To make matters worse, this process of comparison is so deeply ingrained at this point that it has now become an unconscious process in our brains that can, if left unchecked, cause a lot of struggle and turmoil in our lives. When someone has something you don't have or they achieve something you want, you can’t help but wonder why it wasn’t you. Perhaps there’s something wrong with you. We’ve all been in this position, perhaps someone else got a promotion at work over you, even though you feel you worked just as hard or that you are just as capable. You begin to take it personally, and you then begin to compare yourself to your colleague who got the promotion.

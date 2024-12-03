@@ -1,18 +1,17 @@
 ---
 import type {CollectionEntry} from 'astro:content';
 interface Props {
-    project: CollectionEntry<'articles'>;
+    project: CollectionEntry<'blog'>;
 }
 
 const { data, slug } = Astro.props.project;
 ---
 
-
 <div class="lg:flex">
 
     <div class="flex flex-col lg:mx-6">
         <h1 title={data.title} class="text-white-800">
-            <a href={`/articles/${slug}`} class="text-xl font-semibold text-white-800 hover:underline dark:text-white" title={data.title}>
+            <a href={`/blog/${slug}`} class="text-xl font-semibold text-white-800 hover:underline dark:text-white" title={data.title}>
                 {data.title}
             </a>
         </h1>

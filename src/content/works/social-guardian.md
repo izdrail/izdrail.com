@@ -1,11 +1,11 @@
 ---
-title: Social Security
+title: Social Guardian
 publishDate: 2024-03-02 00:00:00
 img: /assets/tools/osint.svg
 img_alt: Mobile security application
-description: Community-driven mobile application for keeping your social security safe.
+description: Community-driven pwa application that helps people run osint research.
 tags:
-  - Mobile Application
+  - PWA Application
   - O.S.I.N.T
   - Cyber Intelligence
   - Education
@@ -33,6 +33,5 @@ It is a mobile application that allows users to search for information about a p
 The application uses the available free SpiderFoot modules to perform the search.
 The results are displayed in a user-friendly format, making it easy for users to understand and interpret the information.
 
-## Where can I get it?
 
-1. [Github](https://github.com/izdrail/socialguardian.izdrail.com)
+[DEMO](https://socialguardian.izdrail.com)

@@ -1,0 +1,172 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import Hero from '../../components/Hero.astro';
+
+import ArticleExtractor from '../../vue/ArticleExtractor.vue';
+
+import Jobs from '../../vue/Jobs.vue';
+
+import laravel from './tools/_laravel.json';
+---
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Watch movies online using the power of docker ">
+<meta property="og:url" content="https://izdrail.com/tools/movies/">
+<meta property="og:image" content="https://i.imgur.com/XF92B0Q.png">
+<meta property="og:description" content="Discover the latest movies to watch for in the ">  
+<meta property="product:plural_title" content="">
+<meta property="product:price.amount" content="0">
+<meta property="product:price.currency" content="GBP">
+<meta name="author" content="Stefan Bogdan">
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Torrent Streaming",
+        "description": "Find the latest things to watch for in the tech industry using the power of p2p streaming.",
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "bestRating": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Stefan"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.4,
+            "reviewCount": 89
+        }
+    }
+</script>
+              <!-- Include the latest version of WebTorrent -->
+              <script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>
+          
+<BaseLayout
+	title="Streaming"
+	description="Find the latest things to watch for in the tech industry using the power of p2p streaming."
+>
+	<div class="stack gap-20">
+
+		<main class="wrapper stack gap-12">
+			<Hero
+				title="Streaming"
+				tagline="Find the latest things to watch for in the tech industry using the power of p2p streaming."
+
+			/>
+<!-- 
+			<Jobs client:visible /> -->
+
+            <div id="hero">
+                <div id="output">
+                  <div id="progressBar"></div>
+                  <!-- The video player will be added here -->
+                </div>
+                <!-- Statistics -->
+                <div id="status">
+                  <div>
+                    <span class="show-leech">Downloading </span>
+                    <span class="show-seed">Seeding </span>
+                    <code>
+                      <!-- Informative link to the torrent file -->
+                      <a id="torrentLink" href="https://webtorrent.io/torrents/sintel.torrent">sintel.torrent</a>
+                    </code>
+                    <span class="show-leech"> from </span>
+                    <span class="show-seed"> to </span>
+                    <code id="numPeers">0 peers</code>.
+                  </div>
+                  <div>
+                    <code id="downloaded"></code>
+                    of <code id="total"></code>
+                    — <span id="remaining"></span><br/>
+                    &#x2198;<code id="downloadSpeed">0 b/s</code>
+                    / &#x2197;<code id="uploadSpeed">0 b/s</code>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Moment is used to show a human-readable remaining time -->
+              <script src="http://momentjs.com/downloads/moment.min.js"></script>
+          
+              <script>
+                const torrentId = 'https://webtorrent.io/torrents/sintel.torrent'
+          
+                const client = new WebTorrent()
+          
+                // HTML elements
+                const $body = document.body
+                const $progressBar = document.querySelector('#progressBar')
+                const $numPeers = document.querySelector('#numPeers')
+                const $downloaded = document.querySelector('#downloaded')
+                const $total = document.querySelector('#total')
+                const $remaining = document.querySelector('#remaining')
+                const $uploadSpeed = document.querySelector('#uploadSpeed')
+                const $downloadSpeed = document.querySelector('#downloadSpeed')
+          
+                // Download the torrent
+                client.add(torrentId, function (torrent) {
+          
+                  // Torrents can contain many files. Let's use the .mp4 file
+                  const file = torrent.files.find(function (file) {
+                    return file.name.endsWith('.mp4')
+                  })
+          
+                  // Stream the file in the browser
+                  file.appendTo('#output')
+          
+                  // Trigger statistics refresh
+                  torrent.on('done', onDone)
+                  setInterval(onProgress, 500)
+                  onProgress()
+          
+                  // Statistics
+                  function onProgress () {
+                    // Peers
+                    $numPeers.innerHTML = torrent.numPeers + (torrent.numPeers === 1 ? ' peer' : ' peers')
+          
+                    // Progress
+                    const percent = Math.round(torrent.progress * 100 * 100) / 100
+                    $progressBar.style.width = percent + '%'
+                    $downloaded.innerHTML = prettyBytes(torrent.downloaded)
+                    $total.innerHTML = prettyBytes(torrent.length)
+          
+                    // Remaining time
+                    let remaining
+                    if (torrent.done) {
+                      remaining = 'Done.'
+                    } else {
+                      remaining = moment.duration(torrent.timeRemaining / 1000, 'seconds').humanize()
+                      remaining = remaining[0].toUpperCase() + remaining.substring(1) + ' remaining.'
+                    }
+                    $remaining.innerHTML = remaining
+          
+                    // Speed rates
+                    $downloadSpeed.innerHTML = prettyBytes(torrent.downloadSpeed) + '/s'
+                    $uploadSpeed.innerHTML = prettyBytes(torrent.uploadSpeed) + '/s'
+                  }
+                  function onDone () {
+                    $body.className += ' is-seed'
+                    onProgress()
+                  }
+                })
+          
+                // Human readable bytes util
+                function prettyBytes(num) {
+                  const units = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+                  const neg = num < 0
+                  if (neg) num = -num
+                  if (num < 1) return (neg ? '-' : '') + num + ' B'
+                  const exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1)
+                  const unit = units[exponent]
+                  num = Number((num / Math.pow(1000, exponent)).toFixed(2))
+                  return (neg ? '-' : '') + num + ' ' + unit
+                }
+              </script>
+        </main>
+	</div>
+</BaseLayout>

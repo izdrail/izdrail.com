@@ -1,6 +1,6 @@
 [
   {
-    "title": "Google SEO Checker",
+    "title": "SEO Checker",
     "subtitle": "Get to know now your Google SEO Score and suggestions to improve your Google SEO Score . Be #1 on Google",
     "description": "Discover the best free Google SEO tool for optimizing rankings, including keyword search, SEO audits, Google My Business, Analytics integration, and comprehensive site analysis.",
     "link": "/tools/free-seo-analyzer",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Article Extractor",
-    "subtitle": "Streamline Your Content Workflow with Advanced Text Extraction and NLP",
+    "subtitle": "Free Text Extraction and NLP",
     "description": "Discover the best free article extractor tool for content extraction, summarization, and NLP analysis. Extract text, summarize key points, and leverage advanced natural language processing - all without cost.",
     "link": "/tools/article-extractor",
     "cta": "Try",
@@ -41,11 +41,11 @@
     "hero": "/assets/tools/jobs.svg"
   },
   {
-    "title": "Social Security",
+    "title": "Social Guardian",
     "subtitle": "Free osint tool, Osint online tool, mobile osint, cybersecurity, scan tool",
-    "description": "Community inspired  mobile application design to protect you social life.",
-    "link": "/work/social-security",
-    "cta": "Run Analysis",
+    "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
+    "link": "/work/social-guardian",
+    "cta": "Run investigation",
     "hero": "/assets/tools/osint.svg"
   }
 ]

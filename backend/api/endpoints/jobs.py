@@ -32,11 +32,8 @@ async def root(jobSearch: JobsSearch):
         json_data = jobs.to_json(orient="records", date_format="iso", double_precision=10, force_ascii=False,
                                  date_unit="ms", default_handler=None)
 
-        # Parse JSON data to Python dictionary
-        python_dict = json.loads(json_data)
-
         return {
-            "data": python_dict
+            "data":  json.loads(json_data)
         }
     except ValueError as e:
         # Handle ValueError (e.g., non-compliant float values)

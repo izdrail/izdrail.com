@@ -1,9 +1,9 @@
 {
-  "name": "izdrail-frontend",
+  "name": "izdrail-com",
   "type": "commonjs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host 0.0.0.0 --port 12000",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

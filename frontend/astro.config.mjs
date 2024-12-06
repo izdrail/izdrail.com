@@ -11,7 +11,7 @@ config.pwa = {
   includeAssets: ['assets/logo.svg'],
   registerType: 'autoUpdate',
   manifest: {
-    name: 'Activist Coder',
+    name: 'Developer',
     short_name: 'izdrail',
     theme_color: '#333',
     icons: [

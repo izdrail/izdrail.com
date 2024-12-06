@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend.izdrail.com:
+    build: .
+    image: izdrail/backend.izdrail.com:latest
+    container_name: backend.izdrail.com
+    restart: always
+    ports:
+      - "8003:8003"
+
+    volumes:
+      - type: bind
+        source: .
+        target: /app/

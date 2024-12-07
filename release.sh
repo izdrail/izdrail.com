@@ -8,6 +8,6 @@ version="0.$current_week"
 
 echo "Creating and pushing tag: $version"
 
-#git tag -a $version -m "Release $version"
+git tag -a $version -m "Release $version"
 
-#git push origin $version
+git push origin $version

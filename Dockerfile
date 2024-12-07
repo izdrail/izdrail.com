@@ -6,7 +6,7 @@ LABEL maintainer="Stefan Bogdanel <stefan@izdrail.com>"
 #ENV STUFF
 ARG JAVA_VERSION=17
 
-ARG NODEJS_VERSION=18.16.0
+ARG NODEJS_VERSION=18
 # See https://developer.android.com/studio/index.html#command-tools
 ARG ANDROID_SDK_VERSION=11076708
 # See https://developer.android.com/tools/releases/build-tools
@@ -45,6 +45,7 @@ COPY frontend /home/frontend/
 COPY frontend/package.json /home/frontend/package.json
 WORKDIR /home/frontend/
 RUN npm install
+RUN npm run build
 
 
 # General packages

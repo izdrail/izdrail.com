@@ -17,19 +17,15 @@ from api.endpoints import nlp as nlp_endpoint
 from api.endpoints import security
 
 app = FastAPI(
-    title="Backend API",
+    title="Backend for izdrail.com",
     description="This is a collection of endpoints that powers izdrail.com",
-    version="0.0.6",
-    terms_of_service="https://izdrail.com/terms/",
+    version="0.4.9",
+    terms_of_service="https://izdrail.com/",
 
     contact={
         "name": "Stefan",
         "url": "https://izdrail.com/",
         "email": "stefan@izdrail.com",
-    },
-    license_info={
-        "name": "Apache 2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
     }
 )
 
@@ -59,7 +55,7 @@ app.include_router(security.router)
 
 @app.get("/")
 async def root():
-    return {"data": "You can try the latest API endpoint here -> https://backend.izdrail.com/docsx"}
+    return {"data": "You can try the latest API endpoint here -> https://backend.izdrail.com/docs"}
 
 # This line is removed as it was causing the issue
 # loop = asyncio.get_event_loop()

@@ -1,12 +1,12 @@
 # Base image
-FROM python:3.11-slim
+FROM python:3.11
 
 LABEL maintainer="Stefan Bogdanel <stefan@izdrail.com>"
 
 #ENV STUFF
 ARG JAVA_VERSION=17
 
-ARG NODEJS_VERSION=20
+ARG NODEJS_VERSION=18.16.0
 # See https://developer.android.com/studio/index.html#command-tools
 ARG ANDROID_SDK_VERSION=11076708
 # See https://developer.android.com/tools/releases/build-tools
@@ -25,6 +25,28 @@ ENV LANG=en_GB.UTF-8
 
 ## Start the logic of ionic 
 RUN apt-get update -q
+
+RUN apt-get purge -qy \
+    cmdtest
+
+RUN apt-get install -qy \
+    apt-utils \
+    locales \
+    gnupg2 \
+    build-essential \
+    curl \
+    nodejs \
+    npm 
+
+
+# FRONTEND - TODO: Make this work
+
+COPY frontend /home/frontend/
+COPY frontend/package.json /home/frontend/package.json
+WORKDIR /home/frontend/
+RUN npm install
+
+
 # General packages
 RUN apt-get install -qy \
     apt-utils \
@@ -34,6 +56,7 @@ RUN apt-get install -qy \
     curl \
     nodejs \
     npm \
+    yarn \
     mlocate \
     net-tools \
     software-properties-common \
@@ -47,15 +70,15 @@ RUN apt-get install -qy \
     openjdk-${JAVA_VERSION}-jdk
 
 
-# Set locale
-RUN locale-gen en_US.UTF-8 && update-locale
 
-# Install Gradle
-ENV GRADLE_HOME=/opt/gradle
-RUN mkdir $GRADLE_HOME \
-    && curl -sL https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip -o gradle-${GRADLE_VERSION}-bin.zip \
-    && unzip -d $GRADLE_HOME gradle-${GRADLE_VERSION}-bin.zip
-ENV PATH=$PATH:/opt/gradle/gradle-${GRADLE_VERSION}/bin
+
+
+
+
+
+RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash - \
+    && apt-get update -q && apt-get install -qy nodejs
+
 
 # Install pip packages and supervisord
 RUN pip install --no-cache-dir --upgrade pip \
@@ -63,14 +86,11 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 # Install Lighthouse globally
 RUN npm install -g lighthouse
+#RUN curl -sSL install.astronomer.io | bash -s
 
 
-# FRONTEND - TODO: Make this work
 
-COPY frontend /home/frontend/
-COPY frontend/package.json /home/frontend/package.json
-WORKDIR /home/frontend/
-RUN npm install --legacy-peer-deps
+
 
 #Now copy to 
 

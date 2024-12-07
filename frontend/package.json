@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0 --port 12000",
     "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0 --port 12000",
-    "astro": "astro"
+    "build": "astro build --watch",
+    "preview": "astro preview --host 0.0.0.0 --port 12000 --watch",
+    "astro": "astro",
+    "vite": "vite watch --host",
+    "build-astro": "astro build --watch --no-source-maps"
   },
   "dependencies": {
     "@astrojs/renderer-react": "^0.5.0",
@@ -27,9 +29,11 @@
     "uuid": "^9.0.1",
     "vue": "^3.3.8",
     "vue-chart-3": "^3.1.8",
-    "vue3-plotly": "^0.0.7"
+    "vue3-plotly": "^0.0.7",
+    "@vite-pwa/astro": "^0.4.3",
+    "vite": "^5.4.11"
   },
   "devDependencies": {
-    "@vite-pwa/astro": "^0.4.3"
+  
   }
 }

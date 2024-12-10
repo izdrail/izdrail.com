@@ -94,7 +94,8 @@ async def root(cache: TTLCache = Depends(lambda: trending_terms_cache)):
     cursor.execute('''
         SELECT keyword, appearances, created_at, updated_at 
         FROM keywords 
-        ORDER BY updated_at DESC,appearances DESC ;
+        WHERE appearances > 5
+        ORDER BY appearances DESC, created_at DESC;
     ''')
     keyword_info = cursor.fetchall()
     # Prepare response with keywords, their appearances, created_at, and updated_at

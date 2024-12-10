@@ -3,7 +3,7 @@
   "type": "commonjs",
   "version": "0.4.9",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 12000",
+    "dev": "astro dev --host 0.0.0.0 --port 12000 --watch",
     "start": "astro dev",
     "build": "astro build --watch",
     "preview": "astro preview --host 0.0.0.0 --port 12000 --watch",

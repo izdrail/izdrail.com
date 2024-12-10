@@ -5,11 +5,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
-import BookPreview from "../components/BookPreview.astro";
+import CheatSheet from '../components/CheatSheet.astro';
 
-const cheatsheets = (await getCollection('cheatsheets')).sort(
-	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
+const cheatsheets = (await getCollection('cheatsheets'));
 ---
 <BaseLayout
 	title="Cheatsheets"
@@ -24,7 +22,7 @@ const cheatsheets = (await getCollection('cheatsheets')).sort(
 			<Grid variant="offset">
 				{
 					cheatsheets.map((book) => (
-						<BookPreview project={book} />
+						<CheatSheet project={book} />
 					))
 				}
 			</Grid>

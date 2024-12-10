@@ -1,0 +1,20 @@
+---
+import type {CollectionEntry} from 'astro:content';
+interface Props {
+    project: CollectionEntry<'cheatsheets'>;
+}
+
+const { data, slug } = Astro.props.project;
+---
+
+
+<div class="lg:mx-6">
+    <h1 title={data.title} class="text-white-800">
+        <a href={`/cheatsheets/${slug}`} class="text-xl font-semibold text-white-800 hover:underline dark:text-white" title={data.title}>
+            {data.title}
+        </a>
+    </h1>
+    <p class="text-3xl text-white-500 dark:text-gray-400">
+        {data.description}
+    </p>
+</div>

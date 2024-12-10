@@ -23,6 +23,25 @@
         </div>
       </div>
     </div>
+      <!-- THE Errors!-->
+      <div class="w-full max-w-sm mx-auto mt-6">
+        <div v-if="display_errors" class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+              <div class="flex items-center justify-center w-12 bg-red-500">
+                  <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z" />
+                  </svg>
+              </div>
+
+              <div class="px-4 py-2 -mx-3">
+                  <div class="mx-3">
+                      <span class="font-semibold text-red-500 dark:text-red-400">Error</span>
+                      <p class="text-sm text-gray-600 dark:text-gray-200">
+                          {{ errors }}
+                      </p>
+                  </div>
+              </div>
+          </div>
+    </div>
 
     <div v-if="loading" class="loading">
       <svg
@@ -147,6 +166,8 @@ export default {
       title: 'SEO Analyzer',
       subtitle: 'Get a more detail SEO report for your website by contacting me directly or setup a meeting.',
       loading: false,
+      display_errors: false,
+      errors: '',
       link: '',
       workflow: 'https://automation.lzomedia.com/api/v1/webhooks/agpLuXOtezPpAxykB97Dj',
       showWorkflow: false,
@@ -161,29 +182,32 @@ export default {
   },
   methods: {
     extractArticle() {
-      // Show loading icon
+
       this.loading = true;
       // Make API call
-      fetch(`https://backend.izdrail.com/nlp/article`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          link: this.link,
-        }),
-      })
+          fetch(`/backend/nlp/article`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              link: this.link,
+            }),
+          })
           .then(response => response.json())
           .then(response => {
             this.article.title = response.data.title;
             this.article.markdown = response.data.markdown;
             this.loading = false;
+            this.display_errors=false;
           })
           .catch(error => {
             console.log(error);
             this.loading = false;
             //todo show error
-          });
+            this.display_errors=true;
+            this.errors = (error);
+          })
     },
 
   },

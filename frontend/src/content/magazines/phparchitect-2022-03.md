@@ -1,7 +1,8 @@
 ---
-title: Arhitect March 2022
+title: Queues with Horizon The Workshop
 publishDate: 2023-04-19 00:00:00
-description: World Backup Day March 2022 - Hack Your Home With a Pi
+description: Understanding Supply Improving the Developer Chain Security Experience
+
 image: /assets/services/security.svg
 tags:
   - PHP

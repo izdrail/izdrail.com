@@ -1,7 +1,7 @@
 ---
 title: Testing The Core
 publishDate: 2023-04-19 00:00:00
-description: Testing The Core - the workshop for the PHP Core
+description: Accept Testing with Making Some Change PSR 12 - Extending Codeception Coding Style Standards
 image: /assets/services/security.svg
 tags:
   - Cybersecurity

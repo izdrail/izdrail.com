@@ -7,8 +7,56 @@ interface Props {
 const { data, slug } = Astro.props.project;
 ---
 
+<div
+data-testid="flowbite-card"
+class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 flex-col"
+>
+<div
+  class="flex h-full flex-col justify-center gap-4 p-6"
+  >
+  <div
+    class="flex items-center justify-between text-gray-500"
+    >
+    <span
+      class="flex h-fit items-center gap-1 font-semibold bg-blue-100 text-blue-800 dark:bg-blue-200 dark:text-blue-800 group-hover:bg-blue-200 dark:group-hover:bg-blue-300 text-xs rounded px-2 py-0.5"
+      data-testid="flowbite-badge"
+      ><span
+        ><svg
+          class="mr-1 h-3 w-3"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+            clip-rule="evenodd"></path><path
+            d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"
+          ></path></svg
+        >Article</span
+      ></span
+    ><span class="text-sm">14 days ago</span>
+  </div><h2
+    class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+    <a href="#">Our first project with React</a>
+  </h2><p class="mb-2 text-gray-500 dark:text-gray-400">
+    {{data.description}}
+  </p><div
+    class="flex items-center justify-between"
+    >
+    <div class="flex items-center space-x-4" >
+      <img
+        alt="Bonnie Green avatar"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+        class="h-7 w-7 rounded-full"
+      /><span class="font-medium dark:text-white"
+        >Bonnie Green</span>
+    </div>
 
+  </div>
+</div>
+</div>
 <div class="lg:mx-6">
+    {data.img && <img src={data.img} alt={data.title || ''} />}
     <h1 title={data.title} class="text-white-800">
         <a href={`/books/${slug}`} class="text-xl font-semibold text-white-800 hover:underline dark:text-white" title={data.title}>
             {data.title}
@@ -17,4 +65,5 @@ const { data, slug } = Astro.props.project;
     <p class="text-3xl text-white-500 dark:text-gray-400">
         {data.description}
     </p>
+
 </div>

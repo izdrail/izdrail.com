@@ -7,8 +7,6 @@ description: Discover the truth online with Sherlock, a powerful open-source int
 tags:
   - O.S.I.N.T
   - Cyber Intelligence
-  - OSINT
-  - Open Source Intelligence
   - Digital Forensics
   - Orange Hackathon
 ---

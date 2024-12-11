@@ -1,5 +1,5 @@
 ---
-title: Arhitect Fenruary 2022
+title: Education Station - DDD Avenue
 publishDate: 2022-02-01 00:00:00
 description: My thoughts on the Parallelize Your Code workshop
 image: /assets/services/security.svg

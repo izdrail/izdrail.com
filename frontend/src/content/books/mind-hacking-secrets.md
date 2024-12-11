@@ -2,40 +2,16 @@
 title: Mind Hacking Secrets
 author: <Stefan Bogdan>
 date: 2024-12-02 11:00:00 +0800 
-categories: [Books, Mind Tricks]
-tags: [Books, Mind Tricks, Development, Learn]
-pin: false
-description: A article about how to hack your mind to be more productive and successful.
-img: ""
+description: Mind Hacking Secrets - A guide to Discover the secrets of mind hacking and how to avoid them.
+img: /assets/logo.svg
+tags:
+    - mindhacking
+    - Improve your brain
 -----
 
-#### Introduction
 
-Chapter 1: Our Sabotaging Ways
+##  Life can feel like a never-ending rat race. 
 
-Chapter 1: Anxious Minds and the Devil in details
-
-Chapter 2: The Weapons of Self-sabotage
-
-Imposter Syndrome Splitting The Mind Reader Over-generalizing The Negative Bias Unrealistic Expectations People Pleasing Tardiness
-
-Chapter 3: Are Our Wires Crossed?
-
-Set Ways of Sabotage Rewiring Our Brains
-
-Chapter 4: Weapons Against Self-sabotaging
-
-Chapter 5: Diet and Sport
-
-Chapter 6: What Is Success Anyway?
-
-Chapter 7: The Sabotage of Success: Failure, Friend or Foe? Conclusion
-
------
-
-# Introduction
-
-#### Life can feel like a never-ending rat race. 
 We’re all rushing around trying to fit everything into the limited amount of time we have here. 
 Some of us know exactly what we want, but don’t know how to get it. 
 We feel stuck or limited by our environment or opportunities. 
@@ -71,11 +47,10 @@ You will begin to raise important questions about what you want to
 achieve in your life by wondering what success is and how it can mean different things to different people. We will discuss our relationship with failure and question whether fear is really a bad thing that should be avoided in our lives, or if it is a necessary part of life that helps us shape our goals and teaches us about ourselves and the world around us. By the end of the book, you will have the knowledge, skills, and tools to be able to take back control of your thoughts, train your brain and gain back your focus. By doing this, you can take the necessary steps to live a happy and successful life on your own terms.
 
 
------
 
-# Chapter 1: Our Sabotaging Ways
+## Our Sabotaging Ways
 
-#### The first thing you need to accept is that self-sabotage is more common in your life than you may even realize. In the race of life, most of us are running with blinders on. We don’t stop and take the time to think about what we’re actually doing in the present moment. We don’t take inventory of our mental and physical states, we don’t always question if we are doing the right thing, and we also don’t recognize the ways in which we could be harming ourselves. If you do stop and take note, you may begin to see that you have unhealthy relationships, whether they are in your personal life or professional life, that you’re stuck in a rut and you aren’t achieving any of your goals, or that you keep finding yourself repeating the same mistakes.
+The first thing you need to accept is that self-sabotage is more common in your life than you may even realize. In the race of life, most of us are running with blinders on. We don’t stop and take the time to think about what we’re actually doing in the present moment. We don’t take inventory of our mental and physical states, we don’t always question if we are doing the right thing, and we also don’t recognize the ways in which we could be harming ourselves. If you do stop and take note, you may begin to see that you have unhealthy relationships, whether they are in your personal life or professional life, that you’re stuck in a rut and you aren’t achieving any of your goals, or that you keep finding yourself repeating the same mistakes.
 
 This is the evidence you need to find out that you have been self sabotaging yourself. It starts with self-sabotaging thoughts which lead to sabotaging behaviors, such as procrastination, avoidance, and causing unnecessary conflict in your life. In order to learn how to stop these harmful thoughts and behaviors, you first need to gain a better understanding of the complexity of your mind. Your brain is an amazing organ, capable of achieving much more than you allow it to. Without an understanding of how it works, you are missing vital pieces of information that could help you learn how to control your thinking and your behavior.
 
@@ -88,12 +63,9 @@ quite ready to look at emotionally, we tend to bury it in our unconscious mind t
 On the other hand, if we fight this impulse to turn a blind eye to our
 unconscious mind, and instead stop and take the time to unpack the feelings and thoughts that live there, we can learn a lot about ourselves. We can begin to understand ourselves better, gain knowledge about why we think the way we do and how our thoughts - unconscious or conscious - can have an impact on our behavior. Having this kind of knowledge about yourself will help you change and control your own thoughts and behavior better. You will be able to get to the root of what is causing you to sabotage yourself, and you can influence your behavior in more positive ways that help you achieve success rather than hinder it. It’s quite similar to the movie, Inception, except the aim is to be awake while you’re delving into your subconscious. The next step is knowing what to look for once you’ve successfully incepted your mind. To do this, you will need to understand what causes sabotaging thoughts.
 
+## The Devil Is in the Negativity
 
------
-
-# The Devil Is in the Negativity
-
-#### One of the biggest contributors to self-sabotaging thoughts is negativity. It is the fuel that drives self-sabotage and stops us from reaching our full potential. It pollutes our minds with toxic thoughts that distort reality and cloud our judgment. Self-doubt, harsh self-criticisms, and self-chastising thoughts are examples of the kinds of negative thinking we’re talking about. It makes us feel anxious, keeps us in our comfort zone, and stops us from taking risks and going for what we want in life.
+One of the biggest contributors to self-sabotaging thoughts is negativity. It is the fuel that drives self-sabotage and stops us from reaching our full potential. It pollutes our minds with toxic thoughts that distort reality and cloud our judgment. Self-doubt, harsh self-criticisms, and self-chastising thoughts are examples of the kinds of negative thinking we’re talking about. It makes us feel anxious, keeps us in our comfort zone, and stops us from taking risks and going for what we want in life.
 You could think that you aren’t smart enough to go to university so you
 don’t bother to apply and your dreams of becoming a lawyer go out the window. You could be overly critical of yourself, criticizing every little detail of your appearance while you get ready to leave the house, shattering your confidence. You could be way too hard on yourself, picking apart your failures and mistakes rather than picking yourself up and learning from them. All those times you berated yourself or thought you were a failure every time you made a mistake, you were losing yourself in unnecessary negative thoughts. This negative part of your mind tells you: you aren't good enough, you should just give up; and when you listen to and believe these thoughts, it squishes your confidence. It becomes harmful to your self-esteem and your sense of self-worth. This can lead to depression, anger, and resentment towards yourself and the world. It affects your behavior and causes you to act in self-sabotaging ways that stop you from progressing in life as you should.
 A lot of our negative thoughts come from our constant need to compare
@@ -118,11 +90,9 @@ has an unhealthy side to it. Unfortunately, through this process, we also develo
 Unfortunately, as adults, we continue to do this, even though you are no
 longer a child or adolescent learning about the world. Surely, by now, you should know who you are and what you want out of life well enough to just focus on your own journey and work hard at making your goals a reality. Surely, this is all you need to be happy and successful without a care in the world. Sadly this is not the case. The very thing that helped shape you now becomes the enemy that works against you and actually stops you from achieving your goals. To make matters worse, this process of comparison is so deeply ingrained at this point that it has now become an unconscious process in our brains that can, if left unchecked, cause a lot of struggle and turmoil in our lives. When someone has something you don't have or they achieve something you want, you can’t help but wonder why it wasn’t you. Perhaps there’s something wrong with you. We’ve all been in this position, perhaps someone else got a promotion at work over you, even though you feel you worked just as hard or that you are just as capable. You begin to take it personally, and you then begin to compare yourself to your colleague who got the promotion.
 
------
+## Our Anxious Minds...
 
-# Our Anxious Minds...
-
-#### Anxiety can also be a big contributing factor to having self-sabotaging thoughts and acting on self-sabotaging behavior. When we feel anxious, we begin to behave in avoidant ways, as we try to get away from the things and people that cause us anxiety. Anxiety seems to be such a useless emotion, and it begs the question of why we experience it in the first place. Especially if it causes so many unnecessary problems in our lives. However, although anxiety may be unpleasant to feel and it can have negative effects on us, it does serve a purpose in our lives. We feel anxious because it’s our brain's way of protecting us from danger. It relates back to a process in the brain known as fight or flight. Before we developed our society and the technology that we have today, we had a lot more danger around us that we needed to be anxious about. The flight or fight response in our brains is a process that is meant to automatically protect us from perceived danger.
+Anxiety can also be a big contributing factor to having self-sabotaging thoughts and acting on self-sabotaging behavior. When we feel anxious, we begin to behave in avoidant ways, as we try to get away from the things and people that cause us anxiety. Anxiety seems to be such a useless emotion, and it begs the question of why we experience it in the first place. Especially if it causes so many unnecessary problems in our lives. However, although anxiety may be unpleasant to feel and it can have negative effects on us, it does serve a purpose in our lives. We feel anxious because it’s our brain's way of protecting us from danger. It relates back to a process in the brain known as fight or flight. Before we developed our society and the technology that we have today, we had a lot more danger around us that we needed to be anxious about. The flight or fight response in our brains is a process that is meant to automatically protect us from perceived danger.
 If a predator is lurking in the bushes waiting to pounce and we happen to
 notice it in time, then our brains will take over to ensure we get out of there as soon as possible. The best way to get away from danger is to run away and avoid it at all costs, and we need this alarm system in place in our brains to ensure that we do this. If we didn’t have this process in our brains, then we would freeze and leave ourselves vulnerable to the danger we are faced with. We would also be a lot more reckless in our daily lives. If we didn’t feel anxious standing on the roof of a tall building while we looked down at the ground below us, then we would be much more inclined to hang over the edge to see what happened. Anxiety also has a much more practical purpose in our daily lives today. It keeps us moving. The anxiety you feel to meet your deadlines at work or at university pushes you to finish your work on time. If we didn’t feel this pressure and anxiety, we would most likely become indifferent and not get anything done at all.
 Anxiety becomes problematic in our lives when we allow it to take over
@@ -137,30 +107,27 @@ colleagues were really nice people and he had a lot in common with. He began to 
 
 
 
-# Chapter 2: The Weapons of Self-sabotage
+## The Weapons of Self-sabotage
 
-#### The next step in understanding how we sabotage ourselves is learning
+The next step in understanding how we sabotage ourselves is learning
 how to recognize some of the common self-sabotaging thoughts that manifest in our minds. By being able to recognize and then gain a better understanding of them and where they stem from, you will begin to be able to see how your thinking has become clouded and distorted. You can then begin to develop ways to overcome them by gaining a better perspective on things. The self- sabotaging thoughts will begin to crumble and fall apart the more you inspect and question them. Your self-sabotaging thoughts are like a virus that can’t survive in the open air.
 It is important to note that there are many self-sabotaging thoughts and
 that most of them hold some similarities to one another. This is because all of these thoughts come from the same place. They come from our negativity and our anxiety, which I will go into more detail on later in this book. For now, I have selected a few examples of self-sabotaging thoughts that will begin to highlight how to recognize them. Going through a comprehensive list of unhealthy thoughts is beyond the scope of this book. By understanding the ones I outline, you will begin to see a pattern in this thinking, and you will then be able to start developing the ability to identify more on your own.
 
 
------
+## Imposter Syndrome
 
-# Imposter Syndrome
+Have you ever felt like your accomplishments were not your own? Like at any moment someone is going to turn around, look you in the eye and say, “Hey buster, I’m on to you.” Then you were experiencing what is known as imposter syndrome, and you aren’t alone in having these feelings. Some of the most successful and famous people in the world have admitted to feeling it, despite everything in their lives standing testament to those feelings not being valid at all. It happens because we all experience the world through our own subjective eyes. We exist in our minds and through our own little universe we see all of our shortcomings and embarrassments, whether we want to acknowledge them or not, they exist.
 
-#### Have you ever felt like your accomplishments were not your own? Like at any moment someone is going to turn around, look you in the eye and say, “Hey buster, I’m on to you.” Then you were experiencing what is known as imposter syndrome, and you aren’t alone in having these feelings. Some of the most successful and famous people in the world have admitted to feeling it, despite everything in their lives standing testament to those feelings not being valid at all. It happens because we all experience the world through our own subjective eyes. We exist in our minds and through our own little universe we see all of our shortcomings and embarrassments, whether we want to acknowledge them or not, they exist.
 We don’t have the same experience as others around us, because for the
 most part what we see of other people are polished, well thought out versions of them. The version of themselves that they allow the rest of the world to see. We don’t see the same embarrassments and shortcomings we see in ourselves, and because of this, we automatically assume they don’t have any. How does this relate to being successful you ask? Well, when we accomplish things we feel imposter syndrome because we get it in our heads that we’re flawed and not as accomplished as other people who seem so much more put together than we are.
+
 Imagine it’s your dream to be an actor, and you’ve worked really hard to
 be one. You’ve spent countless hours reading scripts and in acting classes or performing in school plays. You idolize famous actors in movies, and you envision yourself in their place one day. Then, when you finally get your big break and you land that part you know will catapult your acting career, you begin to feel uneasy. You feel out of place on set as you rehearse your lines, and you feel like a sitting duck getting your makeup up done while you get into character. You don’t see yourself as you would see any other actor you idealized who has sat in your place, because to you, you aren’t anything special and they seem so much more accomplished than you are. However, it may come as a surprise to realize that it’s more than likely countless other brilliant actors who you look up to have felt exactly the same in your place. Even if you don’t see them, everybody has flaws and doubts about themselves. We’re all human and we’re all struggling to come to grips with ourselves and our accomplishments.
 
+## Splitting
 
------
-
-# Splitting
-
-#### Also known as black and white thinking, splitting is a rigid and binary way of looking at the world. Everything is either good or bad and you tend not to recognize or even understand anything in between these two extremes. This way of thinking oversimplifies your understanding of people and the world around you, and it can stop you from experiencing things fully. The world is a colorful place, with many nuances and unique occurrences and experiences. Having a richer, more full-bodied understanding of the world helps you get so much more out of everything. We tend to exercise splitting because the world can be very overwhelming and confusing. Simplifying it into binary terms is a way to make sense of it all. However, if that is the only way you are able to make sense of the world, you will begin to find that this kind of thinking will eventually affect your self-image, your relationships, and it will inevitably hold you back from achieving success.
+Also known as black and white thinking, splitting is a rigid and binary way of looking at the world. Everything is either good or bad and you tend not to recognize or even understand anything in between these two extremes. This way of thinking oversimplifies your understanding of people and the world around you, and it can stop you from experiencing things fully. The world is a colorful place, with many nuances and unique occurrences and experiences. Having a richer, more full-bodied understanding of the world helps you get so much more out of everything. We tend to exercise splitting because the world can be very overwhelming and confusing. Simplifying it into binary terms is a way to make sense of it all. However, if that is the only way you are able to make sense of the world, you will begin to find that this kind of thinking will eventually affect your self-image, your relationships, and it will inevitably hold you back from achieving success.
 Your self-image becomes affected because you end up being way too
 hard on yourself. You view yourself as either a good or a bad person. You limit your autonomy by doing this because you begin to hold yourself to impossibly high standards. If you do one bad thing you’re a terrible human being. You could end up becoming a people pleaser, unable to say no to things even if they cause you to become inconvenienced. You become afraid to let anyone down. If you promised a friend to go for dinner, but on the planned night you feel exhausted and not up to going at all, you’ll compromise yourself and go anyway because you don't want to let them down. You split what is happening into two categories, either you go and fulfill your promise, being the good friend that you are, or you cancel and let your friend down, which means you are then a bad friend and also a bad person. This is an unfair evaluation of the situation and it causes you unnecessary stress as you begin to try and live up to your own unrealistic expectations of yourself.
 It also affects your relationships in a similar way, because you also tend
@@ -170,9 +137,8 @@ This kind of thinking also hinders your success because splitting causes
 you to unrealistically strive for perfection. Failure of any kind and in any form is simply unacceptable. If you fail in even the smallest way, then you are a failure. There's no room for mistakes or for learning from your mistakes and growing from them. This can lead to countless unfinished projects or abandoned pursuits as you decide to give up rather than carry on and try your best. If it’s not perfect then it’s not worth it.
 
 
-# The Mind Reader
-
-#### We all do this quite a lot. We tend to think that we know what other people are thinking, or that we somehow know when someone is judging or criticizing us. We even go so far as to assume what their judgments or criticism are. To a certain extent, we all have the ability to gauge what other people are thinking through reading body language, facial expressions, reading social cues, and through interpreting the subtext in what people say. If we didn’t have this ability we would all be stumbling around in the dark every time we tried to socialize with other people.
+## The Mind Reader
+ We all do this quite a lot. We tend to think that we know what other people are thinking, or that we somehow know when someone is judging or criticizing us. We even go so far as to assume what their judgments or criticism are. To a certain extent, we all have the ability to gauge what other people are thinking through reading body language, facial expressions, reading social cues, and through interpreting the subtext in what people say. If we didn’t have this ability we would all be stumbling around in the dark every time we tried to socialize with other people.
 What we don’t realize is that this ability is very limited, and it only ever
 really works out in your favor when used correctly in a conversation with others. Relying too much on assuming you know what others are thinking can lead to some really embarrassing and awkward misunderstandings in social situations. It can also lead to you isolating yourself from people and not getting to know them because of your misconceptions about them. It’s also a sign that you care too much about what other people think about you, which in itself is quite an unhealthy way of living your life.
 Truthfully, whatever is going on in someone else's head is none of our
@@ -182,29 +148,25 @@ others to have of you are more a reflection of how you are judging yourself than
 say with these feelings clouding your judgment of the situation. You feel like they are talking too much, or that they are trying to take your friend’s attention away from you. You assume they don’t like you and that they are trying to sabotage your relationship with your friend. In actual fact, you’re assuming you know what this person is thinking, and you are highlighting your own insecurities in their actions. You are the one doing the sabotaging in these situations, and you’re stopping yourself from potentially making a new friend.
 
 
-# Over-generalizing
+## Over-generalizing
 
-#### If you’ve ever avoided certain people, situations, or places based on one bad previous experience you’ve had in relation to them, then you probably have the tendency to overgeneralize things. One awkward social interaction with someone tells you that they’re awkward and should be avoided to prevent any further awkward social interactions, or one bad experience at a restaurant means that every experience there will obviously be bad as well. This way of thinking limits you from doing and experiencing a lot of things because it causes you to put unnecessary restrictions in place. You begin to make snap judgments of what you do and don’t like too quickly, without really giving yourself the time to be won over by things.
+If you’ve ever avoided certain people, situations, or places based on one bad previous experience you’ve had in relation to them, then you probably have the tendency to overgeneralize things. One awkward social interaction with someone tells you that they’re awkward and should be avoided to prevent any further awkward social interactions, or one bad experience at a restaurant means that every experience there will obviously be bad as well. This way of thinking limits you from doing and experiencing a lot of things because it causes you to put unnecessary restrictions in place. You begin to make snap judgments of what you do and don’t like too quickly, without really giving yourself the time to be won over by things.
 This happened to me once when I tried to introduce a friend to live blues
 music. He loved to go and watch live music, and I thought he would love this little blues bar I enjoyed going to on some nights when I wanted a good night out. However, he didn’t share my enthusiasm since he had a bad experience going out with me once when I insisted that he join me in trying out a live music event that I had no one else to accompany me to. He ended up coming with and it turned out to be an awful night; the music was terrible, the venue was too crowded, and we had an all-around terrible time.
 Nevertheless, I was determined to make up for that experience, and I just
 knew this blues bar would be right up his alley. After much resistance and grumbling along the way, I managed to get him to go out with me one night, but I may as well not have even bothered. He had already decided that he wasn’t going to have a good night and nothing that happened that night was going to change that. He can be quite stubborn and his stubbornness held firm as he judged the night based on his past experience going out with me that one time. He wasn’t impressed with the venue, they didn’t serve his preferred beer, and the music was mediocre at best. To this day he even insists that he doesn’t like live blues music at all. I have long since stopped bothering to try and change his mind.
 
 
------
 
-# The Negative Bias
-
-#### Research shows that out of all the experiences you have in a day, negative, positive, and neutral, you will pick at and focus on the negatives the most. We will skip over all the good things that happened to us that day and fill our thoughts and feelings with the bad. This is known as negative bias. Our brains do this because we tend to learn more from the negative things that happen to us, rather than the positive ones. We learn more about how to behave through what we ought not to do rather than what we ought to do. Those times when you were told off by your mom for being rude to your grandfather by not giving him a hug stood out more than all the times your mother praised you for doing the right thing.
+## The Negative Bias
+ Research shows that out of all the experiences you have in a day, negative, positive, and neutral, you will pick at and focus on the negatives the most. We will skip over all the good things that happened to us that day and fill our thoughts and feelings with the bad. This is known as negative bias. Our brains do this because we tend to learn more from the negative things that happen to us, rather than the positive ones. We learn more about how to behave through what we ought not to do rather than what we ought to do. Those times when you were told off by your mom for being rude to your grandfather by not giving him a hug stood out more than all the times your mother praised you for doing the right thing.
 We also tend to use a negative bias in relation to our accomplishments.
 When we achieve something great, instead of enjoying our success and allowing ourselves to feel good about ourselves, we tend to look for the things we did wrong or could have improved on. We criticize ourselves and try to pick out the errors. If you ever stop to really think about how you do this, you may come to the realization that this is an absolutely absurd way to respond to the good things that happen to you. If you’re never able to enjoy your success and praise yourself for your accomplishments, then what are you working so hard for? You’re chasing something you don’t even know how to get. You will never be satisfied with what you achieve in your life because nothing will ever be good enough for you. You will always put yourself down, no matter how far up the success ladder you manage to climb. You’ll reach every new stage in your life, stop and criticize yourself, wonder what's next, and continue climbing.
 
 
------
+## Unrealistic Expectations
 
-# Unrealistic Expectations
-
-#### When we are younger, we have a tendency to think that what is going on in our heads has a direct impact on what is happening in the real world. We think that just because we think something, or want something, that it exists in the real world or we will get it without having to do much about it. A child might go to bed and wish for a horse to appear in the garden the next day to play with, and be confused about why there isn’t a horse waiting there in the morning. This is also called magical thinking, and although we are meant to outgrow this, this kind of thinking sometimes follows us into adulthood.
+When we are younger, we have a tendency to think that what is going on in our heads has a direct impact on what is happening in the real world. We think that just because we think something, or want something, that it exists in the real world or we will get it without having to do much about it. A child might go to bed and wish for a horse to appear in the garden the next day to play with, and be confused about why there isn’t a horse waiting there in the morning. This is also called magical thinking, and although we are meant to outgrow this, this kind of thinking sometimes follows us into adulthood.
 Superstitious thinking is an example of this. We could think that a bad
 hair day is a sign of a bad day, and so we go about our day waiting for all the bad things to come our way. The phenomenon known as the placebo effect is another example of how adults practice magical thinking. However, magical thinking can also cause you to self-sabotage because it can lead to you creating unrealistic expectations for things in your head. Expectations of ourselves, of others, and of future events and situations. We then have a tendency to pin our happiness on the eventual fulfillment of these expectations. This can be a dangerous game to play because, in reality, those expectations are not based on anything real and tangible. They are based on our hopes, desires, and ideas about things and situations in our environment. If those expectations are not met, which is quite likely, since things rarely pan out the way we want them to, then our happiness plummets. Since we pin our happiness on future events that we have no way of controlling, there is nothing we can do but feel let down when they don’t go the way we had hoped.
 Imagine you get it in your head that you’re going to get a promotion at
@@ -214,29 +176,22 @@ When we fill our heads with unrealistic expectations, we are living in
 possibilities and future events that may never happen. We are not living in the moment and enjoying what the very real world around us has to offer. Life has many twists and turns; circumstances change, we change, and so should our goals - and actions aimed to achieve those goals. By allowing ourselves to have unrealistic expectations, we are also losing our ability to be adaptable and to be resilient to setbacks that stop us from reaching our goals. We are also letting ourselves off the hook for having to do the hard work necessary to get there.
 
 
------
+## People Pleasing
 
-# People Pleasing
-
-#### If you have a tendency to always say yes to things, even when it’s to your detriment, and you struggle to use the word “no”, as if it doesn’t even exist in your vocabulary, then you are more than likely a people pleaser. Saying yes is so much easier than dealing with the consequences of saying no. After all, you want people to like you, and you don’t want to let them down and give them a reason to not want to be friends with you anymore. This is also a means of avoiding conflict. Rather than standing your ground and deciding what you are and are not willing to do, you are choosing to just go along with what they want. The need to please others in this way comes from a low sense of self-worth. You don’t respect yourself enough to set boundaries in place in your relationship, and because of this, people will most likely not respect you either.
+If you have a tendency to always say yes to things, even when it’s to your detriment, and you struggle to use the word “no”, as if it doesn’t even exist in your vocabulary, then you are more than likely a people pleaser. Saying yes is so much easier than dealing with the consequences of saying no. After all, you want people to like you, and you don’t want to let them down and give them a reason to not want to be friends with you anymore. This is also a means of avoiding conflict. Rather than standing your ground and deciding what you are and are not willing to do, you are choosing to just go along with what they want. The need to please others in this way comes from a low sense of self-worth. You don’t respect yourself enough to set boundaries in place in your relationship, and because of this, people will most likely not respect you either.
 We need boundaries because they speak to the world about how we
 would like to be treated, and they allow you to put in place a set of rules that builds up yourself self-worth. If you don’t set these boundaries in place, then people will end up walking all over you and your relationships will end up suffering because of it. Your constant people-pleasing will also land you in some tricky situations. You may find yourself overtaxing your time and compromising your plans for someone else's, or you may find yourself double booking through promising multiple people a piece of your time that you don’t have to give. You will inevitably end up letting people down anyway, and they will come to think of you as unreliable. On the other hand, you will form much stronger and longer-lasting bonds with people when your relationship with them is based on a foundation of respect. So, know your worth, and learn to respect yourself so that you can teach people how to respect you.
 
 
------
+## Tardiness
 
-# Tardiness
-
-#### We all have that one friend who is constantly late to you everything you invite them to. At first, you put up with it because you like them and having them as a friend far outweighs the fact that they are a bit unreliable. When you make plans with them, you even tell them to be there half an hour to an hour early, so that you don’t end up waiting around for them for too long. This can become tiresome and it can be frustrating, to say the least. Eventually, it leaves a sour taste in your mouth as you begin to think that your tardy friend thinks that their time is more valuable than yours. However, it might be worth knowing that always being late for things is actually another form of self-sabotaging behavior. The reason they are late may not be because, as they would like you to believe, they have poor time management or it’s just a quirk in their personalities. It’s a way for them to cope with anxiety and stress in their daily lives. It could be because of social anxiety, and because of this, they procrastinate getting ready and lose track of time. It can also be a way of shooting themselves in the foot.
+ We all have that one friend who is constantly late to you everything you invite them to. At first, you put up with it because you like them and having them as a friend far outweighs the fact that they are a bit unreliable. When you make plans with them, you even tell them to be there half an hour to an hour early, so that you don’t end up waiting around for them for too long. This can become tiresome and it can be frustrating, to say the least. Eventually, it leaves a sour taste in your mouth as you begin to think that your tardy friend thinks that their time is more valuable than yours. However, it might be worth knowing that always being late for things is actually another form of self-sabotaging behavior. The reason they are late may not be because, as they would like you to believe, they have poor time management or it’s just a quirk in their personalities. It’s a way for them to cope with anxiety and stress in their daily lives. It could be because of social anxiety, and because of this, they procrastinate getting ready and lose track of time. It can also be a way of shooting themselves in the foot.
 Perhaps they are headed to a job interview and their fear of not getting
 the job causes them to self-sabotage by being late. That way, when they don’t get the job, it wasn't their fault. It wasn’t due to them being inadequate or unqualified in some way, and it definitely wasn’t because they are a failure. It was due to them being late because of whatever excuse they use to cover up for their lateness. There’s always an excuse for their tardiness, and it always completely lets them off the hook. Something like, “My car broke down.” or “I couldn’t find the place on my maps, with the address you sent me, I ended up driving around in circles.” This form of self-sabotage may be neatly disguised, but it can stop you from achieving a lot in your life. It will stop you from ever really putting yourself out there and going for what you want. As much as you try to deny it and tell yourself that the reason you aren’t succeeding isn’t your fault, the only person you are fooling is yourself.
 
+## Are Our Wires Crossed?
 
------
-
-# Chapter 3: Are Our Wires Crossed?
-
-#### To fully understand how our negative and anxiety-riddled brains lead to
+To fully understand how our negative and anxiety-riddled brains lead to
 self-sabotaging thoughts and behaviors without us even realizing it, we need to have a better understanding of the science behind how our brains work. Activity happens in the brain through neurons firing along axons that connect the neurons in your brain. This is how communication happens in your brain, and it’s what creates your thinking and your actions. This entire process creates what are called neurological pathways. The more we act out a particular behavior, the more axons and dendrites form in association with that action. This causes a stronger link between the neurons associated with that behavior, and it allows for communication between these neurons to fire faster and father, reinforcing them and making them stronger. The stronger the connection, the more well known and used that neural pathway becomes in your brain. This is how habits are formed, they become automatic behaviors we act on without much thought or effort on our part.
 Think of hiking. When you head off into the wilderness, you know where
 to go because of previous hikers who have used the same trail over and over again. Neurological pathways in the brain are like a well-used hiking trail that clearly marks the way. Your brain will begin to use the well-used neurological pathways by default, without you even noticing. This is why when you learn something new, at first it can seem so unnatural and difficult to grasp. You need to slow everything down so that you can learn it one step at a time and only after grasping how to do everything and spending a considerable amount of time practicing do you begin to gain confidence and feel like you are finally getting the hang of it. Learning how to drive a car is a very good example of this. Flash forward to a year after getting your driver's license and you can’t even remember a time you weren’t driving as you fly down the street with the radio blaring. Once those new neurological pathways related to driving have been established and you gain enough experience driving, they become reinforced and automatic. You no longer even have to think about all the different things you have to do in order to drive, you just do it.
@@ -245,9 +200,9 @@ since it helps us to learn and retain the skills we need to complete tasks and f
  habits and patterns of behavior that can cause you to continuously sabotage your own life without you even noticing.
 
 
-# Set Ways of Sabotage
+## Set Ways of Sabotage
 
-#### When we repeat self-sabotaging thoughts and behaviors throughout our daily lives, we are forming and reinforcing bad neurological pathways in our brains. These become the normal default behaviors that we carry out every day because our brains don’t know any better way of behaving. These thoughts and behaviors are unconscious and automatic, as we carry them out without even realizing or questioning them. Since we aren’t even aware that they are happening, we are powerless to do anything to put a stop to them. We just fall into the same habits and patterns daily, creating a rigid pattern of thinking and behaving, allowing this to sabotage us and stop us from working towards achieving our goals and happiness. We are left at the mercy of our own brains.
+ When we repeat self-sabotaging thoughts and behaviors throughout our daily lives, we are forming and reinforcing bad neurological pathways in our brains. These become the normal default behaviors that we carry out every day because our brains don’t know any better way of behaving. These thoughts and behaviors are unconscious and automatic, as we carry them out without even realizing or questioning them. Since we aren’t even aware that they are happening, we are powerless to do anything to put a stop to them. We just fall into the same habits and patterns daily, creating a rigid pattern of thinking and behaving, allowing this to sabotage us and stop us from working towards achieving our goals and happiness. We are left at the mercy of our own brains.
 Flashing back to my university days, I remember a classmate named
 Sasha who fell into one of these patterns of self-sabotage. She had a very unproductive way of getting on with her coursework. She would become very overwhelmed by the amount of work she had to do, which would cause her quite a bit of anxiety. To make matters worse, she didn’t really enjoy the degree she was in, and this caused her to have quite negative thoughts about the course and the university that went a long way to demotivate her. All of this resulted in her avoiding her course work, she wasn’t really interested in what she was learning and she tended to spend a lot of the time she should have been working on her assignments on procrastinating. Her work would pile up and as her deadlines got closer and closer, she would become increasingly more anxious and stressed out about getting her work done. This leads to more avoidance and procrastination until the absolute last minute, when she would pull all-nighters trying to finish all her work and meet her deadlines.
 Despite her demotivation and her negative opinions about the university,
@@ -256,12 +211,9 @@ she had no desire to fail and waste the time and money she had already put into 
 Sasha’s behavior is only one example of how we sabotage ourselves, but
 there are countless others. The self-sabotaging thoughts mentioned in chapter 2 present themselves differently for everyone experiencing them, depending on their situations and goals. We are hard on ourselves, feed our self-doubt, and we allow this to paralyze us. This makes us afraid to put ourselves out there, and it stops us from reaching our full potential and achieving success. However, what they all have in common is that when we don’t stop these patterns of sabotage, we are doing nothing to help ourselves achieve happiness and success. We are allowing our negativity and anxiety to affect our thinking in self-sabotaging ways that influence our behavior and reinforce the neurological pathways that connect them until they become automatic in our lives.
 
+##  Rewiring Our Brains
 
------
-
-# Rewiring Our Brains
-
-#### Imagine what would happen if instead of allowing this to continue, we started to believe in ourselves. To focus more on the positive rather than the negative, and to start to recognize our successes and give ourselves credit where credit is due. Instead of looking at our mistakes or failures and letting them defeat us, we take them as learning curves that make us better equipped for future success. Be more positive, is that really the answer? Well, no... it’s not really that simple or easy, because as much as people would like you to believe, turning off your negative thoughts is not as easy as flipping a switch and having them disappear. Most people would tell you to, “Keep your chin up!”, or they would optimistically sing, “When life gives you lemons...” and think that they have done their part in helping you overcome your struggles. Unfortunately, life is more complicated than that.
+ Imagine what would happen if instead of allowing this to continue, we started to believe in ourselves. To focus more on the positive rather than the negative, and to start to recognize our successes and give ourselves credit where credit is due. Instead of looking at our mistakes or failures and letting them defeat us, we take them as learning curves that make us better equipped for future success. Be more positive, is that really the answer? Well, no... it’s not really that simple or easy, because as much as people would like you to believe, turning off your negative thoughts is not as easy as flipping a switch and having them disappear. Most people would tell you to, “Keep your chin up!”, or they would optimistically sing, “When life gives you lemons...” and think that they have done their part in helping you overcome your struggles. Unfortunately, life is more complicated than that.
 We tend to look down on negativity, and we try to bury it by promoting
 positivity like it’s your only saving grace in this world. This is because we believe that it is, that it’s our only way to combat our negative thoughts. However, no matter how much we try and how hard we work at being positive, negativity is just a natural process that exists in our thinking, and it’s impossible to stay positive all of the time. Sometimes we just have bad days and we want to yell and kick and scream at everything and everyone. Nothing is going right and no amount of positivity is going to change that.
 Of course, I’m not trying to say that positivity isn’t a good trait to have,

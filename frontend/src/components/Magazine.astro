@@ -10,7 +10,7 @@ const { data, slug } = Astro.props.magazine;
 
 <div class="lg:mx-6">
     <h1 title={data.title} class="text-white-800">
-        <a href={`/magazine/${slug}`} class="text-xl font-semibold text-white-800 hover:underline dark:text-white" title={data.title}>
+        <a href={`/magazines/${slug}`} class="text-xl font-semibold text-white-800 hover:underline dark:text-white" title={data.title}>
             {data.title}
         </a>
     </h1>

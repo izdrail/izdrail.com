@@ -9,7 +9,8 @@
     "preview": "astro preview --host 0.0.0.0 --port 12000 --watch",
     "astro": "astro",
     "vite": "vite watch --host",
-    "build-astro": "astro build --watch --no-source-maps"
+    "build-astro": "astro build --watch --no-source-maps",
+    "vite-preview": "vite preview --host 0.0.0.0 --port 12000 --watch"
   },
   "dependencies": {
     "@astrojs/renderer-react": "^0.5.0",

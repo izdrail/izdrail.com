@@ -1,12 +1,13 @@
 ---
 title: Git Cheatsheet
 description: A searchable, bookmark cheatsheet for Git's CLI commands.
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
+image: assets/logo.svg
+
 tags:
-  - Tools
-  - Git
   - Development
-  - Learn
+  - Cheatsheet
+  - Tools
+  - Git Cheatsheet
 ---
 
 # Git Cheat Sheet
@@ -23,7 +24,7 @@ tags:
 
  Set the email:
 
- $ git config --global user.email "himanshudubey481@gmail.com"
+ $ git config --global user.email "example@gmail.com"
 
  Set the default editor:
 
@@ -59,12 +60,10 @@ tags:
 ###  Git clone
 
 
------
-
 ### Make a local copy of the server repository.
 
 
-### $ git clone <remote Url>
+```$ git clone <remote Url>```
 
 
 ## 3. Local changes

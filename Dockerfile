@@ -6,7 +6,7 @@ LABEL maintainer="Stefan Bogdanel <stefan@izdrail.com>"
 #ENV STUFF
 ARG JAVA_VERSION=17
 
-ARG NODEJS_VERSION=18
+ARG NODEJS_VERSION=19
 # See https://developer.android.com/studio/index.html#command-tools
 ARG ANDROID_SDK_VERSION=11076708
 # See https://developer.android.com/tools/releases/build-tools

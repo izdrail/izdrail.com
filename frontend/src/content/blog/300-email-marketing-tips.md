@@ -2,7 +2,7 @@
 title: 300 Marketing + Sales tips and tricks
 
 description:  Learn how to write effective marketing and sales emails with these 300 tips and tricks.
-img: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Drupal_logo_-_gray.png/640px-Drupal_logo_-_gray.png
+img: /img/marketing-sales-tips-tricks.jpg
 tags:
   - Marketing
   - Email
@@ -12,36 +12,6 @@ tags:
 -----
 
 # 300 EMAIL MARKETING TIPS
-
------
-
-## CONTENTS 
-
-### INTRODUCTION – THE BIG, BOLD PROMISE
-
-SECTION 1 – TIPS TO BRAND YOUR EMAIL LIST
-
-SECTION 2 – TIPS TO CREATE A COMPELLING LEAD MAGNET
-
-SECTION 3 – TIPS TO CAPTURE & CONVERT TRAFFIC TO SUBSCRIBERS
-
-SECTION 4 – TIPS TO CREATE A BRAND-BOOSTING WELCOME EMAIL
-
-SECTION 5 – TIPS TO NURTURE NEW SUBSCRIBERS ON AUTO WITH A WELCOME EMAIL SERIES/NURTURE SEQUENCE
-
-SECTION 6 – TIPS TO FILL YOUR EMAIL EDITORIAL CALENDAR
-
-SECTION 7 – TIPS TO MONETIZE YOUR EMAIL LIST
-
-SECTION 8 – TIPS TO MEASURE YOUR EMAIL PERFORMANCE
-
-SECTION 9 – TIPS TO WRITE EMAILS THAT GET CLICKS AND OPENS
-
-SECTION 10 – TIPS TO CREATE EMAIL SYSTEMS
-
-CONCLUSION + NEXT STEPS
-
------
 
 ## Introduction
 

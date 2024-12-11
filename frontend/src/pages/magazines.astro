@@ -6,8 +6,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 import CheatSheet from '../components/CheatSheet.astro';
+import Magazine from '../components/Magazine.astro';
 
-const cheatsheets = (await getCollection('cheatsheets'));
+const magazines = (await getCollection('magazines'));
 ---
 <BaseLayout
 	title="Magazines"
@@ -21,8 +22,8 @@ const cheatsheets = (await getCollection('cheatsheets'));
 			/>
 			<Grid variant="offset">
 				{
-					cheatsheets.map((book) => (
-						<CheatSheet project={book} />
+					magazines.map((magazine) => (
+						<Magazine magazine={magazine} />
 					))
 				}
 			</Grid>

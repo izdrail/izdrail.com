@@ -16,7 +16,7 @@ const currentPath = Astro.url.pathname;
 
 const {
 	title = 'Senior Software Engineer Essex ',
-    author ='Stefan Bogdan',
+    author ='Stefan Bogdanel',
 	description = ' A software engineer who spends most of my time refining solutions rather than reinventing them available for hire',
 	logo = '/assets/logo.svg',
     remote_logo = 'https://izdrail.com' + currentPath,
@@ -60,10 +60,9 @@ console.log(og_url);
 <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<!--<link-->
-<!--	href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:wght@500;600&display=swap"-->
-<!--	rel="stylesheet"-->
-<!--/>-->
+<link
+	href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:wght@500;600&display=swap"
+	rel="stylesheet" />
 
 
 <script is:inline>
@@ -72,7 +71,7 @@ console.log(og_url);
 		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme');
 		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
 	};
 	const isDark = getThemePreference() === 'dark';
 	document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
@@ -81,7 +80,7 @@ console.log(og_url);
 		// Watch the document element and persist user preference when it changes.
 		const observer = new MutationObserver(() => {
 			const isDark = document.documentElement.classList.contains('theme-dark');
-			localStorage.setItem('theme', isDark ? 'light' : 'dark');
+			localStorage.setItem('theme', isDark ? 'dark' : 'dark');
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}

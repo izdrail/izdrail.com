@@ -52,7 +52,7 @@ export default defineConfig({
   buildOptions: {
     outdir: 'dist',
     emptyOutDir: true,
-    sourcemap: false,
+    sourcemap: true,
     minify: true,
     compressHTML: false,
     minifyCSS: true,
@@ -95,39 +95,4 @@ export default defineConfig({
       transformers: [],
     },
   },
-  vite: {
-    logLevel: 'info',
-    ssr: {
-      noExternal: [
-        '@astrojs/vue',
-        'astro-component-lib',
-      ]
-    },
-    optimizeDeps: {
-      include: [
-        '@kangc/v-md-editor',
-      ],
-    },
-    define: {
-      __DATE__: `'${new Date().toISOString()}'`,
-    },
-    server: {
-      fs: {
-        // Allow serving files from hoisted root node_modules
-        allow: ['../..']
-      },
-      proxy: {
-        "/backend": {
-          target: "http://localhost:12001",
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/backend/, ""),
-        },
-        "/backend/docs": {
-          target: "http://localhost:12001/docs",
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/backend\/docs/, ""),
-        },
-      },
-    },
-  }
-});
+  });

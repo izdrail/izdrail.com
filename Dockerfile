@@ -6,7 +6,7 @@ LABEL maintainer="Stefan Bogdanel <stefan@izdrail.com>"
 #ENV STUFF
 ARG JAVA_VERSION=17
 
-ARG NODEJS_VERSION=18
+ARG NODEJS_VERSION=19
 # See https://developer.android.com/studio/index.html#command-tools
 ARG ANDROID_SDK_VERSION=11076708
 # See https://developer.android.com/tools/releases/build-tools
@@ -71,12 +71,6 @@ RUN apt-get install -qy \
     openjdk-${JAVA_VERSION}-jdk
 
 
-
-
-
-
-
-
 RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash - \
     && apt-get update -q && apt-get install -qy nodejs
 
@@ -91,11 +85,6 @@ RUN npm install -g lighthouse
 
 
 
-
-
-#Now copy to 
-
-
 # Upgrade pip and install pipx
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install pipx \
@@ -103,16 +92,21 @@ RUN pip install --no-cache-dir --upgrade pip \
     && pip install gnews \
     && pip install poetry
 
-# Set up FastAPI app
+# Set up backend api
 WORKDIR /home/backend
 COPY backend . 
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt \
-    && pip install fastapi-versioning pymupdf4llm python-multipart yake tls_client uvicorn litellm asent spacyfishing\
+    && pip install fastapi-versioning pymupdf4llm python-multipart yake tls_client uvicorn litellm \
     && pip install instabot lighthouse-python-plus gnews \
     && python3 -m nltk.downloader -d /usr/local/share/nltk_data wordnet punkt stopwords vader_lexicon \
     && python3 -m spacy download en_core_web_md \
     && python3 -m textblob.download_corpora
+
+
+
+WORKDIR /home/magazines
+COPY magazines  .
 
 # Clean up
 RUN apt-get autoremove -y \

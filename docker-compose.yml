@@ -9,8 +9,9 @@ services:
       - "12000:12000"   # Backend service port
       - "12001:12001"   # Backend service port
     volumes:
-      - ./backend:/home/backend
-      - ./frontend:/home/frontend
+      - ./backend:/home/backend:rw
+      - ./frontend:/home/frontend:rw
+      - ./magazines:/home/magazines:rw
     environment:
       - CLOUDFLARE_ACCOUNT_ID=e2fa0631e7c2fafc79e68a70a5968569
       - CLOUDFLARE_API_KEY=av76jm154SuiQ8wu_4Nm_5tjQRjTB-u2RRJZ_nsS

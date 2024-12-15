@@ -3,13 +3,14 @@
   "type": "commonjs",
   "version": "0.4.9",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 12000",
+    "dev": "astro dev --host 0.0.0.0 --port 12000 --reload",
     "start": "astro dev",
-    "build": "astro build --watch",
-    "preview": "astro preview --host 0.0.0.0 --port 12000 --watch",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0 --port 12000 --reload ",
     "astro": "astro",
     "vite": "vite watch --host",
-    "build-astro": "astro build --watch --no-source-maps"
+    "build-astro": "astro build --watch --no-source-maps",
+    "vite-preview": "vite preview --host 0.0.0.0 --port 12000 --watch"
   },
   "dependencies": {
     "@astrojs/renderer-react": "^0.5.0",
@@ -18,6 +19,7 @@
     "@astrojs/vue": "^4",
     "@bhplugin/vue3-datatable": "^1.1.4",
     "@kangc/v-md-editor": "^2.3.18",
+    "@vite-pwa/astro": "^0.4.3",
     "astro": "^4.5.8",
     "astro-remote": "^0.2.3",
     "axios": "^1.7.7",
@@ -27,13 +29,10 @@
     "octokit": "^3.1.2",
     "tailwindcss": "^3.3.5",
     "uuid": "^9.0.1",
+    "vite": "^5.4.11",
     "vue": "^3.3.8",
     "vue-chart-3": "^3.1.8",
     "vue3-plotly": "^0.0.7",
-    "@vite-pwa/astro": "^0.4.3",
-    "vite": "^5.4.11"
-  },
-  "devDependencies": {
-  
+    "webtorrent": "^2.5.10"
   }
 }

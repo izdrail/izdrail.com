@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+import CheatSheet from '../components/CheatSheet.astro';
+import Magazine from '../components/Magazine.astro';
+
+const magazines = (await getCollection('magazines'));
+---
+<BaseLayout
+	title="Magazines"
+	description="Some of the magazines I read while working with various technologies."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Magazines"
+				tagline="Some of the magazines I read while working with various technologies."
+			/>
+			<Grid variant="offset">
+				{
+					magazines.map((magazine) => (
+						<Magazine magazine={magazine} />
+					))
+				}
+			</Grid>
+		</main>
+	</div>
+</BaseLayout>

@@ -12,7 +12,7 @@ config.pwa = {
   registerType: 'autoUpdate',
   manifest: {
     name: 'Developer',
-    short_name: 'izdrail',
+    short_name: 'developer',
     theme_color: '#333',
     icons: [
       {
@@ -49,39 +49,30 @@ config.pwa = {
 
 export default defineConfig({
   integrations: [ tailwind(),vue(), AstroPWA(config.pwa)],
+  server: {
+    proxy: {
+      '/backend': {
+        target: '//127.0.0.1:12001/',
+        secure: false,
+        autoRewrite: true,
+        changeOrigin: true,
+        rewrite: (path)  => path.replace(/^\/backend/,  'v1_0/security'),
+      },
+    }
+  },
   buildOptions: {
     outdir: 'dist',
     emptyOutDir: true,
-    sourcemap: false,
+    sourcemap: true,
     minify: true,
+    compressHTML: false,
+    minifyCSS: true,
     rollupOptions: {
       plugins: [
         vue(),
         tailwind(),
       ],
     },
-  },
-  vite: {
-    logLevel: 'info',
-    ssr: {
-      noExternal: [
-        '@astrojs/vue',
-        'astro-component-lib',
-      ]
-    },
-    optimizeDeps: {
-      include: [
-        '@kangc/v-md-editor',
-      ],
-    },
-    define: {
-      __DATE__: `'${new Date().toISOString()}'`,
-    },
-    server: {
-      fs: {
-        // Allow serving files from hoisted root node_modules
-        allow: ['../..']
-      }
-    },
   }
+
 });

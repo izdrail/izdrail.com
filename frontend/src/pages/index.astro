@@ -10,8 +10,10 @@ import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Content Fetching: List four most recent work projects
-const projects = (await getCollection('works'))
-    .slice(0, 4);
+const projects = (await getCollection('works'));
+
+const books = (await getCollection('books')).slice(0, 3);
+
 ---
 
 <BaseLayout
@@ -28,6 +30,7 @@ const projects = (await getCollection('works'))
                         align="start"
                 >
                     <div class="roles">
+                        <a href="https://izdrail.com" title="senior developer available for hire">
                         <Pill>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                  stroke="currentColor" class="w-6 h-6">
@@ -36,7 +39,8 @@ const projects = (await getCollection('works'))
                             </svg>
                             Senior Developer
                         </Pill>
-
+                        </a>
+                        <a href="https://izdrail.com/contact" title="senior developer available for hire in essex">
                         <Pill>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                  stroke="currentColor" class="w-6 h-6">
@@ -45,6 +49,8 @@ const projects = (await getCollection('works'))
                             </svg>
                             Essex
                         </Pill>
+                        </a>
+                        <a href="https://izdrail.com/services/python" title="python agency london">
                         <Pill>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                  stroke="currentColor" class="w-6 h-6">
@@ -53,6 +59,7 @@ const projects = (await getCollection('works'))
                             </svg>
                             Python
                         </Pill>
+                        </a>
                         <Pill>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                  stroke="currentColor" class="w-6 h-6">
@@ -118,8 +125,8 @@ const projects = (await getCollection('works'))
                         {name: 'WordPress', url: '/services/wordpress'},
                         {name: 'Cybersecurity', url: '/services/cybersecurity'},
                     ].map((language) => (
-                            <div class={`mention-card ${language.name === 'Cybersecurity' ? 'col-span-2' : ''}`}>
-                                <h2 title={`${language.name} Development Services`}>
+                            <div class={`mention-card ${language.name === 'agency london' ? 'col-span-2' : ''}`}>
+                                <h2 title={`${language.name} agency london`}>
                                     <a href={language.url} title={language.name}>
                                         {language.name}
                                     </a>
@@ -132,235 +139,54 @@ const projects = (await getCollection('works'))
         </section>
 
         <section class="wrapper container stack gap-10 lg:gap-18 mt-20">
-            <header class="section-header stack lg:gap-20 ">
-                <h1 title="Portfolio of Laravel Projects">
-                    <a title="Portfolio of my hoby projects" href="/work">Works</a>
-                </h1>
-                <p>
-                    Check out my portfolio of Laravel projects and see how I can help you build your next web application.
-                </p>
+            <header class="section-header stack lg:gap-20">
+              <h1 title="Portfolio of my hobby projects">
+                <a title="Portfolio of my hobby projects" href="/work">Works</a>
+              </h1>
+              <p>
+                Explore my portfolio of software projects and discover how I can assist in building your next software application.
+              </p>
             </header>
-            <div class="grid grid-cols-2 gap-7">
-                {
-                    projects.map((project) => (
-                            <PortfolioPreview project={project}/>
-                    ))
-                }
+            <div class="grid grid-cols-3 gap-7">
+              {projects.map((project) => (
+                <PortfolioPreview project={project} />
+              ))}
             </div>
-        </section>
-
-        <!--
-        <section class="bg-white dark:bg-gray-900">
+          </section>
+          
+          <section class="dark:bg-gray-900">
             <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-                <div class="mx-auto max-w-screen-sm text-center">
-                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">
-                        Books, Articles, and Tutorials
+              <div class="mx-auto max-w-screen-sm text-center">
+                <h2 class="mb-4 text-5xl tracking-tight dark:text-white ">
+                  Books, Articles, and Tutorials
+                </h2>
+                <p class="mb-8 text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
+                  Discover insightful books, articles, and tutorials that I've written or read to share my knowledge.
+                </p>
+              </div>
+              <div class="grid gap-8 lg:grid-cols-3 lg:divide-x lg:divide-gray-200 dark:lg:divide-gray-700">
+                {books.map((resource) => (
+                  <article class="space-y-4">
+                    <h2 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <a href={resource.slug}>{resource.data.title}</a>
                     </h2>
-                    <p class="mb-8 text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-                        Check out some of the books and articles that i've written
-                    </p>
-                </div>
-                <div class="mb-16 grid gap-8 lg:grid-cols-3 lg:divide-x lg:divide-gray-200 dark:lg:divide-gray-700">
-                    <article>
+                    <p class="text-gray-500 dark:text-gray-400">{resource.data.description}</p>
+                    
+                    <a
+                      href={`/books/${resource.slug}`}
 
-                        <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">SEO Basics: Beginner's Guide to SEO Success</a>
-                        </h2>
-                        <p class="mb-4 text-gray-500 dark:text-gray-400">
-                            Over the past year, Volosoft has undergone many changes! After
-                            months of preparation and some hard work, we moved to our new
-                            office.
-                        </p>
-                        <a
-                                href="#"
-                                class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                        >
-                            Read more
-
-                        </a>
-                    </article>
-                    <div class="space-y-8 lg:pl-8">
-                        <article>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">How to quickly deploy a static website</a>
-                            </h2>
-                            <p class="mb-4 text-gray-500 dark:text-gray-400">
-                                Over the past year, Volosoft has undergone many changes! After
-                                months of preparation and some hard work, we moved to our new
-                                office.
-                            </p>
-                            <a
-                                    href="#"
-                                    class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            >
-                                Read more
-                                <svg
-                                        class="ml-2 h-4 w-4"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            fillRule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </article>
-                        <article>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">
-                                    What is SEO? Search Engine Optimization Explained
-                                </a>
-                            </h2>
-                            <p class="mb-4 text-gray-500 dark:text-gray-400">
-                                Over the past year, Volosoft has undergone many changes! After
-                                months of preparation and some hard work, we moved to our new
-                                office.
-                            </p>
-                            <a
-                                    href="#"
-                                    class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            >
-                                Read more
-                                <svg
-                                        class="ml-2 h-4 w-4"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            fillRule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </article>
-                        <article>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">
-                                    Spotify's Car Thing available to all premium users
-                                </a>
-                            </h2>
-                            <p class="mb-4 text-gray-500 dark:text-gray-400">
-                                Over the past year, Volosoft has undergone many changes! After
-                                months of preparation and some hard work, we moved to our new
-                                office.
-                            </p>
-                            <a
-                                    href="#"
-                                    class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            >
-                                Read more
-                                <svg
-                                        class="ml-2 h-4 w-4"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            fillRule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="space-y-8 lg:pl-8">
-                        <article>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">How to Rank Higher on Google (6 Easy Steps)</a>
-                            </h2>
-                            <p class="mb-4 text-gray-500 dark:text-gray-400">
-                                Over the past year, Volosoft has undergone many changes! After
-                                months of preparation and some hard work, we moved to our new
-                                office.
-                            </p>
-                            <a
-                                    href="#"
-                                    class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            >
-                                Read more
-                                <svg
-                                        class="ml-2 h-4 w-4"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            fillRule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </article>
-                        <article>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">
-                                    12 SEO Best Practices That Everyone Should Follow
-                                </a>
-                            </h2>
-                            <p class="mb-4 text-gray-500 dark:text-gray-400">
-                                Over the past year, Volosoft has undergone many changes! After
-                                months of preparation and some hard work, we moved to our new
-                                office.
-                            </p>
-                            <a
-                                    href="#"
-                                    class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            >
-                                Read more
-                                <svg
-                                        class="ml-2 h-4 w-4"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            fillRule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </article>
-                        <article>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">How to schedule your Tweets to send later</a>
-                            </h2>
-                            <p class="mb-4 text-gray-500 dark:text-gray-400">
-                                Over the past year, Volosoft has undergone many changes! After
-                                months of preparation and some hard work, we moved to our new
-                                office.
-                            </p>
-                            <a
-                                    href="#"
-                                    class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            >
-                                Read more
-                                <svg
-                                        class="ml-2 h-4 w-4"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                            fillRule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </article>
-                    </div>
-                </div>
+                      class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
+                    >
+                      Read more
+        
+                    </a>
+                  </article>
+                ))}
+              </div>
             </div>
-        </section>
-        !-->
+          </section>
+          
+
     </main>
 </BaseLayout>
 <style>
@@ -426,7 +252,7 @@ const projects = (await getCollection('works'))
         aspect-ratio: calc(2.25 / var(--bg-scale));
         top: 0;
         transform: translateY(-75%) translateX(-50%);
-        background: url('/assets/backgrounds/noise.png') top center/220px repeat,
+        background: url('https://craftinginterpreters.com/image/background.png') top center/220px repeat,
         var(--hero-bg) center center / var(--bg-gradient-size) no-repeat, var(--gray-999);
         background-blend-mode: overlay, normal, normal, normal;
         mix-blend-mode: var(--bg-blend-mode);

@@ -41,10 +41,18 @@
     "hero": "/assets/tools/jobs.svg"
   },
   {
-    "title": "Social Guardian",
+    "title": "Sherlock",
     "subtitle": "Free osint tool, Osint online tool, mobile osint, cybersecurity, scan tool",
     "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
     "link": "/work/social-guardian",
+    "cta": "Run investigation",
+    "hero": "/assets/tools/osint.svg"
+  },
+  {
+    "title": "Streaming",
+    "subtitle": "Free movie streeming using webtorrent protocol",
+    "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
+    "link": "/tools/streaming",
     "cta": "Run investigation",
     "hero": "/assets/tools/osint.svg"
   }

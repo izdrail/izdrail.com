@@ -1,11 +1,10 @@
 ---
-title: The Bmw Mechanic
+title: Bmw Mechanic
 publishDate: 2024-03-02 00:00:00
 img: /assets/tools/bmw.svg
 img_alt: bmw mobile app diagnose
-description: mobile application for people who work with bmw cars.
+description: Bimmer Uk Mechanic learn how to diagnose cars remotely.
 tags:
-  - Mobile Application (PWA)
   - Bmw Mechanics
   - Auto Data 3.5
   - INSPA
@@ -33,4 +32,4 @@ Got to play with the CAN bus and the OBD2 protocol. (tba).
 
 
 ## Where can I get it?
-1. [Github](https://github.com/izdrail/thebmwmechanic.co.uk)
+1. [Website](https://thebmwmechanic.co.uk)

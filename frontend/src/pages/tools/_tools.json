@@ -1,4 +1,11 @@
-[
+[ {
+  "title": "Sherlock",
+  "subtitle": "Free osint tool, Osint online tool, mobile osint, cybersecurity, scan tool",
+  "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
+  "link": "/work/social-guardian",
+  "cta": "Run investigation",
+  "hero": "/assets/tools/osint.svg"
+},
   {
     "title": "SEO Checker",
     "subtitle": "Get to know now your Google SEO Score and suggestions to improve your Google SEO Score . Be #1 on Google",
@@ -40,20 +47,13 @@
     "cta": "Try Now",
     "hero": "/assets/tools/jobs.svg"
   },
-  {
-    "title": "Sherlock",
-    "subtitle": "Free osint tool, Osint online tool, mobile osint, cybersecurity, scan tool",
-    "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
-    "link": "/work/social-guardian",
-    "cta": "Run investigation",
-    "hero": "/assets/tools/osint.svg"
-  },
+ 
   {
     "title": "Streaming",
     "subtitle": "Free movie streeming using webtorrent protocol",
-    "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
+    "description": "Stream movies from your phone, tablet, or computer to your computer, tablet, or phone. Stream movies from your phone, tablet, or computer to your computer, tablet, or phone.",
     "link": "/tools/streaming",
-    "cta": "Run investigation",
-    "hero": "/assets/tools/osint.svg"
+    "cta": "Start Streeming",
+    "hero": "/assets/tools/streaming.svg"
   }
 ]

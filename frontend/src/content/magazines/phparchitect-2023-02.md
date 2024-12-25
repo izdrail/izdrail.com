@@ -1,5 +1,5 @@
 ---
-title: Arhitect January 2022
+title: Knowledge Crunching
 publishDate: 2023-04-19 00:00:00
 description: Welcome to my premier Cybersecurity company based in London, United Kingdom.
 image: /assets/services/security.svg

@@ -38,6 +38,13 @@ export const collections = {
             description: z.string(),
         }),
     }),
+    magazines: defineCollection({
+        schema: z.object({
+            title: z.string(),
+            tags: z.array(z.string()),
+            description: z.string(),
+        }),
+    }),
 
 
     blog: defineCollection({

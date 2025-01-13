@@ -17,8 +17,8 @@ const books = (await getCollection('books')).slice(0, 3);
 ---
 
 <BaseLayout
-        title="Your friendly software developer from Essex, UK"
-        description="Senior software developer in London with expertise in Pyhon, PHP with a track record of delivering scalable web applications and custom solutions."
+    title='Software developer available for cheap monthly retainer'
+    description='I offer flexible retainer agreements to suit your requirements. I charge a fixed fee per month depending on the days/hours required.'
 >
     <main>
 
@@ -124,6 +124,7 @@ const books = (await getCollection('books')).slice(0, 3);
                         {name: 'Drupal', url: '/services/drupal'},
                         {name: 'WordPress', url: '/services/wordpress'},
                         {name: 'Cybersecurity', url: '/services/cybersecurity'},
+                        {name: 'AWS Consulting', url: '/services/aws-consulting-firm'},
                     ].map((language) => (
                             <div class={`mention-card ${language.name === 'agency london' ? 'col-span-2' : ''}`}>
                                 <h2 title={`${language.name} agency london`}>
@@ -144,48 +145,51 @@ const books = (await getCollection('books')).slice(0, 3);
                 <a title="Portfolio of my hobby projects" href="/work">Works</a>
               </h1>
               <p>
-                Explore my portfolio of software projects and discover how I can assist in building your next software application.
+                Explore my portfolio of <b>software projects</b> and discover how I can assist in building your next software application.
               </p>
             </header>
-            <div class="grid grid-cols-3 gap-7">
+            <div class="grid grid-cols-2 gap-7 projects-container">
               {projects.map((project) => (
                 <PortfolioPreview project={project} />
               ))}
             </div>
           </section>
-          
-          <section class="dark:bg-gray-900">
-            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-              <div class="mx-auto max-w-screen-sm text-center">
-                <h2 class="mb-4 text-5xl tracking-tight dark:text-white ">
-                  Books, Articles, and Tutorials
-                </h2>
-                <p class="mb-8 text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-                  Discover insightful books, articles, and tutorials that I've written or read to share my knowledge.
-                </p>
-              </div>
-              <div class="grid gap-8 lg:grid-cols-3 lg:divide-x lg:divide-gray-200 dark:lg:divide-gray-700">
-                {books.map((resource) => (
-                  <article class="space-y-4">
-                    <h2 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      <a href={resource.slug}>{resource.data.title}</a>
-                    </h2>
-                    <p class="text-gray-500 dark:text-gray-400">{resource.data.description}</p>
-                    
-                    <a
-                      href={`/books/${resource.slug}`}
 
-                      class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
-                    >
-                      Read more
+<div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+   <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-white-900 sm:text-4xl dark:text-white">Software Development Services</h2>
+      <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">Crafted with skill and care to help our clients grow their business!</p>
+   </div>
+   <div class="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="space-y-4">
+         <span class="h-fit items-center gap-1 font-semibold bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600 text-xs rounded px-2 py-0.5 inline-flex" data-testid="flowbite-badge"><span>Laravel</span></span>
+         <span class="h-fit items-center gap-1 font-semibold bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600 text-xs rounded px-2 py-0.5 inline-flex" data-testid="flowbite-badge"><span>Symfony</span></span>
+         <h3 class="text-2xl font-bold leading-tight text-white-900 dark:text-white">PHP Agency London</h3>
+         <p class="text-lg font-normal text-white-500 dark:text-gray-400">
+            PHP Retainer & Development Services in Essex. Expert solutions for businesses across the South East of the UK. 
+            </p>
+       
+      </div>
+      <div class="space-y-4">
+         <span class="h-fit items-center gap-1 font-semibold bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600 text-xs rounded px-2 py-0.5 inline-flex" data-testid="flowbite-badge"><span>Django</span></span>
+         <span class="h-fit items-center gap-1 font-semibold bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600 text-xs rounded px-2 py-0.5 inline-flex" data-testid="flowbite-badge"><span>Fast API</span></span>
+         <h3 class="text-2xl font-bold leading-tight text-white-900 dark:text-white">Python Agency London</h3>
+         <p class="text-lg font-normal text-white-500 dark:text-gray-400">
+            The Python Developer in London with Freelancer Prices. Izdrail is the UK's Essex Experienced Python development agency. 
+         </p>
         
-                    </a>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </section>
-          
+      </div>
+      <div class="space-y-4">
+         <span class="h-fit items-center gap-1 font-semibold bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600 text-xs rounded px-2 py-0.5 inline-flex" data-testid="flowbite-badge"><span>Mux</span></span>
+         <span class="h-fit items-center gap-1 font-semibold bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600 text-xs rounded px-2 py-0.5 inline-flex" data-testid="flowbite-badge"><span>GIN</span></span>
+
+         <h3 class="text-2xl font-bold leading-tight text-white-900 dark:text-white">Golang Agency London</h3>
+         <p class="text-lg font-normal text-white-500 dark:text-gray-400">
+            A essex golang software developer retainer ensures that you have continuous, dedicated support for your ongoing golang needs.
+         </p>
+      </div>
+   </div>
+</div>          
 
     </main>
 </BaseLayout>

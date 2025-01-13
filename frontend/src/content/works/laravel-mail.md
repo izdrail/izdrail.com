@@ -3,12 +3,13 @@ title: Laravel Mail
 publishDate: 2020-03-02 00:00:00
 img: /assets/tools/laravel-mail.svg
 img_alt: Laravel Mail
-description: Marketing automation software for Laravel.
+description: Laravel Mail is a fully featured email marketing platform built for growing creators, developers, and businesses.
 tags:
-  - GrapesJS Editor
-  - IMAP Client
+  - Marketing Automation
+  - Leads Discovery
   - Advanced Workflows
   - Multiple workspaces
+  - Large templates database
 ---
 
 # Enterprise  Email Solution for Modern Businesses

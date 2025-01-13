@@ -7,7 +7,6 @@ interface Props {
 
 const { data, slug } = Astro.props.project;
 ---
-<!-- NLP -->
 
 <a class="card" title={data.title} href={`/work/${slug}`}>
 	<h3 class="title" title={`${data.title}`}>
@@ -57,6 +56,18 @@ const { data, slug } = Astro.props.project;
 		object-fit: cover;
 	}
 
+	/* Parent container for layout */
+	.parent-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1rem;
+	}
+
+	.parent-container .card:nth-last-child(-n+2) {
+		grid-column: span 2;
+		width: 100%;
+	}
+
 	@media (min-width: 50em) {
 		.card {
 			height: 22rem;
@@ -65,6 +76,11 @@ const { data, slug } = Astro.props.project;
 
 		.title {
 			border-radius: 0.9375rem;
+		}
+
+		/* Ensure last 2 cards behave correctly in larger screens */
+		.parent-container .card:nth-last-child(-n+2) {
+			grid-column: span 2;
 		}
 	}
 </style>

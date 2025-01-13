@@ -40,13 +40,12 @@ import Icon from './Icon.astro';
                 <p class="text-2xl text-center">Email me</p>
                 <p class="mt-2 text-sm text-center">Anytime.</p>
                 <p class="mt-2 text-sm dark:text-blue-400 text-center">
-                    <a title="laravel developer london contact number" class="text-blue-500 dark:text-white"
-                        onclick="_paq.push(['trackEvent', "Meeting booked", "email", "contact"]);"
-                       href="tel:stefan@izdrail.com">stefan@izdrail.com</a>
+                    <a title="laravel developer london contact number" class="text-blue-500 dark:text-white" onclick="_paq.push(['trackEvent', "Meeting booked", "email", "contact"]);" href="tel:stefan@izdrail.com">stefan@izdrail.com</a>
                 </p>
             </div>
         </div>
     </div>
+    
 </section>
 
 <style>
@@ -63,7 +62,7 @@ import Icon from './Icon.astro';
     }
 
     h2 {
-        font-size: var(--text-xl);
+        font-size: var(--text-2xl);
         text-align: center;
         max-width: 15ch;
     }
@@ -77,8 +76,12 @@ import Icon from './Icon.astro';
         }
 
         h2 {
-            font-size: var(--text-3xl);
+            font-size: var(--text-2xl);
             text-align: left;
+        }
+
+        a{
+            font-size: var(--text-xl);
         }
     }
 </style>

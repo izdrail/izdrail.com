@@ -1,26 +1,33 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
 import Hero from '../../components/Hero.astro';
-
 import ArticleExtractor from '../../vue/ArticleExtractor.vue';
 ---
 
 <meta property="og:type" content="product">
-<meta property="og:title" content="Article Extractor - Free tools to extract the main content from any URL and convert it into clean HTML, ready for use in your favorite CMS.">
+<meta property="og:title" content="Article Extractor & Website Content Crawler | Professional SEO Tool">
 <meta property="og:url" content="https://izdrail.com/tools/article-writer/">
 <meta property="og:image" content="https://i.imgur.com/XF92B0Q.png">
-<meta property="og:description" content="Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS.">
-<meta property="product:plural_title" content="">
+<meta property="og:description" content="Extract website content automatically with our powerful Article Extractor and Web Crawler. Perfect for SEO professionals, content analysts, and digital marketers. Try our free web content extraction tool today!">
+<meta property="product:plural_title" content="Web Content Extraction Tools">
 <meta property="product:price.amount" content="0">
 <meta property="product:price.currency" content="GBP">
-<meta name="author" content="Stefan ♥">
+<meta name="author" content="Stefan Bogdanel">
+<meta name="keywords" content="article extractor, website extractor, web crawler seo, content extraction, web scraping, seo tools">
+
 <script type="application/ld+json">
     {
         "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Article Extractor",
-        "description": "Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS.",
+        "@type": "SoftwareApplication",
+        "name": "Article Extractor & Website Content Crawler",
+        "description": "Professional web content extraction tool for SEO specialists and digital marketers. Extract clean HTML content from any URL with our advanced website extractor and web crawler.",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP"
+        },
         "review": {
             "@type": "Review",
             "reviewRating": {
@@ -30,7 +37,7 @@ import ArticleExtractor from '../../vue/ArticleExtractor.vue';
             },
             "author": {
                 "@type": "Person",
-                "name": "Stefan"
+                "name": "Chris"
             }
         },
         "aggregateRating": {
@@ -40,76 +47,166 @@ import ArticleExtractor from '../../vue/ArticleExtractor.vue';
         }
     }
 </script>
+
 <BaseLayout
-	title="Article Writer"
-	description="Extract text from any link and analyze it for keywords, sentiment, and more."
+    title="Article Extractor & Website Content Crawler | Professional SEO Tool"
+    description="Extract and analyze website content with our powerful Article Extractor and Web Crawler SEO tool. Perfect for content analysis and digital marketing."
 >
-	<div class="stack gap-20">
+    <div class="stack gap-20">
+        <main class="wrapper stack gap-12">
+            <Hero
+                title="Article Extractor & Website Content Crawler"
+                tagline="Transform any webpage into clean, analyzable content with our professional website extractor tool. Built for SEO specialists, content marketers, and web analysts."
+            />
 
-		<main class="wrapper stack gap-12">
-			<Hero
-				title="Article extractor"
-				tagline="Start curating your content with this free tool that extracts the main content from any URL and converts it into clean HTML, ready for use in your favorite CMS."
-			/>
+            <ArticleExtractor client:visible />
 
-			<ArticleExtractor client:visible />
 
-            <!-- About the project sections -->
+
+                <!-- Technology Stack -->
+                <section>
+                    <h2>Enterprise-Grade Technology Stack</h2>
+                    <div class="text-2xl">
+                        <p>
+                            Our Article Extractor leverages cutting-edge technologies for reliable web content extraction:
+                        </p>
+                        
+                        <div class="mt-8 space-y-8">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Python-powered Web Crawling Engine</h3>
+                                <p>
+                                    At the core of our website extractor lies a sophisticated Python-based crawling engine. This system efficiently navigates web pages, handles different HTML structures, and manages various character encodings. Key features include:
+                                </p>
+                                <ul class="list-disc list-inside mt-2 ml-4">
+                                    <li>Intelligent content detection algorithms</li>
+                                    <li>Automatic handling of different character encodings</li>
+                                    <li>Smart rate limiting to respect website resources</li>
+                                    <li>Built-in error handling and retry mechanisms</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">FastAPI for High-Performance Content Processing</h3>
+                                <p>
+                                    Our FastAPI implementation ensures rapid content processing and delivery. This modern framework provides:
+                                </p>
+                                <ul class="list-disc list-inside mt-2 ml-4">
+                                    <li>Asynchronous processing for faster content extraction</li>
+                                    <li>Automatic API documentation generation</li>
+                                    <li>Type-safe data handling</li>
+                                    <li>High-concurrency support for multiple simultaneous extractions</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Advanced NLTK Implementation</h3>
+                                <p>
+                                    The Natural Language Toolkit (NLTK) powers our advanced text analysis capabilities:
+                                </p>
+                                <ul class="list-disc list-inside mt-2 ml-4">
+                                    <li>Sophisticated tokenization for accurate text processing</li>
+                                    <li>Part-of-speech tagging for content analysis</li>
+                                    <li>Named entity recognition for identifying key information</li>
+                                    <li>Frequency analysis for keyword identification</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">VADER Sentiment Analysis</h3>
+                                <p>
+                                    Our implementation of VADER (Valence Aware Dictionary and sEntiment Reasoner) provides nuanced content sentiment analysis:
+                                </p>
+                                <ul class="list-disc list-inside mt-2 ml-4">
+                                    <li>Social media-optimized sentiment scoring</li>
+                                    <li>Context-aware emotion detection</li>
+                                    <li>Multiple sentiment dimensions (positive, negative, neutral)</li>
+                                    <li>Intensity analysis for emotional content</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Spacy NLP for Content Understanding</h3>
+                                <p>
+                                    Spacy's industrial-strength natural language processing enhances our content analysis:
+                                </p>
+                                <ul class="list-disc list-inside mt-2 ml-4">
+                                    <li>Advanced entity recognition for content categorization</li>
+                                    <li>Dependency parsing for relationship extraction</li>
+                                    <li>Word vectors for semantic similarity analysis</li>
+                                    <li>Multi-language support for international content</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Flask for Robust API Delivery</h3>
+                                <p>
+                                    Our Flask implementation ensures reliable API service delivery:
+                                </p>
+                                <ul class="list-disc list-inside mt-2 ml-4">
+                                    <li>RESTful API architecture for easy integration</li>
+                                    <li>Flexible routing for different extraction needs</li>
+                                    <li>Session handling for authenticated access</li>
+                                    <li>Comprehensive error handling and status reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <p class="mt-8">
+                            This powerful combination of technologies enables our Article Extractor to provide comprehensive web content analysis and extraction capabilities, making it an indispensable tool for SEO professionals and content analysts.
+                        </p>
+                    </div>
+                </section>
+            <!-- About Section -->
             <section>
-                <h3>
-                    About Article Extractor
-                </h3>
+                <h2>Professional Website Content Extraction Tool</h2>
                 <div class="text-2xl">
                     <p>
-                        This tool allows you to extract the main content from any web page and analyze it for keywords, sentiment, and more.
+                        Our Article Extractor and Web Crawler SEO tool empowers digital professionals to extract, analyze, and optimize web content efficiently. Perfect for content analysis, SEO optimization, and digital marketing research.
                     </p>
                     <p>
-                        The tool is designed to help <b>webmasters</b>, <b>marketers</b> and <b>search engine optimization</b> (SEO) specialists to get a more insightful image on a piece of content .
+                        Designed specifically for <b>SEO specialists</b>, <b>content marketers</b>, and <b>web analysts</b>, our website extractor provides comprehensive content insights through advanced crawling and analysis capabilities.
                     </p>
-
                 </div>
             </section>
 
-
-            <!--Requirements for running -->
+            <!-- Key Features -->
             <section>
-                <h3>
-                   Why I've built this tool
-                </h3>
+                <h2>Advanced Web Crawler SEO Features</h2>
                 <div class="text-2xl">
-                    <p>
-                        I've decided to built this tool for showcasing  my skills in building web applications using the latest technologies like python, fastapi, vuejs, tailwindcss and docker.
-                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Instant website content extraction to clean HTML format</li>
+                        <li>SEO-focused content analysis and keyword extraction</li>
+                        <li>Sentiment analysis for content optimization</li>
+                        <li>Bulk URL processing capabilities</li>
+                        <li>Advanced NLP-powered content insights</li>
+                    </ul>
                 </div>
             </section>
 
+            <!-- Technology Stack -->
             <section>
-                <h3 title="how to run your own">
-                    Run your own
-                </h3>
+                <h2>Enterprise-Grade Technology Stack</h2>
                 <div class="text-2xl">
                     <p>
-                        I've decided to make the source code of this tool available to the public.
-                        You can run your own instance of the tool by following the instructions on the <a href="https://github.com/izdrail/intel.izdrail.com">GitHub repository</a> .
+                        Our Article Extractor leverages cutting-edge technologies for reliable web content extraction:
                     </p>
-                    <p>
-                        Or even better run it on your local machine using docker and docker-compose.
-                    </p>
-                    <p class="mt-5">
-                        <code>
-                            docker pull izdrail/intel.izdrail.com:latest
-                        </code>
-                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Python-powered web crawling engine</li>
+                        <li>FastAPI for high-performance content processing</li>
+                        <li>Advanced NLTK implementation</li>
+                        <li>Vader sentiment analysis</li>
+                        <li>Spacy NLP for content understanding</li>
+                        <li>Flask for robust API delivery</li>
+                    </ul>
                 </div>
             </section>
 
+            <!-- API Documentation -->
             <section>
-                <h3>
-                    Open API Documentation
-                </h3>
+                <h2>Developer-Friendly API Access</h2>
                 <div class="text-2xl">
                     <p>
-                        The API documentation is available online at the following address:
+                        Integrate our website extractor capabilities into your own applications:
                     </p>
                     <p class="mt-5">
                         <code>
@@ -117,76 +214,30 @@ import ArticleExtractor from '../../vue/ArticleExtractor.vue';
                         </code>
                     </p>
                     <p>
-                        <br>
-                        Feel free to use the API for your own projects.
+                        Access our comprehensive API documentation for seamless integration of our web crawler SEO tools into your workflow.
                     </p>
                 </div>
             </section>
 
+            <!-- Self-Hosting -->
             <section>
-                <h3 title="Technologies used">
-                    Technologies used
-                </h3>
+                <h2>Deploy Your Own Article Extractor</h2>
                 <div class="text-2xl">
                     <p>
-                        The tool is built using the following technologies:
+                        Get started with your own instance of our website content extraction tool:
                     </p>
-                    <ul class="list-disc list-inside">
-                        <li>Python</li>
-                        <li>FastAPI</li>
-                        <li>NLTK</li>
-                        <li>Vader sentiment analysis</li>
-                        <li>Spacy NLP</li>
-                        <li>Flask</li>
-                    </ul>
+                    <p class="mt-5">
+                        <code>
+                            docker pull izdrail/intel.izdrail.com:latest
+                        </code>
+                    </p>
+                    <p>
+                        Access the complete source code on our <a href="https://github.com/izdrail/intel.izdrail.com">GitHub repository</a> for custom implementations.
+                    </p>
                 </div>
-
             </section>
 
-        <section>
-            <p><strong>Uncover Content Insights & Optimize Websites</strong></p>
-
-            <p>This powerful tool empowers webmasters, marketers, and SEO specialists to gain a deeper understanding of any online content. With a single click, Article Extractor dives into web pages, extracting the core HTML content and analyzing it for valuable insights, including:</p>
-
-            <ul>
-                <li><strong>Keywords:</strong> Identify the most relevant keywords used in the content, providing a foundation for targeted SEO strategies.</li>
-                <li><strong>Sentiment:</strong> Understand the emotional tone of the content, allowing you to tailor your messaging and audience engagement.</li>
-                <li><strong>Advanced NLP (Natural Language Processing):</strong> Leverage cutting-edge NLP techniques to uncover deeper content meaning and structure.</li>
-            </ul>
-
-            <p><strong>Built with Cutting-Edge Technologies</strong></p>
-
-            <p>Article Extractor showcases the power of modern web development tools, utilizing the latest advancements in:</p>
-
-            <ul>
-                <li>Python</li>
-                <li>FastAPI</li>
-                <li>Vue.js</li>
-                <li>Tailwind CSS</li>
-                <li>Docker</li>
-            </ul>
-
-            <p><strong>Run It Your Way</strong></p>
-
-            <p>Experience the flexibility of Article Extractor:</p>
-
-            <ul>
-                <li><strong>Deploy your own instance:</strong> Explore the source code on the public GitHub repository and follow the instructions to launch your own customized version of the tool.</li>
-                <li><strong>Local Development:</strong> Get started quickly by deploying Article Extractor directly on your machine using Docker and Docker Compose.</li>
-            </ul>
-
-            <p><strong>Open API & Collaboration</strong></p>
-
-            <p>Expand the application of Article Extractor beyond its core functionalities:</p>
-
-            <ul>
-                <li><strong>Comprehensive API Documentation:</strong> Access detailed API documentation at [link to your API documentation here] to integrate Article Extractor's capabilities into your existing projects.</li>
-            </ul>
-
-            <p><strong>Start Extracting Insights Today!</strong></p>
-
-            <p>Harness the power of Article Extractor to unlock valuable content insights and optimize your online presence.</p>
-        </section>
+    
         </main>
-	</div>
+    </div>
 </BaseLayout>

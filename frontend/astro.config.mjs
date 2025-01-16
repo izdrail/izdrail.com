@@ -51,12 +51,12 @@ export default defineConfig({
   integrations: [ tailwind(),vue(), AstroPWA(config.pwa)],
   server: {
     proxy: {
-      '/backend': {
-        target: '//127.0.0.1:12001/',
+      '/backend/': {
+        target: 'http//127.0.0.1:12001/',
         secure: false,
         autoRewrite: true,
         changeOrigin: true,
-        rewrite: (path)  => path.replace(/^\/backend/,  'v1_0/security'),
+        rewrite: (path)  => path.replace(/^\/backend/,  ''),
       },
     }
   },

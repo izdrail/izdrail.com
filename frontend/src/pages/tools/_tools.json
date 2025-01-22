@@ -44,8 +44,8 @@
     "title": "Sherlock",
     "subtitle": "Free osint tool, Osint online tool, mobile osint, cybersecurity, scan tool",
     "description": "Run osint research on your phone number, email address, or domain name. Discover the best free osint tool for scanning your phone number, email address, or domain name.",
-    "link": "/work/social-guardian",
+    "link": "/work/sherlock",
     "cta": "Run investigation",
-    "hero": "/assets/tools/osint.svg"
+    "hero": "/assets/tools/sherlock.svg"
   }
 ]

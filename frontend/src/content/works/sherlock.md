@@ -1,7 +1,7 @@
 ---
 title: Sherlock
 publishDate: 2024-03-02 00:00:00
-img: /assets/tools/osint.svg
+img: /assets/tools/sherlock.svg
 img_alt: Mobile security application
 description: Discover the truth online with Sherlock, a powerful open-source intelligence tool. 
 tags:

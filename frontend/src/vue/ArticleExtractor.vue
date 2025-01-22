@@ -169,7 +169,7 @@ export default {
       display_errors: false,
       errors: '',
       link: '',
-      workflow: 'https://automation.lzomedia.com/api/v1/webhooks/agpLuXOtezPpAxykB97Dj',
+      workflow: '',
       showWorkflow: false,
       article: {
         title: '',

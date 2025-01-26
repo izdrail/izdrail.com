@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import vue from "@astrojs/vue";
+import mdx from "@astrojs/mdx";
 import AstroPWA from '@vite-pwa/astro'
 import config from "tailwindcss/defaultConfig.js";
 
@@ -35,7 +36,7 @@ config.pwa = {
   },
   workbox: {
     navigateFallback: '/',
-    globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,md,json,jpg,pdf}'],
+    globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,md,mdx,json,jpg,pdf}'],
   },
   devOptions: {
     enabled: true,
@@ -71,6 +72,7 @@ export default defineConfig({
       plugins: [
         vue(),
         tailwind(),
+        mdx(),
       ],
     },
   }

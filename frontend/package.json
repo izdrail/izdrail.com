@@ -3,14 +3,14 @@
   "type": "commonjs",
   "version": "0.4.9",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 12000 --reload",
+    "dev": "astro dev --host 0.0.0.0 --port 12000 --reload ",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0 --port 12000 --reload ",
     "astro": "astro",
     "vite": "vite watch --host",
     "build-astro": "astro build --watch --no-source-maps",
-    "vite-preview": "vite preview --host 0.0.0.0 --port 12000 --watch"
+    "vite-preview": "vite preview --host 0.0.0.0 --port 12000"
   },
   "dependencies": {
     "@astrojs/renderer-react": "^0.5.0",

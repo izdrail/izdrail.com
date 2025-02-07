@@ -13,11 +13,11 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 const projects = (await getCollection('works'));
 
 const books = (await getCollection('books')).slice(0, 3);
-
+//todo: move title, description to config 
 ---
 
 <BaseLayout
-    title='Software developer available for cheap monthly retainer'
+    title='Available software developer for monthly retainer '
     description='I offer flexible retainer agreements to suit your requirements. I charge a fixed fee per month depending on the days/hours required.'
 >
     <main>
@@ -26,7 +26,7 @@ const books = (await getCollection('books')).slice(0, 3);
             <header class="hero">
                 <Hero
                         title="Software Engineer"
-                        tagline="spending most of my time refining solutions rather than reinventing them."
+                        tagline="Spending most of my time refining solutions rather than reinventing them."
                         align="start"
                 >
                     <div class="roles">
@@ -37,7 +37,7 @@ const books = (await getCollection('books')).slice(0, 3);
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
                             </svg>
-                            Senior Developer
+                           
                         </Pill>
                         </a>
                         <a href="https://izdrail.com/contact" title="senior developer available for hire in essex">
@@ -84,14 +84,7 @@ const books = (await getCollection('books')).slice(0, 3);
                             </svg>
                             Drupal
                         </Pill>
-                        <Pill>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                 stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
-                            </svg>
-                            Magento
-                        </Pill>
+
                     </div>
                 </Hero>
 
@@ -149,15 +142,16 @@ const books = (await getCollection('books')).slice(0, 3);
               </p>
             </header>
             <div class="grid grid-cols-2 gap-7 projects-container">
-              {projects.map((project) => (
-                <PortfolioPreview project={project} />
+              {projects.map((project, index) => (
+                <PortfolioPreview
+                  project={project}
+                  class={index === projects.length - 1 && projects.length % 2 !== 0 ? 'full-width' : ''}
+                />
               ))}
             </div>
           </section>
 
-
-
-          <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+        <section class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
             <div class="max-w-2xl mx-auto text-center">
                <h1 class="text-3xl font-extrabold leading-tight tracking-tight text-white-900 sm:text-4xl dark:text-white">
                   Software Development Services in London & Essex
@@ -199,9 +193,9 @@ const books = (await getCollection('books')).slice(0, 3);
                   <span class="badge">GIN</span>
                </div>
             </div>
-         </div>
+        </section>
          
-         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+        <section class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
             <h2 class="mb-1 text-3xl font-extrabold leading-tight text-white-900" title="Software Services London">Other Services</h2>
             <p class="mb-12 text-lg text-white-500">Additional expert software solutions for startups, businesses, and enterprises.</p>
             
@@ -250,40 +244,41 @@ const books = (await getCollection('books')).slice(0, 3);
                   </div>
                </div>
             </div>
-         </div>
-         
-         <style>
-            .badge {
-               display: inline-flex;
-               align-items: center;
-               gap: 4px;
-               font-weight: bold;
-               background-color: #f3f4f6;
-               color: #111827;
-               padding: 2px 8px;
-               font-size: 0.75rem;
-               border-radius: 4px;
-            }
-            .service-box {
-               position: relative;
-               padding: 20px;
-               background: white;
-               border-radius: 8px;
-               border-width: 2px;
-            }
-            .service-title {
-               font-size: 1.25rem;
-               font-weight: bold;
-               color: #1f2937;
-            }
-            .service-description {
-               color: #4b5563;
-            }
-         </style>
-         
+        </section>
+   
 
     </main>
 </BaseLayout>
+      
+<style>
+    .badge {
+       display: inline-flex;
+       align-items: center;
+       gap: 4px;
+       font-weight: bold;
+       background-color: #f3f4f6;
+       color: #111827;
+       padding: 2px 8px;
+       font-size: 0.75rem;
+       border-radius: 4px;
+    }
+    .service-box {
+       position: relative;
+       padding: 20px;
+       background: white;
+       border-radius: 8px;
+       border-width: 2px;
+    }
+    .service-title {
+       font-size: 1.25rem;
+       font-weight: bold;
+       color: #1f2937;
+    }
+    .service-description {
+       color: #4b5563;
+    }
+ </style>
+ 
 <style>
     .hero {
         display: flex;

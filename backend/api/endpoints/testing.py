@@ -26,7 +26,7 @@ lemmatizer = WordNetLemmatizer()
 class RewriteText(BaseModel):
     text: str
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_trf")
 
 def get_synonyms(word, pos):
     # Use NLTK to get synonyms for a word and a specific part of speech

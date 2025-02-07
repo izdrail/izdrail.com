@@ -4,6 +4,7 @@ import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
 import AstroPWA from '@vite-pwa/astro'
 import config from "tailwindcss/defaultConfig.js";
+import mdx from '@astrojs/mdx';
 
 config.pwa = {
   mode: 'production',
@@ -51,8 +52,9 @@ config.pwa = {
 export default defineConfig({
   integrations: [ tailwind(),vue(), AstroPWA(config.pwa)],
   server: {
+    allowedHosts: ['localhost', 'izdrail.com'],
     proxy: {
-      '/backend/': {
+      '/backend': {
         target: 'http//127.0.0.1:12001/',
         secure: false,
         autoRewrite: true,
@@ -75,6 +77,9 @@ export default defineConfig({
         mdx(),
       ],
     },
-  }
+  },
+  experimental: {
+    contentLayer: true,
+  },
 
 });

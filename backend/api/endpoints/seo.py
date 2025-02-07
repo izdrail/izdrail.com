@@ -8,7 +8,7 @@ from lighthouse import LighthouseRunner
 router = APIRouter()
 
 
-class SeoAnalise(BaseModel):
+class SeoAnalyzer(BaseModel):
     link: str
     format: str
 
@@ -18,7 +18,7 @@ class LightHouseAction(BaseModel):
 
 
 @router.post("/seo/analyze")
-async def root(data: SeoAnalise):
+async def root(data: SeoAnalyzer):
     import inspect
     module_path = os.path.dirname(inspect.getfile(analyze))
     response = analyze(data.link, follow_links=False, analyze_headings=True, analyze_extra_tags=True)

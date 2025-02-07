@@ -148,7 +148,7 @@ export default {
       }
 
       // Make API call if no cached data is found
-      fetch(`localhost:12001/jobs`, {
+      fetch(`http://localhost:12001/jobs`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

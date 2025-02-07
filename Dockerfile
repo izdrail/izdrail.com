@@ -6,7 +6,7 @@ LABEL maintainer="Stefan Bogdanel <stefan@izdrail.com>"
 #ENV STUFF
 ARG JAVA_VERSION=17
 
-ARG NODEJS_VERSION=19
+ARG NODEJS_VERSION=23
 # See https://developer.android.com/studio/index.html#command-tools
 ARG ANDROID_SDK_VERSION=11076708
 # See https://developer.android.com/tools/releases/build-tools
@@ -34,45 +34,33 @@ RUN apt-get install -qy \
     locales \
     gnupg2 \
     build-essential \
-    curl \
-    nodejs \
-    npm 
+    curl 
 
-
+RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash - \
+    && apt-get update -q && apt-get install -qy nodejs
 # FRONTEND - TODO: Make this work
 
 COPY frontend /home/frontend/
 COPY frontend/package.json /home/frontend/package.json
 WORKDIR /home/frontend/
-RUN npm install
-RUN npm run build
+RUN npm install --force
+
 
 
 # General packages
 RUN apt-get install -qy \
-    apt-utils \
-    locales \
-    gnupg2 \
-    build-essential \
-    curl \
-    nodejs \
-    npm \
-    yarn \
     mlocate \
     net-tools \
     software-properties-common \
     maven \
     usbutils \
     git \
+    nano \
     unzip \
     p7zip p7zip-full \
     python3 \
     openjdk-${JAVA_VERSION}-jre \
     openjdk-${JAVA_VERSION}-jdk
-
-
-RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash - \
-    && apt-get update -q && apt-get install -qy nodejs
 
 
 # Install pip packages and supervisord
@@ -84,12 +72,12 @@ RUN npm install -g lighthouse
 #RUN curl -sSL install.astronomer.io | bash -s
 
 
-
 # Upgrade pip and install pipx
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install pipx \
     && pip install lxml[html_clean] \
     && pip install gnews \
+    && pip install -U spacy \
     && pip install poetry
 
 # Set up backend api
@@ -100,7 +88,7 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt \
     && pip install fastapi-versioning pymupdf4llm python-multipart yake tls_client uvicorn litellm \
     && pip install instabot lighthouse-python-plus gnews \
     && python3 -m nltk.downloader -d /usr/local/share/nltk_data wordnet punkt stopwords vader_lexicon \
-    && python3 -m spacy download en_core_web_md \
+    && python3 -m spacy download en_core_web_trf \
     && python3 -m textblob.download_corpora
 
 
@@ -116,6 +104,7 @@ RUN apt-get autoremove -y \
 # Copy Supervisor configuration
 COPY docker/supervisord.conf /etc/supervisord.conf
 
+WORKDIR /home/frontend/
 
 # Expose application ports
 EXPOSE 12000 12001 

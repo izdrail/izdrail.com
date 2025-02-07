@@ -4,7 +4,7 @@ from cachetools import TTLCache
 import spacy
 import os
 from newspaper import Config, Article
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_trf")
 router = APIRouter()
 import requests
 

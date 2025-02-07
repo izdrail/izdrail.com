@@ -185,7 +185,7 @@ export default {
 
       this.loading = true;
       // Make API call
-          fetch(`/backend/nlp/article`, {
+          fetch(`http://localhost:12001/nlp/article`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

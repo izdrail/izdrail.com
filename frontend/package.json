@@ -3,7 +3,7 @@
   "type": "commonjs",
   "version": "0.4.9",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 12000 --reload ",
+    "dev": "astro dev --host izdrail.com --port 12000 --reload ",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0 --port 12000 --reload ",
@@ -13,11 +13,11 @@
     "vite-preview": "vite preview --host 0.0.0.0 --port 12000"
   },
   "dependencies": {
+    "@astrojs/mdx": "^3.1.9",
     "@astrojs/renderer-react": "^0.5.0",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/tailwind": "^5.1",
     "@astrojs/vue": "^4",
-    "@astrojs/mdx": "^3",
     "@bhplugin/vue3-datatable": "^1.1.4",
     "@kangc/v-md-editor": "^2.3.18",
     "@vite-pwa/astro": "^0.4.3",

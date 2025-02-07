@@ -14,7 +14,7 @@ from spacy import displacy
 router = APIRouter()
 
 # Load SpaCy Model
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_trf")
 
 # Initialize Sentiment Analyzer
 sentiment_analyzer = SentimentIntensityAnalyzer()

@@ -27,7 +27,7 @@ export default {
             // Show loading icon
             this.loading = true;
             // Make API call
-            fetch(`https://backend.izdrail.com/seo/analyze`, {
+            fetch(`http://localhost:12001/seo/analyze`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -103,7 +103,7 @@ export default {
       // Show loading icon
       this.loading = true;
       // Make API call
-      fetch(`https://backend.izdrail.com/google/trending`, {
+      fetch(`http://localhost:12001/google/trending`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
